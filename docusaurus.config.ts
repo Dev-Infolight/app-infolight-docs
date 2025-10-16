@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Infolight Docs',
+  tagline: 'Documentação oficial do aplicativo infolight',
+  favicon: 'img/infolight-logo.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -22,8 +22,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'INFOLIGHT TECNOLOGIA DA INFORMACAO LTDA', // Usually your GitHub org/user name.
+  projectName: 'app-infolight-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -31,8 +31,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'pt-BR',
+    locales: ['pt-BR'],
   },
 
   presets: [
@@ -41,10 +41,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -52,11 +48,6 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -75,70 +66,87 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      hideOnScroll: true,
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Infolight',
+        src: 'img/infolight-black.svg',
+        srcDark: 'img/infolight-white.svg',
+        href: "/",
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentação',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+          type: "dropdown",
+          label: "Onde baixar o aplicativo ?",
+          position: 'left',
+          items: [
+            {
+              label: "PlayStore",
+              href: "https://play.google.com/store/apps/details?id=br.com.infolight.mobile",
+            },
+            {
+              label: "Apple Store",
+              href: "https://apps.apple.com/br/app/infolight/id6743130204",
+            }
+          ]
+        }
       ],
     },
     footer: {
-      style: 'dark',
+       logo: {
+        alt: 'Infolight',
+        src: 'img/infolight-black.svg',
+        srcDark: 'img/infolight-white.svg',
+
+        height: 30,
+      },
       links: [
         {
-          title: 'Docs',
+          title: 'Guia',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Documentação',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Onde baixar o aplicativo ?',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "PlayStore",
+              href: "https://play.google.com/store/apps/details?id=br.com.infolight.mobile",
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
+              label: "Apple Store",
+              href: "https://apps.apple.com/br/app/infolight/id6743130204",
+            }
           ],
         },
         {
-          title: 'More',
+          title: 'Mais',
           items: [
+            // {
+            //   label: 'Blog',
+            //   to: '/blog',
+            // },
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Infolight',
+              href: 'https://infolight.com.br/',
             },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+             {
+              label: 'Instagram',
+              href: 'https://www.instagram.com/infolighterp/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} Infolight. Todos os direitos reservados.`,
     },
     prism: {
       theme: prismThemes.github,
