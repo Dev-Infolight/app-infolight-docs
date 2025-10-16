@@ -8,7 +8,6 @@ const config: Config = {
   title: 'Infolight Docs',
   tagline: 'Documentação oficial do aplicativo infolight',
   favicon: 'img/infolight-logo.svg',
-
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -60,13 +59,16 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    docs: {
+      sidebar: {
+        hideable: true,
+      }
+    },
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      hideOnScroll: true,
       logo: {
         alt: 'Infolight',
         src: 'img/infolight-black.svg',
@@ -111,7 +113,7 @@ const config: Config = {
           items: [
             {
               label: 'Documentação',
-              to: '/docs/intro',
+              to: 'docs/introducao',
             },
           ],
         },

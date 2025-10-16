@@ -1,0 +1,9 @@
+{
+  "label": "Tela inicial",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Tela inicial do aplicativo",
+    "title": "Tela inicial"
+  }
+}
