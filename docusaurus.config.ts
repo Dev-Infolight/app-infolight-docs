@@ -69,6 +69,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
+      hideOnScroll: true,
       logo: {
         alt: 'Infolight',
         src: 'img/infolight-black.svg',
