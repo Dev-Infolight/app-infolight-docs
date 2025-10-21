@@ -30,3 +30,11 @@
   --ifm-navbar-background-color: #343434;
   --ifm-footer-background-color: #343434;
 }
+
+.row-images {
+  height: 500px;
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+}
+
