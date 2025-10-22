@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 sidebar_label: "Parâmetros"
 title: "Parâmetros"
 ---
@@ -138,4 +138,4 @@ Os **parâmetros globais** devem ser cadastrados na `tabela de parâmetros do si
 
     Ao realizar o procedimento adequado, o parâmetro deve passar a funcionar sem problemas no aplicativo.
 
-    Se mesmo após realizar os passos apresentados acima, o parâmetro continuar não funcionando, no **Tempus ERP**, verifique se o cadastro do parâmetro foi feito corretamente e sem erros de digitação. Por fim, se não tiver sucesso, entre em contato com o suporte da [infolight](https://infolight.com.br/#contato).
+    Se mesmo após realizar os passos apresentados acima, o parâmetro continuar não funcionando, no **Tempus ERP**, verifique se o cadastro do parâmetro foi feito corretamente e sem erros de digitação. Por fim, se não tiver sucesso, entre em contato com o suporte da [Infolight](https://infolight.com.br/#contato).

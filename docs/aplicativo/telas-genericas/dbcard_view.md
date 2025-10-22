@@ -34,7 +34,7 @@ dbCard(query/table, '*campo1, campo2*; *campo3*, campo4, campo5', 'chamadaBotao'
 - Os campos `campo1` e `campo2` estão envolvidos com asteriscos (`*`), aplicando negrito de forma combinada.
 - O **ponto e vírgula** (`;`) após `campo2` indica uma **quebra de linha**, separando visualmente os campos seguintes.
 - `campo3` está em negrito de forma **individual**, e os demais (`campo4` e `campo5`) são exibidos normalmente.
-- `'chamadaBotao'` define o botão personalizado que será executado ao clicar no card. Se omitido, o card nao será clicável.
+- `'chamadaBotao'` define o botão personalizado que será executado ao clicar no card. Se omitido, o card não será clicável.
 
 Você pode combinar essas formatações de forma flexível, criando cards organizados e interativos, de acordo com a necessidade da aplicação.
 
@@ -46,11 +46,11 @@ Você pode combinar essas formatações de forma flexível, criando cards organi
 
     - Campos com nomes errados na chamada.
 
-    - Campos nao pertencem a query/tabela.
+    - Campos não pertencem a query/tabela.
 
  2. **Campo não aparece**
  
-    - Campo da chamada nao pertence a query/tabela.
+    - Campo da chamada não pertence a query/tabela.
 
     - Campo como nome errado na chamada.
  
