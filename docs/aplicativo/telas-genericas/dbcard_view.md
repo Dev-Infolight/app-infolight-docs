@@ -6,18 +6,18 @@ title: "DBCARD"
 
 # DBCARD: Tela genérica de geração de cards 
 
-A DBCARD funciona de forma offline, utilizando queries ou tabelas já presentes na base do aplicativo para criar cards modulares e botões personalizados.
+A `DBCARD` funciona de forma *offline*, utilizando queries ou tabelas já armazenadas na base local do aplicativo para criar cards modulares e configuráveis. Mostrar, ou não, um ou mais totalizadores, conforme configuração. Ela também possibilita definir botões personalizados, permitindo que o parâmetro enviado determine qual tela ou função o card abrirá ao ser tocado.
 
 ## Estrutura da chamada `DBCARD`
 
 A chamada `DBCARD` é composta por **quatro partes**. A primeira é a própria palavra-chave `DBCARD`, que inicia a execução da função. Em seguida, entre parênteses, são definidos **três parâmetros adicionais**, sendo os **dois primeiros obrigatórios**.
 
 - O **primeiro parâmetro** é a **query SQL** ou o **nome da tabela** que será utilizada como fonte de dados.
-- O **segundo parâmetro** define os **campos que serão exibidos nos cards**, separados por vírgula e envolvidos em **aspas simples** (`' '`). Os campos devem existir na query/table. Esses campos podem conter **atributos de formatação**, como:
+- O **segundo parâmetro** define os **campos que serão exibidos nos cards**, separados por vírgula e envolvidos em **aspas simples** (`' '`). Os campos devem existir na *query*/table. Esses campos podem conter **atributos de formatação**, como:
   - **Ponto e vírgula** (`;`) — cria uma **quebra de linha** ou separação visual entre os campos no card.
   - **Asteriscos duplos** (`**`) — aplicam **negrito** aos campos, podendo ser usados tanto para campos individuais quanto para grupos de campos.
 
-- O **terceiro parâmetro** é **opcional** e representa a **definição dos botões personalizados** que serão exibidos nos cards. Ele também deve estar envolvido em **aspas simples** (`' '`). Caso não haja necessidade de botões ou ações interativas, esse parâmetro pode ser omitido.
+- O **terceiro parâmetro** é **opcional** e representa a **definição dos botões personalizados** que serão executados nos cards. Ele também deve estar envolvido em **aspas simples** (`' '`). Caso não haja necessidade de botões ou ações interativas, esse parâmetro pode ser omitido.
 
 ---
 
@@ -31,10 +31,11 @@ dbCard(query/table, '*campo1, campo2*; *campo3*, campo4, campo5', 'chamadaBotao'
 
 ## Explicações do exemplo
 
+- `query/table` representa a fonte de dados do grid que será gerado, podendo ser uma *query* ou uma tabela. Essa fonte  precisa estar armazenada localmente no aplicativo, pois a `DbCard` opera de forma totalmente *offline*.
 - Os campos `campo1` e `campo2` estão envolvidos com asteriscos (`*`), aplicando negrito de forma combinada.
 - O **ponto e vírgula** (`;`) após `campo2` indica uma **quebra de linha**, separando visualmente os campos seguintes.
 - `campo3` está em negrito de forma **individual**, e os demais (`campo4` e `campo5`) são exibidos normalmente.
-- `'chamadaBotao'` define o botão personalizado que será executado ao clicar no card. Se omitido, o card não será clicável.
+- `'chamadaBotao'` define o botão personalizado que será executado ao tocar no card. Se omitido, o card não terá ação ao toque.
 
 Você pode combinar essas formatações de forma flexível, criando cards organizados e interativos, de acordo com a necessidade da aplicação.
 
@@ -42,15 +43,15 @@ Você pode combinar essas formatações de forma flexível, criando cards organi
 
  1. **Tela Vazia**
 
-    - Query ou tabela inexistente.
+    - *Query* ou tabela inexistente.
 
     - Campos com nomes errados na chamada.
 
-    - Campos não pertencem a query/tabela.
+    - Campos não pertencem a *query*/tabela.
 
  2. **Campo não aparece**
  
-    - Campo da chamada não pertence a query/tabela.
+    - Campo da chamada não pertence a *query*/tabela.
 
     - Campo como nome errado na chamada.
  
@@ -74,7 +75,11 @@ Você pode combinar essas formatações de forma flexível, criando cards organi
 
     - Alteração feita depois do login.
 
-## O que fazer depois das correções? 
+## Como Corrigir
+
+    :::info
+    Se você tiver limpado a base de dados ou ainda não estiver logado, pode desconsiderar os passos abaixo. Basta fazer as alterações necessárias e, ao fazer o login novamente, as correções/alterações entrarão em vigor.
+    :::
 
 1. **Correção/alteração na chamada**
 
@@ -86,12 +91,16 @@ Você pode combinar essas formatações de forma flexível, criando cards organi
     
 3. **Correção/alteração na query usada no primeiro parâmetro**
 
-    - Insira a query na tabela `CX4`, e role a tela para baixo na guia *Início* da tela inicial.
+    - Insira a *query* na tabela `CX4`, e role a tela para baixo na guia *Início* da tela inicial.
 
 4. **Correção/alteração do totalizador da query**
 
-    - Insira o campos na `X4_TOTFLDS` da correspondente query na tabela `CX4`, e role a tela para baixo na guia *Início* da tela inicial.
+    - Insira o campos na `X4_TOTFLDS` da correspondente *query* na tabela `CX4`, e role a tela para baixo na guia *Início* da tela inicial.
 
 5. **Correção/alteração na tabela de legendas `CX1`**
 
     - Insira o campo na tabela `CX1`, incluindo sua legenda correspondente, e role a tela para baixo na guia *Início* da tela inicial.
+
+:::tip
+    Por fim, se não tiver sucesso, entre em contato com o suporte da [Infolight](https://infolight.com.br/#contato).
+:::
