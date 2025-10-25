@@ -68,8 +68,8 @@ Para o cadastro de *Pessoa Física*, tanto **offline** quanto **online**, o pree
     <img src={novoscliente9} alt="Guia Enviados" />
 </div>
 
-- Se o cadastro foi realizado **online**, a aprovação do novo cliente ficará a cargo do administrador do ERP Tempus.
 - Se o cadastro foi feito **offline**, após a restauração da conexão com a internet, será necessário rolar a tela para baixo na guia **Início** da tela principal ou na guia **Pendentes** da tela de *Novos Clientes*. Só então, a aprovação ficará a cargo do administrador do ERP Tempus. 
+- Se o cadastro foi realizado **online**, a aprovação do novo cliente ficará a cargo do administrador do ERP Tempus.
 
 
 ## Problemas comuns
