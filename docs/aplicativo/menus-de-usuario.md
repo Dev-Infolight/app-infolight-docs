@@ -11,7 +11,7 @@ import MenuDeUsuario2 from '@site/static/img/menu-de-usuario2.png';
 
 São basicamente as **`opções do menu`** que serão apresentadas para o usuário após ele fazer login e/ou acessar a tela de relatórios do sistema. Com este recurso, podemos definir exatamente quais as **`telas`** e **`relatórios`** que serão apresentados para cada **`empresa, grupo de usuário e módulo do sistema`**. As imagens a seguir demonstram alguns exemplos de menus de usuário:
 
-<div className="row-images">
+<div className="divRow">
     <img src={MenuDeUsuario1} alt="Exemplo de menu de usuário 1"/>
     <img src={MenuDeUsuario2} alt="Exemplo de menu de usuário 2"/>
 </div>

@@ -31,10 +31,38 @@
   --ifm-footer-background-color: #343434;
 }
 
-.row-images {
-  height: 500px;
+.divRow {
   display: flex;
+  flex: 1;
+  flex-wrap: wrap;
   gap: 16px;
-  overflow-x: auto;
+}
+
+.divRow > img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.divRow > p {
+  flex: 1;
+}
+
+.divColumn{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 16px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.h-500 {
+  height: 500px;
+}
+
+.fw-600 {
+  font-weight: 600;
 }
 

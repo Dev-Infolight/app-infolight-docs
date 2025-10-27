@@ -134,8 +134,8 @@ Os **parâmetros globais** devem ser cadastrados na `tabela de parâmetros do si
 
 1. **Cadastrei um novo parâmetro, mas ele não funcionou no aplicativo:** 
 
-    Ao cadastrar um novo parâmetro de [escopo global](#tipos-de-parâmetros), a partir da tela inicial, navegue até a tela de configurações do sistema e atualize as tabelas de configuração. Se o novo parâmetro for de [escopo de usuário](#tipos-de-parâmetros), na tela inicial, arraste para baixo para atualizar.
+    Ao cadastrar um novo parâmetro de [escopo global](#tipos-de-parâmetros), a partir da tela inicial, navegue até a guia de **configurações** do sistema e atualize as **tabelas de configuração**. Se o novo parâmetro for de [escopo de usuário](#tipos-de-parâmetros), na tela inicial, arraste para baixo para atualizar.
 
-    Ao realizar o procedimento adequado, o parâmetro deve passar a funcionar sem problemas no aplicativo.
+    Ao realizar algum dos passos que foram descritos acima, o parâmetro deve passar a funcionar sem problemas no aplicativo.
 
     Se mesmo após realizar os passos apresentados acima, o parâmetro continuar não funcionando, no **Tempus ERP**, verifique se o cadastro do parâmetro foi feito corretamente e sem erros de digitação. Por fim, se não tiver sucesso, entre em contato com o suporte da [Infolight](https://infolight.com.br/#contato).
