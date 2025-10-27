@@ -161,4 +161,4 @@ O ponto chave dos **`menus de usuários`** são as **`chamadas`**, são com elas
 
 1. **Cadastrei ou atualizei os dados de uma opção de menu, mas não apareceu no aplicativo:**
 
-    A partir da tela inicial, navegue até a guia **`Configurações`** e **`atualize as tabelas de configuração`**. Caso você não obtenha sucesso, verifique se cadastrou ou atualizou a opção do menu corretamente `(considerando módulo, empresa e grupo do usuário logado)` e **`atualize as tabelas de configuração novamente`**. Se o problema persistir, entre em contado com o suporte da [Infolight](https://infolight.com.br/#contato).
+    A partir da tela inicial, navegue até a guia **`Configurações`** e **`atualize as tabelas de configuração`**. Caso você não obtenha sucesso, verifique se cadastrou ou atualizou a opção do menu corretamente `(considerando módulo, empresa e grupo do usuário logado)` e **`atualize as tabelas de configuração novamente`**. Se o problema persistir, entre em contato com o suporte da [Infolight](https://infolight.com.br/#contato).
