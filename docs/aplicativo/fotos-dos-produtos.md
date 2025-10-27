@@ -10,6 +10,10 @@ As *fotos dos produtos* são uma funcionalidade importante oferecida pelo app In
 
 Embora opcionais, as fotos ajudam a enriquecer a experiência de uso. Caso o link das fotos não seja disponibilizado no parâmetro, o aplicativo funcionará normalmente sem as fotos, já que o caminho dos arquivos das fotos são armazenadas em uma tabela interna, podendo ser a posterior atualizadas. 
 
+:::info IMPORTANTE
+É necessário estar conectado à internet para baixar as fotos dos produtos. Após o download, as imagens ficam armazenadas localmente e continuarão sendo exibidas mesmo quando o dispositivo estiver *offline*.
+:::
+
 ## Cadastro de Fotos dos Produtos
 
 Para cadastrar as fotos corretamente, siga os passos abaixo:
@@ -33,6 +37,11 @@ Para cadastrar as fotos corretamente, siga os passos abaixo:
 7. O link gerado com a alteção no final da url deve ser cadastrados em parametros, na variavel `MV_URLFOTOS`.
 
 ## Baixar fotos dos produtos
+
+:::info Conexão necessária
+Para baixar as fotos é necessário **conexão com a internet**.  
+Verifique sua rede antes de continuar.
+:::
 
 Geralmente, as fotos são baixadas automaticamente na etapa final do login. Caso isso não ocorra, essa etapa é simplesmente ignorada. O app consegue funcionar perfeitamente sem as fotos.
 
@@ -70,7 +79,11 @@ Para atualizar a fotos de um produto, siga os passos abaixo:
     
     - Foto renomeada com código de outro produto não correspondente.
 
-## O que fazer depois das correções? 
+ ## Como Corrigir
+ 
+    :::info
+    Se você tiver limpado a base de dados ou ainda não estiver logado, pode desconsiderar os passos abaixo. Basta fazer as alterações necessárias e, ao fazer o login novamente, as correções/alterações entrarão em vigor.
+    :::
 
 1. **Correção/alteração no link**
 
@@ -80,3 +93,6 @@ Para atualizar a fotos de um produto, siga os passos abaixo:
 
     - Depois de adicionar uma ou mais fotos ou renomeá-las com o código correto do produto, clique em **Atualizar Fotos dos produtos**, na guia *configuração* da tela inicial, caso já esteja logado. Caso contrário, as fotos serão baixadas automaticamente no próximo login.
     
+:::tip
+    Por fim, se não tiver sucesso, entre em contato com o suporte da [Infolight](https://infolight.com.br/#contato).
+:::
