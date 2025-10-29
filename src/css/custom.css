@@ -62,8 +62,21 @@
   height: 500px;
 }
 
+.w-300 {
+  width: 300px;
+}
+
 .fw-600 {
   font-weight: 600;
+}
+
+.images-grid-rows-2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
 .images-grid {
@@ -138,4 +151,13 @@
   .images-half img {
     height: 300px;
   }
+
+  .images-grid-rows-2 {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.color-red {
+  color: red;
 }
