@@ -161,3 +161,11 @@
 .color-red {
   color: red;
 }
+
+.theme-code-block-highlighted-line {
+  background-color: rgba(153, 152, 149, 0.2);
+}
+
+.align-items-start {
+  align-items: start;
+}
