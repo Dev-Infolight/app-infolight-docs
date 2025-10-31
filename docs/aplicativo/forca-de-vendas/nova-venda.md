@@ -15,6 +15,15 @@ import EscolhendoTabelaDePrecos from "@site/static/img/escolhendo-tabela-de-prec
 import ObservacaoDoPedido from "@site/static/img/campo-de-observacao-do-pedido.png";
 import InfoCliente from "@site/static/img/info-complementar-cabecalho.png";
 import NroPedidoDoCliente from "@site/static/img/nro-pedido-cliente.png";
+import PedidoJaRealizado from "@site/static/img/pedido-ja-realizado.png";
+import GuiaProdutos from "@site/static/img/guia-de-produtos.png";
+import FiltroProdutos1 from "@site/static/img/filtros-produtos-1.png";
+import FiltroProdutos2 from "@site/static/img/filtros-produtos-2.png";
+import IconeFiltro from "@site/static/img/icone-filtro.svg";
+import AdicionarItemAoCarrinho from "@site/static/img/adicionando-item-ao-carrinho.png";
+import GuiaDoCarrinho from "@site/static/img/carrinho.png";
+import PedidoEmCache from "@site/static/img/pedido-em-cache.png";
+
 
 # Nova venda
 
@@ -53,7 +62,7 @@ As opcões que serão apresentadas ao vendedor neste campo, serão provenientes 
 1. **TAE - Cadastro de regras**;
 2. **TBE - Regras de saída por vendedor**.
 
-Funciona assim: por padrão, o aplicativo irá listar todas as regras de saída que estão cadastradas TAE (considerando empresa e filial a qual o usuário está logado), e caso a tabela TBE exista na base do vendedor, o aplicativo irá fazer uma cruzamento de informações para listar apenas as regras de saída que são associadas ao vendedor em questão. No trecho de código abaixo, você pode conferir exatamente como este processo funciona:
+Funciona assim: por padrão, o aplicativo irá listar todas as regras de saída que estão cadastradas TAE (considerando empresa e filial a qual o usuário está logado), e caso a tabela TBE exista na base do vendedor, o aplicativo irá fazer um cruzamento de informações para listar apenas as regras de saída que são associadas ao vendedor em questão. No trecho de código abaixo, você pode conferir exatamente como este processo funciona:
 
 ```SQL showLineNumbers title="TBE não existe na base do vendedor:"
 SELECT
@@ -67,7 +76,6 @@ WHERE
     AND UPPER(AE_PALM) = 'S'
 ORDER BY
     AE_CODIGO
-
 ```
 ```SQL {7,11} showLineNumbers title="TBE existe na base do vendedor:" 
 SELECT
@@ -155,14 +163,14 @@ Caso a query não retorne dados, o campo de condições de pagamento não será 
     <img src={EscolhendoCondicaoDePagamento} alt="Lista de tabelas de preço"/>
 </div>
 
-A tabela de preços é o campo que vai definir não somente os produtos que vão aparecer na **guia de produtos** mas também o preço de cada um deles. A tabela de preços selecionada será salva no campo **F3_TABPRC** da tabela de **pedidos de venda (TF3)**.
+A tabela de preços é o campo que vai definir não somente os produtos que vão aparecer na **guia de produtos**, mas também o preço de cada um deles. A tabela de preços selecionada será salva no campo **F3_TABPRC** da tabela de **pedidos de venda (TF3)**.
 
 Para listar as tabelas de preço, o aplicativo utiliza as seguintes tabelas:
 
 1. **TT3 - Tabela de preços**;
 2. **TA9 - Tabela de preço dos vendedores.**
 
-A lógica é exatamente a mesma das regras de saída e condições de pagemanto, por padrão, as tabelas de preços da TT3 são listadas, mas quando a TA9 existe, uma associação de dados é realizada. Este comportamento é mostrado os trechos de código abaixo.
+A lógica é exatamente a mesma das regras de saída e condições de pagamento. Por padrão, as tabelas de preços da TT3 são listadas, mas quando a TA9 existe, uma associação de dados é realizada. Este comportamento é mostrado nos trechos de código abaixo.
 
 ```SQL showLineNumbers title="TA9 não existe na base do vendedor:"
 SELECT
@@ -199,7 +207,7 @@ Para evitar que um vendedor adicione produtos de diferentes tabelas de preço ao
 
 O aplicativo também permite que os campos de **Condição de pagamento** e **Tabela de preços** já venham preenchidos automaticamente com base no cadastro do cliente.
 
-Se você deseja esse comportamento, na **tabela de clientes (TA1)**, cadastre a condição de pagamento no campo **A1_CONDPAG** e/ou tabela de preços no campo **A1_TABPRC**.
+Se você deseja esse comportamento, no **cadastro do cliente**, informe a condição de pagamento no campo **A1_CONDPAG** e/ou tabela de preços no campo **A1_TABPRC**.
 
 O aplicativo utiliza a seguinte query para obter essas informações:
 
@@ -217,7 +225,7 @@ WHERE
 ```
 
 :::info[IMPORTANTE]
-Os campos de condição de pagamento e tabela de preços só serão preenchidos automaticamente se eles aparecerem em suas respectivas listas.
+Os campos de condição de pagamento e tabela de preços só serão preenchidos automaticamente se a `condição de pagamento` e/ou `tabela de preços` que foi inserida no cadastro do cliente aparecer na lista de tabelas de preço e condições de pagamento da tela.
 :::
 
 ---
@@ -233,7 +241,7 @@ Os campos de condição de pagamento e tabela de preços só serão preenchidos 
 
 ### Observação 
 
-No campo de observação, o usuário pode escrever alguma mensagem relacionada ao pedido em questão. O texto digitado será salvo no campo **F3_HIST** da tabela de **Pedidos de venda**. Abaixo está uma imagem do campo de observação: 
+No campo de observação, o usuário pode escrever alguma mensagem relacionada ao pedido em questão. O texto digitado será salvo no campo **F3_HIST** da tabela de **Pedidos de venda (TF3)**. Abaixo está uma imagem do campo de observação: 
 
 <img
     className="pb-16"
@@ -254,7 +262,7 @@ Além do formulário, a guia do cabeçalho também exibe informações relevante
 
 1. **Observação do cliente:**
    
-   Consiste basicamente em uma mensagem para que o vendedor relembre algum detalhe importante sobre o cliente, por exemplo: identificar que o cliente é mal pagador. Esta mensagem pode ser cadastrada no campo de **observação do cliente (A1_OBS)** na **tabela de Clientes (TA1)**.
+   Consiste basicamente em uma mensagem para que o vendedor relembre de algum detalhe importante sobre o cliente, por exemplo: identificar que o cliente é mal pagador. Esta mensagem pode ser cadastrada no campo de **observação do cliente (A1_OBS)** na **tabela de Clientes (TA1)**.
 
 2. **Comodatos do cliente:**
 
@@ -279,6 +287,167 @@ Além do formulário, a guia do cabeçalho também exibe informações relevante
 
 ## Produtos
 
+### Listagem
+
+<img 
+    className="h-500"
+    src={GuiaProdutos}
+    alt="Guia com os produtos da tabela de preços selecionada"
+/>
+
+A guia de **Produtos** tem a função de listar todos os produtos da tabela de preços que foi selecionada durante o preenchimento do **cabeçalho** e permitir que o usuário selecione algum produto e adicione ao carrino.
+
+A listagem de produtos é feita em formato de cards contendo as seguintes informações: 
+
+1. **Foto do produto (Se ela existir)**;
+2. **Código do produto**;
+3. **Nome do produto**;
+4. **Preço do produto**;
+6. **Primeira unidade de medida**;
+7. **Segunda unidade de medida**;
+8. **Estoque disponivel**.
+
+:::info[IMPORTANTE]
+O aplicativo não exibe o **estoque** e a **segunda unidade de medida** simultaneamente no card, você terá que decidir qual a informação é mais relevante para o seu contexto.<br/><br/>Configure o parâmetro `MV_ESTNEGMOB`:<br />**`T`**, **`String vazia`**, **`Não cadastrar este parâmetro`** -> Exibe a segunda unidade de medida<br/>**`F`** -> Exibe o estoque disponível.
+:::
+
+---
+
+### Filtros
+
+<img 
+    src={FiltroProdutos1}
+    alt="Filtros dos produtos"
+/>
+
+Para facilitar a busca por produtos ou grupos de produtos, o aplicativo fornece os seguintes filtros:
+
+1. **Campo de busca por texto:**
+
+    Este filtro permite que o vendedor busque os produtos por `código (A7_CODIGO)` ou `nome (A7_DESCRIC)`.
+
+2. **Botão "Todos:"**
+
+    Exibe todos os produtos da tabela de preços selecionada.
+
+3. **Botão "Produto foco:"**
+
+    Retorna os produtos da tabela de preços selecionada que fazem parte do foco de vendas da empresa.
+
+4. **Botão "Mais comprados:"**
+
+    Retorna os produtos da tabela de preços selecionada que são mais comprados pelo cliente.
+
+5. **Botão Último pedido:**
+
+    Retorna os produtos do último pedido digitado pelo vendedor no aplicativo.
+
+6. **Botão de filtro:**
+
+    Ao clicar em <IconeFiltro className="iconFilter"/>, um modal será aberto, e nele, o vendedor poderá filtrar os produtos por marca, grupo e subgrupo. Este modal pode ser visualizado na imagen abaixo:
+
+    <img 
+        src={FiltroProdutos2}
+        alt="Filtro por marca, grupo e subgrupo."
+    />
+
+### Adicionando item ao carrinho
+
+<img 
+    className="h-500"
+    src={AdicionarItemAoCarrinho}
+    alt="Tela para adicionar um item ao carrinho"
+/>
+
+Para adicionar um item ao carrinho, clique em cima do card do produto, e no modal que será aberto, preencha os dados solicitados, e por fim, clique no botão **Confirmar**. 
+
+Para facilitar a compreensão, foram projetadas duas guias para este modal, são elas: 
+
+1. **Guia de valores:**
+
+    Na guia de valores, o vendedor pode definir o preço e a quantidade da primeira unidade medida (1 e 3), preço e quantidade da segunda unidade de medida (2 e 4) e o desconto que será aplicado (5).
+
+2. **Guia de impostos:**
+
+    Basedo nos valores que o vendedor digitou na guia de **Valores**, o aplicativo irá cálcular automaticamente os seguintes impostos: `IPI`, `ICMS ST` e o `FCP ST`.
+
+:::info[Parâmetros]
+Existem alguns parâmetros que você pode considerar para utilizar nesta tela, [clique aqui](../parametros.md) para conferir.
+:::
+
+---
+
 ## Carrinho
 
-## Mas afinal, como funciona o cadastro ?
+<img 
+    className="h-500"
+    src={GuiaDoCarrinho}
+    alt="guia do carrinho"
+/>
+
+A guia do carrinho possui basicamente um resumo do pedido. Nela, o vendedor terá os seguinte recursos:
+
+1. **Listagem dos produtos do pedido:**
+
+    o vendedor poderá visualizar os produtos que ele digitou, incluindo as quantidades, valores, descontos e impostos de cada um deles.
+
+2. **Editar um item do carrinho:**
+
+    O vendedor pode clicar em cima do card do produto e editar as quantidades e valores que foram anteriormente digitadas.
+
+3. **Salvar o pedido como rascunho:**
+
+    Nem sempre o vendedor terá acesso a internet em todos os locais que ele visitar. Pensando nisto, o aplicativo permite que o vendedor digite um pedido sem internet, salve locamente em seu dispositivo, e posteriormente, com o uso de internet, sincronize este pedido com o **Tempus ERP**.
+
+    Para utilizar este recurso, marque a opção **`Salvar como rascunho`** e clique em **`Confirmar Pedido`**.
+
+4. **Enviar pedido para o Tempus ERP:**
+
+    Para enviar o pedido, certifique-se de que está conectado a internet e clique no botão **`Confirmar pedido`**.
+
+    :::info[É IMPORTANTE SABER]
+    Ao clicar no botão de confirmar o pedido, caso você não tenha marcado para salvar como rascunho e não esteja conectado a internet, o pedido será salvo locamente com o status de `Pendente de envio` e a partir da tela de [pedido de venda](./pedidos_de_venda.md), você poderá sincronizar este pedido com o Tempus ERP.
+    :::
+
+#### Onde o pedido será salvo ?
+
+Ao fim da digitação de um novo pedido de venda, os dados do **cabeçalho** serão salvos na tabela de **pedidos venda (TF3)** e os itens do carrinho serão salvos na tabela de **itens do pedido de venda (TF4)**.
+
+---
+
+## Informação de pedido já realizado
+
+<div className="divRow">
+    <img 
+        src={PedidoJaRealizado}
+        alt="Informação de pedido já realizado para o cliente"
+    />
+    <div className="divColumn">
+       <div>
+            <b>Entendendo</b>
+            <p>Ao abrir a tela de **novo pedido**, caso você já tenha feito um pedido para o cliente em questão, um modal informativo será apresentado.</p>
+       </div>
+       <div>
+            <b>Como funciona ?</b>
+            <p>Caso o parâmetro `MV_DIASULTPED` esteja configurado, o aplicativo irá verificar se o vendedor fez algum pedido para o cliente durante o período cadastrado, caso contrário, será verificado se o vendedor já digitou um pedido para o cliente na data atual.</p>
+       </div>
+    </div>
+</div>
+
+---
+
+## Fechei o pedido sem querer, e agora ?
+
+<div className="divRow">
+    <img 
+        src={PedidoEmCache}
+        alt="Pedido em cache"
+    />
+    <div className="divColumn">
+        <b>Entendendo</b>
+        <p>Não se preocupe, durante a digitação de um novo pedido de venda, o aplicativo vai salvando as informações em cache para caso você feche a tela sem querer ou o seu celular descarregue, você não perda os dados do pedido.</p>
+        <p>Ao reabrir o aplicativo, o modal que está sendo mostrado na foto ao lado será apresentado e você poderá continuar a digitação do pedido de onde parou.</p>   
+    </div>
+    
+</div>
+
