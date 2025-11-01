@@ -264,7 +264,7 @@ Funcionalidade **em desenvolvimento**.
     
 2. **Cliente sumiu depois da sincronização**
 
-    - Entre verifique no ERP Tempus se o cliente foi inativado. Caso sim, ative novamente e role a tela para baixo na guia *Início* da tela inicial.
+    - Entre no ERP Tempus e verifique se o cliente foi inativado. Caso sim, ative novamente e role a tela para baixo na guia *Início* da tela inicial.
 
 3. **Ativar novamente o botão Nova Venda**
 
