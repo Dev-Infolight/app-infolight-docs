@@ -129,9 +129,9 @@ Ao clicar no menu **`O que deseja fazer?`**, o usuário tem acesso às seguintes
 
 ---
 
-### Dados Cadastrais do Cliente
+### Dados Cadastrais
 
-Nesta seção, o usuário encontra **três abas** com informações do cliente: **Dados**, **Endereço** e **Administrativo/Financeiro**.
+Nesta função, o usuário encontra um modal com **três abas** com informações do cliente: **Dados**, **Endereço** e **Administrativo/Financeiro**.
 
 <div className="images-grid">
   <img src={telaCliente7} alt="Aba Dados" />
@@ -143,7 +143,7 @@ Nesta seção, o usuário encontra **três abas** com informações do cliente: 
 
 ### Nova Venda
 
-A função **Nova Venda** é detalhada na documentação de [Nova Venda](nova-venda.md).  
+A função **Nova Venda** é detalhada na documentação da tela [Nova Venda](nova-venda.md).  
 Caso o cliente possua **títulos vencidos**, será exibido um **modal de confirmação** perguntando se o usuário deseja prosseguir.
 
 :::info
@@ -165,7 +165,7 @@ são mais precisas para localizar. Caso o cliente possua **títulos vencidos**, 
 
 ### Visitas Não Positivadas
 
-A função **Visitas Não Positivadas** permite registrar visitas em que **não houve venda**, informando uma **justificativa**. Os registros podem ser feitos *online* ou *offline* e ficam disponíveis no histórico do cliente.
+A função Visistas Não Positivada abre a tela **Vendas Não Positivadas** que permite registrar visitas em que **não houve venda**, informando uma **justificativa**. Os registros podem ser feitos *online* ou *offline* e ficam disponíveis no histórico do cliente.
 
 Para registrar uma nova visita, toque no **ícone de (+)** no canto superior direito.
 
@@ -190,7 +190,7 @@ Se o usuário estiver **sem conexão**, o cadastro ficará **pendente** e poder�
 
 ### Títulos em Aberto
 
-A tela **Títulos em Aberto** exibe os títulos do cliente em formato de `card`, com a **data de vencimento**. Títulos vencidos a legenda e a data são destacados em **vermelho**.
+A função abre a tela **Títulos Abertos** que exibe os títulos do cliente em formato de `card`, com a **data de vencimento**. Nos Títulos vencidos, a legenda e a data são destacados em **vermelho**.
 
 A tela inclui uma **busca genérica** (pesquisa por todos os campos) ou permite filtrar por campo específico. Toque no **ícone de lupa (🔍)** no canto superior direito para acessar a busca.
 
@@ -213,9 +213,9 @@ Ao tocar em um card, ele se **expande** e mostra o botão **Mais detalhes?**, qu
 ---
 
 
-### Últimos Pedidos
+### Últimos Compras
 
-A função **Últimos Pedidos** abre a tela **Pedidos de Venda** do cliente, exibindo tanto os pedidos **pendentes** quanto os **enviados**.
+A função **Últimos Compras** abre a tela **Pedidos de Venda** do cliente, exibindo tanto os pedidos **pendentes** quanto os **enviados**.
 
 <div className="images-grid">
   <img src={telaCliente17} alt="Tela Pedidos de Venda - Pendentes" />
