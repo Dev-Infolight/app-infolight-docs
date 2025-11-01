@@ -143,7 +143,7 @@ Nesta seção, o usuário encontra **três abas** com informações do cliente: 
 
 ### Nova Venda
 
-A função **Nova Venda** é detalhada na documentação de [Pedidos de Venda](pedidos_de_venda.md).  
+A função **Nova Venda** é detalhada na documentação de [Nova Venda](nova-venda.md).  
 Caso o cliente possua **títulos vencidos**, será exibido um **modal de confirmação** perguntando se o usuário deseja prosseguir.
 
 :::info
