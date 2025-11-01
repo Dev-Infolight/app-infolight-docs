@@ -68,8 +68,8 @@ Para o cadastro de *Pessoa Física*, tanto **offline** quanto **online**, o pree
     <img src={novoscliente9} alt="Guia Enviados" />
 </div>
 
-- Se o cadastro foi feito **offline**, após a restauração da conexão com a internet, será necessário rolar a tela para baixo na guia **Início** da tela principal ou na guia **Pendentes** da tela de *Novos Clientes*. Só então, a aprovação ficará a cargo do administrador do ERP Tempus. 
-- Se o cadastro foi realizado **online**, a aprovação do novo cliente ficará a cargo do administrador do ERP Tempus.
+- Se o cadastro foi feito **offline**, após a restauração da conexão com a internet, será necessário rolar a tela para baixo na guia **Início** da tela principal ou na guia **Pendentes** da tela de *Novos Clientes*. Só então, a aprovação ficará pedente no ERP Tempus. 
+- Se o cadastro foi realizado **online**, a aprovação do novo cliente ficará a pedente no ERP Tempus.
 
 
 ## Problemas comuns
@@ -90,7 +90,7 @@ Para o cadastro de *Pessoa Física*, tanto **offline** quanto **online**, o pree
 
 1. **Cliente na guia pedentes com status de Duplicidade**
 
-    - Entre em contato com o administrador do ERP Tempus e solicite a aprovação do cliente. Em seguida, role role a tela para baixo na guia *Início* da tela inicial.
+    - Entre no ERP Tempus e aprove o novo cliente. Em seguida, role a tela para baixo na guia *Início* da tela inicial.
     
 :::tip
     Por fim, se não tiver sucesso, entre em contato com o suporte da [Infolight](https://infolight.com.br/#contato).
