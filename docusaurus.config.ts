@@ -12,7 +12,9 @@ const config: Config = {
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
-
+  plugins: [[ require.resolve('docusaurus-lunr-search'), {
+    languages: ['pt'] // language codes
+  }]],
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
