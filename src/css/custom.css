@@ -16,9 +16,9 @@
   --ifm-background-color: #f0f0f0;
   --ifm-navbar-background-color: #ffffff;
   --ifm-footer-background-color: #ffffff;
-  --searchbar-background-color: rgb(236, 232, 232);
-  --searchbar-border-color: rgb(215, 210, 210);
-  --searchbar-icon-color: #000;
+  --searchbar-background-color: #f0f0f0;
+  --searchbar-border-color: #e0dcdc;
+  --searchbar-icon-color: rgb(68,68,68);
   --card-border-color: rgb(230, 227, 227);
   --text-color: #000;
 }
@@ -34,8 +34,8 @@
   --ifm-background-color: #232323;
   --ifm-navbar-background-color: #343434;
   --ifm-footer-background-color: #343434;
-  --searchbar-background-color: rgb(94, 91, 91);
-  --searchbar-border-color: rgb(107, 105, 105);
+  --searchbar-background-color: #232323;
+  --searchbar-border-color: #3f3b3b;
   --searchbar-icon-color: #FFF;
   --card-border-color: rgb(67, 66, 66);
   --text-color: #FFF;
@@ -222,4 +222,10 @@ html[data-theme='dark'] .search-bar {
 
 .object-fit-contain {
   object-fit: contain;
+}
+
+.gap-16-column{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
