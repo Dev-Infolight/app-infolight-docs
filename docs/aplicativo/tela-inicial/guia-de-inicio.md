@@ -80,7 +80,7 @@ Para cálcular o total de vendas do dia, primeiro, o aplicativo decide se este p
 
 ##### Obtendo vendas do dia online
 
-Caso o aplicativo decida que as vendas do dia devem ser puxadas de forma online, a informação será obtida diretamente do servidor da empresa em questão através do endpoint `/getResPedidosDia`.
+Caso o aplicativo decida que as vendas do dia devem ser puxadas de forma online, a informação será obtida diretamente do servidor da empresa através do endpoint `/getResPedidosDia`.
 
 ##### Obtendo vendas do dia offline
 
@@ -126,7 +126,7 @@ WHERE
 ```
 
 :::info[IMPORTANTE]
-Mesmo que o cálculo seja realizado 100% offline, o valor total de vendas do mês é provenientes do endpoint `/MinhasVendas`, ou seja, para atualizar este valor, arraste para baixo e sincronize os dados.
+Os dados que alimentam a tabela de vendas dos meses no aplicativo são provenientes do endpoint `/MinhasVendas`.
 :::
 
 :::tip[DICA]
@@ -142,7 +142,7 @@ Para utilizar este recurso:
 1. Acesse a **tabela de usuários x módulos (AX6)**;
 2. Procure o registro referente ao **grupo do usuário** e **módulo selecionado**;
 3. Altere o valor do campo **X6_DASH para vazio (X6_DASH = "")**;
-4. Navegue até a [guia de configurações](./guia-de-configuracoes.md) e **atualize as tabelas de configuração**.
+4. Navegue até a guia de configurações e [**atualize as tabelas de configuração**](./guia-de-configuracoes.md#dados).
 
 Após a realização dos passos citados acima, se os totais de venda não sumirem da guia inicial, feche o aplicativo e abra novamente. 
 
@@ -162,7 +162,7 @@ Ao esconder os totais de venda, a [guia do dashboard](./guia-de-dashboard.md) ta
 
 ### Mascarando valores das vendas
 
-As vezes o usuário deseja que os totais de venda continuem aparecendo na tela, mas, com os valores mascarados. Para isso, bastar clica no icone que está localizado ao lado do botão de logout. Clique uma vez para ocultar e clique novamente para mostrar os valores.
+As vezes o usuário deseja que os totais de venda continuem aparecendo na tela, mas, com os valores mascarados. Para isso, bastar clicar no ícone que está localizado ao lado do botão de logout. Clique uma vez para ocultar e clique novamente para mostrar os valores.
 
 <img 
     src={TotaisDeVendaMascarados}
@@ -207,6 +207,8 @@ Ao passar mais de um dia sem sincronizar os dados, a data da última vez que voc
 />
 
 Recomendamos que você sincronize os dados do aplicativo diariamente, porquê, caso você passe muito tempo sem sincronizar, algumas rotinas do aplicativo se tornarão indisponíveis enquanto uma nova sincronização de dados não for realizada. 
+
+É valido lembrar que o proceso de sincronização de dados necessita de uma conexão com a internet para funcionar.
 
 :::
 
