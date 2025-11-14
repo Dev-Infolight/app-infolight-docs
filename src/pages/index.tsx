@@ -17,8 +17,6 @@ export default function Home(): ReactNode {
 
   const {siteConfig} = useDocusaurusContext();
 
-  console.log(siteConfig.themeConfig.docs);
-
   return (
     <Layout 
       title={siteConfig.title} 
@@ -61,7 +59,7 @@ export default function Home(): ReactNode {
         />
         <CardInfo 
           label='Liberação de preços'
-          redirectTo='/docs/aplicativo/administracao/liberacao-de-precos'
+          redirectTo='/docs/aplicativo/gestor/liberacao-de-precos'
           icon={LiberacaoDePrecosIcon}
         />
     </div>

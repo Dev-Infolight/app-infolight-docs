@@ -9,7 +9,7 @@ import SincronizacaoAtrasada from "@site/static/img/guia-inicio/sincronizacao-at
 import AtualizandoDados from "@site/static/img/guia-inicio/atualizando-dados.jpg";
 import VendasDiaMes from "@site/static/img/guia-inicio/vendas-dia-mes.jpg";
 import DiagramaTotalDeVendasDia from "@site/static/img/guia-inicio/total-de-vendas-dia.png";
-import PedidoEmCache from "@site/static/img/pedido-em-cache.png";
+import PedidoEmCache from "@site/static/img/nova-venda/pedido-em-cache.png";
 import InformacaoNovaVersao from "@site/static/img/guia-inicio/verificacao-de-versao.jpg";
 import TotaisDeVendaMascarados from "@site/static/img/guia-inicio/totais-com-valor-mascarado.png";
 import TotaisDeVendasOcultados from "@site/static/img/guia-inicio/totais-ocultados.png";

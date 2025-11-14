@@ -4,8 +4,8 @@ sidebar_label: "Menus de usuários"
 title: "Menus de usuário"
 ---
 
-import MenuDeUsuario1 from '@site/static/img/menu-de-usuario1.png';
-import MenuDeUsuario2 from '@site/static/img/menu-de-usuario2.png';
+import MenuDeUsuario1 from '@site/static/img/menus-de-usuario/menu-de-usuario1.png';
+import MenuDeUsuario2 from '@site/static/img/menus-de-usuario/menu-de-usuario2.png';
 
 # Menus de usuário
 

@@ -4,25 +4,25 @@ sidebar_label: "Nova venda"
 title: "Nova venda"
 ---
 
-import Cabecalho1 from "@site/static/img/cabecalho1.png";
-import Cabecalho2 from "@site/static/img/cabecalho2.png";
-import CampoRegraDeSaida from "@site/static/img/campo-regra-de-saida.png";
-import EscolhendoRegraDeSaida from "@site/static/img/escolhendo-regra-de-saida.png";
-import CampoDeCondicaoDePagamento from "@site/static/img/campo-condicao-de-pagamento.png";
-import EscolhendoCondicaoDePagamento from "@site/static/img/escolhendo-condicao-de-pagamento.png";
-import CampoDeTabelaDePrecos from "@site/static/img/campo-tabela-de-precos.png";
-import EscolhendoTabelaDePrecos from "@site/static/img/escolhendo-tabela-de-precos.png";
-import ObservacaoDoPedido from "@site/static/img/campo-de-observacao-do-pedido.png";
-import InfoCliente from "@site/static/img/info-complementar-cabecalho.png";
-import NroPedidoDoCliente from "@site/static/img/nro-pedido-cliente.png";
-import PedidoJaRealizado from "@site/static/img/pedido-ja-realizado.png";
-import GuiaProdutos from "@site/static/img/guia-de-produtos.png";
-import FiltroProdutos1 from "@site/static/img/filtros-produtos-1.png";
-import FiltroProdutos2 from "@site/static/img/filtros-produtos-2.png";
-import IconeFiltro from "@site/static/img/icone-filtro.svg";
-import AdicionarItemAoCarrinho from "@site/static/img/adicionando-item-ao-carrinho.png";
-import GuiaDoCarrinho from "@site/static/img/carrinho.png";
-import PedidoEmCache from "@site/static/img/pedido-em-cache.png";
+import Cabecalho1 from "@site/static/img/nova-venda/cabecalho1.png";
+import Cabecalho2 from "@site/static/img/nova-venda/cabecalho2.png";
+import CampoRegraDeSaida from "@site/static/img/nova-venda/campo-regra-de-saida.png";
+import EscolhendoRegraDeSaida from "@site/static/img/nova-venda/escolhendo-regra-de-saida.png";
+import CampoDeCondicaoDePagamento from "@site/static/img/nova-venda/campo-condicao-de-pagamento.png";
+import EscolhendoCondicaoDePagamento from "@site/static/img/nova-venda/escolhendo-condicao-de-pagamento.png";
+import CampoDeTabelaDePrecos from "@site/static/img/nova-venda/campo-tabela-de-precos.png";
+import EscolhendoTabelaDePrecos from "@site/static/img/nova-venda/escolhendo-tabela-de-precos.png";
+import ObservacaoDoPedido from "@site/static/img/nova-venda/campo-de-observacao-do-pedido.png";
+import InfoCliente from "@site/static/img/nova-venda/info-complementar-cabecalho.png";
+import NroPedidoDoCliente from "@site/static/img/nova-venda/nro-pedido-cliente.png";
+import PedidoJaRealizado from "@site/static/img/nova-venda/pedido-ja-realizado.png";
+import GuiaProdutos from "@site/static/img/nova-venda/guia-de-produtos.png";
+import FiltroProdutos1 from "@site/static/img/nova-venda/filtros-produtos-1.png";
+import FiltroProdutos2 from "@site/static/img/nova-venda/filtros-produtos-2.png";
+import IconeFiltro from "@site/static/img/nova-venda/icone-filtro.svg";
+import AdicionarItemAoCarrinho from "@site/static/img/nova-venda/adicionando-item-ao-carrinho.png";
+import GuiaDoCarrinho from "@site/static/img/nova-venda/carrinho.png";
+import PedidoEmCache from "@site/static/img/nova-venda/pedido-em-cache.png";
 
 
 # Nova venda
@@ -450,4 +450,6 @@ Ao fim da digitação de um novo pedido de venda, os dados do **cabeçalho** ser
     </div>
     
 </div>
+
+---
 

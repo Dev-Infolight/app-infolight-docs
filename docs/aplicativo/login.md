@@ -4,8 +4,10 @@ sidebar_label: "Login"
 title: "Login"
 ---
 
-import Login1 from "@site/static/img/login1.png";
-import Login2 from "@site/static/img/login2-editado.png";
+import Login1 from "@site/static/img/login/login1.png";
+import Login2 from "@site/static/img/login/login2-editado.png";
+import FluxogramaLoginComInternet from "@site/static/img/login/fluxograma-de-login.png";
+import FluxogramaLoginSemInternet from "@site/static/img/login/fluxograma-login-offline.png";
 
 # Login
 
@@ -51,9 +53,15 @@ O login se refere ao processo no qual o usuário informa as suas credenciais e t
 
 ### Login com internet
 
-![login com internet](/img/fluxograma-de-login.png)
+<img 
+    src={FluxogramaLoginComInternet}
+    alt="Fluxograma login com internet"
+/>
 
 ### Login sem internet
 
-![Login sem internet](/img/fluxograma-login-offline.png)
+<img 
+    src={FluxogramaLoginSemInternet}
+    alt="Fluxograma login com internet"
+/>
 

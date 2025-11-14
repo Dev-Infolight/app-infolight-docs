@@ -3,12 +3,12 @@ sidebar_position: 2
 sidebar_label: "Conexão com o servidor"
 title: "Conexão com o servidor"
 ---
-import ConexaoComOServidor from "@site/static/img/conexao-com-o-servidor.png";
-import Login2 from "@site/static/img/login2.png";
-import ConfiguracoesLogin from "@site/static/img/configuracoes-login.png";
-import ListagemDeConexoes1 from "@site/static/img/gerenciar-conexoes-1.png";
-import AdicionarConexao from "@site/static/img/add-nova-conexao.png";
-import RemocaoDeConexao from "@site/static/img/removendo-conexao.png";
+import ConexaoComOServidor from "@site/static/img/conexao-com-o-servidor/conexao-com-o-servidor.png";
+import Login2 from "@site/static/img/conexao-com-o-servidor/login2.png";
+import ConfiguracoesLogin from "@site/static/img/conexao-com-o-servidor/configuracoes-login.png";
+import ListagemDeConexoes1 from "@site/static/img/conexao-com-o-servidor/gerenciar-conexoes-1.png";
+import AdicionarConexao from "@site/static/img/conexao-com-o-servidor/add-nova-conexao.png";
+import RemocaoDeConexao from "@site/static/img/conexao-com-o-servidor/removendo-conexao.png";
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
