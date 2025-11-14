@@ -46,12 +46,12 @@ export default function Home(): ReactNode {
         />
         <CardInfo 
           label='Expedição de carga'
-          redirectTo='/docs/introducao'
+          redirectTo='/docs/aplicativo/expedicao/expedicao-carga'
           icon={ExpedicaoDeCargaIcon}
         />
         <CardInfo 
           label='Expedição de NFCe'
-          redirectTo='/docs/introducao'
+          redirectTo='/docs/aplicativo/expedicao/expedicao-NFCE'
           icon={ExpedicaoNFCeIcon}
         />
         <CardInfo 
@@ -61,7 +61,7 @@ export default function Home(): ReactNode {
         />
         <CardInfo 
           label='Liberação de preços'
-          redirectTo='/docs/introducao'
+          redirectTo='/docs/aplicativo/administracao/liberacao-de-precos'
           icon={LiberacaoDePrecosIcon}
         />
     </div>
