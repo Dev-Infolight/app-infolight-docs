@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 9
 sidebar_label: "Vendas do mês"
 title: "Vendas do mês"
 ---
