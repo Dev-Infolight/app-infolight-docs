@@ -16,9 +16,11 @@
   --ifm-background-color: #f0f0f0;
   --ifm-navbar-background-color: #ffffff;
   --ifm-footer-background-color: #ffffff;
-  --searchbar-background-color: rgb(236, 232, 232);
-  --searchbar-border-color: rgb(215, 210, 210);
-  --searchbar-icon-color: #000;
+  --searchbar-background-color: #f0f0f0;
+  --searchbar-border-color: #e0dcdc;
+  --searchbar-icon-color: rgb(68,68,68);
+  --card-border-color: rgb(230, 227, 227);
+  --text-color: #000;
 }
 
 [data-theme='dark'] {
@@ -32,9 +34,11 @@
   --ifm-background-color: #232323;
   --ifm-navbar-background-color: #343434;
   --ifm-footer-background-color: #343434;
-  --searchbar-background-color: rgb(94, 91, 91);
-  --searchbar-border-color: rgb(107, 105, 105);
+  --searchbar-background-color: #232323;
+  --searchbar-border-color: #3f3b3b;
   --searchbar-icon-color: #FFF;
+  --card-border-color: rgb(67, 66, 66);
+  --text-color: #FFF;
 }
 
 .divRow {
@@ -189,6 +193,7 @@
   font-size: 20px;
   background-color: var(--ifm-color-primary);
   border-radius: 5px;
+  color: red;
 } 
 
 .search-bar {
@@ -213,4 +218,14 @@
 
 html[data-theme='dark'] .search-bar {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke='%23fff' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+.gap-16-column{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
