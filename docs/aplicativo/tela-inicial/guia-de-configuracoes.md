@@ -4,20 +4,20 @@ sidebar_label: 'Guia "Configurações"'
 title: 'Guia de "configurações"'
 ---
 
-import configuracao1 from '@site/static/img/TelaInicialConfiguracoes/configuracoes1.png';
-import configuracao2 from '@site/static/img/TelaInicialConfiguracoes/configuracoes2.png';
-import configuracao3 from '@site/static/img/TelaInicialConfiguracoes/configuracoes3.png';
-import configuracao4 from '@site/static/img/TelaInicialConfiguracoes/configuracoes4.png';
-import configuracao5 from '@site/static/img/TelaInicialConfiguracoes/configuracoes5.png';
-import configuracao6 from '@site/static/img/TelaInicialConfiguracoes/configuracoes6.png';
-import configuracao7 from '@site/static/img/TelaInicialConfiguracoes/configuracoes7.png';
-import configuracao8 from '@site/static/img/TelaInicialConfiguracoes/configuracoes8.png';
-import configuracao9 from '@site/static/img/TelaInicialConfiguracoes/configuracoes9.png';
-import configuracao10 from '@site/static/img/TelaInicialConfiguracoes/configuracoes10.png';
-import configuracao11 from '@site/static/img/TelaInicialConfiguracoes/configuracoes11.png';
-import configuracao12 from '@site/static/img/TelaInicialConfiguracoes/configuracoes12.png';
-import configuracao13 from '@site/static/img/TelaInicialConfiguracoes/configuracoes13.png';
-import configuracao14 from '@site/static/img/TelaInicialConfiguracoes/configuracoes14.png';
+import configuracao1 from '@site/static/img/telaInicialConfiguracoes/configuracoes1.png';
+import configuracao2 from '@site/static/img/telaInicialConfiguracoes/configuracoes2.png';
+import configuracao3 from '@site/static/img/telaInicialConfiguracoes/configuracoes3.png';
+import configuracao4 from '@site/static/img/telaInicialConfiguracoes/configuracoes4.png';
+import configuracao5 from '@site/static/img/telaInicialConfiguracoes/configuracoes5.png';
+import configuracao6 from '@site/static/img/telaInicialConfiguracoes/configuracoes6.png';
+import configuracao7 from '@site/static/img/telaInicialConfiguracoes/configuracoes7.png';
+import configuracao8 from '@site/static/img/telaInicialConfiguracoes/configuracoes8.png';
+import configuracao9 from '@site/static/img/telaInicialConfiguracoes/configuracoes9.png';
+import configuracao10 from '@site/static/img/telaInicialConfiguracoes/configuracoes10.png';
+import configuracao11 from '@site/static/img/telaInicialConfiguracoes/configuracoes11.png';
+import configuracao12 from '@site/static/img/telaInicialConfiguracoes/configuracoes12.png';
+import configuracao13 from '@site/static/img/telaInicialConfiguracoes/configuracoes13.png';
+import configuracao14 from '@site/static/img/telaInicialConfiguracoes/configuracoes14.png';
 
 
 # Guia de configurações

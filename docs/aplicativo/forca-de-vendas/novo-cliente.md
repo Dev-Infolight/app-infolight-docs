@@ -4,15 +4,15 @@ sidebar_label: "Novo cliente"
 title: "Novo cliente"
 ---
 
-import novoscliente1 from '@site/static/img/novoCliente/novos-clientes1.png';
-import novoscliente2 from '@site/static/img/novoCliente/novos-clientes2.png';
-import novoscliente3 from '@site/static/img/novoCliente/novos-clientes3.png';
-import novoscliente4 from '@site/static/img/novoCliente/novos-clientes4.png';
-import novoscliente5 from '@site/static/img/novoCliente/novos-clientes5.png';
-import novoscliente6 from '@site/static/img/novoCliente/novos-clientes6.png';
-import novoscliente7 from '@site/static/img/novoCliente/novos-clientes7.png';
-import novoscliente8 from '@site/static/img/novoCliente/novos-clientes8.png';
-import novoscliente9 from '@site/static/img/novoCliente/novos-clientes9.png';
+import novoscliente1 from '@site/static/img/telaNovoCliente/novos-clientes1.png';
+import novoscliente2 from '@site/static/img/telaNovoCliente/novos-clientes2.png';
+import novoscliente3 from '@site/static/img/telaNovoCliente/novos-clientes3.png';
+import novoscliente4 from '@site/static/img/telaNovoCliente/novos-clientes4.png';
+import novoscliente5 from '@site/static/img/telaNovoCliente/novos-clientes5.png';
+import novoscliente6 from '@site/static/img/telaNovoCliente/novos-clientes6.png';
+import novoscliente7 from '@site/static/img/telaNovoCliente/novos-clientes7.png';
+import novoscliente8 from '@site/static/img/telaNovoCliente/novos-clientes8.png';
+import novoscliente9 from '@site/static/img/telaNovoCliente/novos-clientes9.png';
 
 
 # Novo cliente
