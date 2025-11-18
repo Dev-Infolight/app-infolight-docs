@@ -27,5 +27,5 @@ Cada documento apresenta, de forma clara e objetiva:
 Com isso, esta documentação serve como um **guia completo**, auxiliando tanto novos implementadores quanto usuários experientes a utilizarem o sistema de maneira eficiente, segura e com menor ocorrência de erros.
 
 :::tip
-    Por fim, se a documentação não for suficiente, entre em contato com o suporte da [Infolight](https://infolight.com.br/#contato).
+    Por fim, caso a documentação não for suficiente, entre em contato com o suporte da [Infolight](https://infolight.com.br/#contato).
 :::
