@@ -6,7 +6,7 @@ title: "Grupo de perguntas"
 
 # Grupo de perguntas
 
-Os grupos de perguntas definem os campos que vão aparecer no formulário dos relatórios de [análise comercial](./analise_comercial.md) e [painel de vendas](./painel-de-vendas.md).
+Os grupos de perguntas definem os campos que vão aparecer no formulário dos relatórios de [análise comercial](./telas-genericas/analise_comercial.md) e [painel de vendas](./telas-genericas/painel-de-vendas.md).
 
 ## Onde cadastrar ?
 

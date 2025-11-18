@@ -141,12 +141,12 @@ O ponto chave dos **`menus de usuários`** são as **`chamadas`**, são com elas
         <td>Personalizável</td>
     </tr>
     <tr>
-        <td>[Análise Comercial](./analise_comercial.md)</td>
+        <td>[Análise Comercial](./telas-genericas/analise_comercial.md)</td>
         <td>Configura os dados do body da requisição para gerar o relatório de **`Análise comercial`**.</td>
         <td>Personalizável</td>
     </tr>
     <tr>
-        <td>[Painel de Vendas](./painel-de-vendas.md)</td>
+        <td>[Painel de Vendas](./telas-genericas/painel-de-vendas.md)</td>
         <td>Configura os dados da requisição para gerar o relatório do **`Painel de vendas`**.</td>
         <td>Personalizável</td>
     </tr>
