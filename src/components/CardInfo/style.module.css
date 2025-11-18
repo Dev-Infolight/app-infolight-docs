@@ -1,0 +1,33 @@
+.link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.card {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ifm-navbar-background-color);
+  border-radius: 10px;
+  border: 1px solid var(--card-border-color);
+  transition: all 300ms linear;
+}
+
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  border: 2px solid var(--ifm-color-primary);
+}
+
+.card > span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card > svg {
+  width: 60px;
+  height: 60px;
+  fill: #68b6e6;
+}
