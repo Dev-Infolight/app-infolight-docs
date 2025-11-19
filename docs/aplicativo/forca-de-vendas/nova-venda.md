@@ -232,10 +232,19 @@ Os campos de condição de pagamento e tabela de preços só serão preenchidos 
 
 ### Número do pedido do cliente
 
+É um número gerado internamente pelo cliente do vendedor para controle interno das compras realizadas pelo mesmo.
+
+:::info[IMPORTANTE]
+Este campo é opcional e só será apresentando quando o campo `F3_PEDCLI` existir na `tabela de pedidos de venda (TF3)` do vendedor.
+:::
+
+Abaixo está a imagem que retrata este campo:
+
 <img
     src={NroPedidoDoCliente}
     alt="Campo do número do pedido do cliente"
 />
+
 
 ---
 
