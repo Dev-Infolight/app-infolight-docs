@@ -196,6 +196,11 @@
   color: red;
 } 
 
+.iconCheck {
+  fill: #68b6e6;
+  background-color: #FFF;
+}
+
 .search-bar {
   border-radius: 10px;
   background-color: var(--searchbar-background-color);

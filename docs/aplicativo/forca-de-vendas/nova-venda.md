@@ -29,7 +29,7 @@ import PedidoEmCache from "@site/static/img/nova-venda/pedido-em-cache.png";
 
 A **criação de pedidos de venda** é um dos recursos mais significativos do aplicativo infolight. Está rotina permite que o vendedor cadastre pedidos de venda para os clientes de sua carteira.
 
-A tela de nova venda é dividida em 3 guias principais: **Cabeçalho**, **Produtos**, **Carinho**. Falaremos sobre elas durante as seções abaixo.
+A tela de nova venda é dividida em 3 guias principais: **Cabeçalho**, **Produtos** e **Carinho**. Falaremos sobre elas durante as seções abaixo.
 
 ## Cabeçalho
 
@@ -266,7 +266,7 @@ Além do formulário, a guia do cabeçalho também exibe informações relevante
 
 2. **Comodatos do cliente:**
 
-    Os comodatos são os equipamentos foram emprestados pela a empresa para o cliente para que ele possa vender os produtos em seu negócio.
+    Os comodatos são os equipamentos foram emprestados pela empresa para o cliente para que ele possa vender os produtos em seu negócio.
 
     ```SQL showLineNumbers title="Query utilizada para puxar os comodatos do cliente:"
     SELECT
@@ -347,6 +347,7 @@ Para facilitar a busca por produtos ou grupos de produtos, o aplicativo fornece 
     Ao clicar em <IconeFiltro className="iconFilter"/>, um modal será aberto, e nele, o vendedor poderá filtrar os produtos por marca, grupo e subgrupo. Este modal pode ser visualizado na imagen abaixo:
 
     <img 
+        className="h-500 object-fit-contain"
         src={FiltroProdutos2}
         alt="Filtro por marca, grupo e subgrupo."
     />

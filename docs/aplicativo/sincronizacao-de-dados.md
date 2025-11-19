@@ -9,7 +9,7 @@ title: "Sincronização de dados"
 A sincronização de dados pode ser considerada como um dos recursos mais importantes do aplicativo Infolight. Ela é a responsavel por entrar em contato com o Tempus ERP e baixar os dados necessários para o usuário. Existem dois tipos de sincronização: **`sincronização inicial`** e **`sincronização incremental`**, ambas serão descritas nos tópicos abaixo.
 
 :::info[NOTA]
-A sincronização de dados requer conexão com a internet e uma [conexão com os servidor](./conexao-com-o-servidor.md).
+A sincronização de dados requer conexão com a internet e uma [conexão com o servidor](./conexao-com-o-servidor.md).
 :::
 
 ## Sincronização inicial

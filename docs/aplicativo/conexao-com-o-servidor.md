@@ -9,6 +9,7 @@ import ConfiguracoesLogin from "@site/static/img/conexao-com-o-servidor/configur
 import ListagemDeConexoes1 from "@site/static/img/conexao-com-o-servidor/gerenciar-conexoes-1.png";
 import AdicionarConexao from "@site/static/img/conexao-com-o-servidor/add-nova-conexao.png";
 import RemocaoDeConexao from "@site/static/img/conexao-com-o-servidor/removendo-conexao.png";
+import CheckIcon from "@site/static/img/conexao-com-o-servidor/check.svg";
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -125,7 +126,7 @@ Ao limpar o cache, o aplicativo perderá a informação de logins já realizados
                 </div>
                 <div>
                     <b>Como indentificar a conexão ativa ?</b>
-                    <p>A conexão ativa será identificada por marcador (icone de ✅) que estará localizado no canto direito do card.</p>
+                    <p>A conexão ativa será identificada por um marcador (icone de <CheckIcon className="iconCheck"/>) que estará localizado no canto direito do card.</p>
                     :::tip[DICA]
                     A conexão ativa também é exibida na `tela de login` e nas `configurações de login`.
                     :::

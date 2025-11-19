@@ -70,7 +70,7 @@ O ponto chave dos **`menus de usuários`** são as **`chamadas`**, são com elas
 
 3. **Chamadas para telas personalizáveis:**
 
-    São chamadas que além de definirem qual tela será aberta, também definem as informações que serão exibidas. Existem 4 chamadas personalizáveis no aplicativo: **DBCAD**, **DBON**, **DBCARD** e **DBONCARD**. Os detalhes destas chamadas estão na seção [Telas genéricas](./telas-genericas/dbcad_view.md).
+    São chamadas que além de definirem qual tela será aberta, também definem as informações que serão exibidas. Existem 6 chamadas personalizáveis no aplicativo: **DBCAD**, **DBON**, **DBCARD** e **DBONCARD**, **Análise comercial** e **Painel de vendas**. Os detalhes destas chamadas estão na seção [Telas genéricas](./telas-genericas/dbcad_view.md).
 
 ## Relação de chamadas
 
@@ -153,7 +153,7 @@ O ponto chave dos **`menus de usuários`** são as **`chamadas`**, são com elas
     <tr>
         <td>Chamada vazia (XQ_CHAMADA = "")</td>
         <td>Abre a tela de relatórios, listando todos os submenus da opção selecionada.</td>
-        <td>Personalizável</td>
+        <td>Menu em árvore</td>
     </tr>
 </table>
 

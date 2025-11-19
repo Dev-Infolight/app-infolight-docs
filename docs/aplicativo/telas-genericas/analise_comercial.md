@@ -76,7 +76,7 @@ O primeiro parâmetro define qual será informação principal do relatório:
     </tr>
 </table>
 
-### Segundo parâmetro:
+### Segundo parâmetro
 
 O segundo parâmetro define como a informação será exibida:
 
@@ -87,7 +87,7 @@ O segundo parâmetro define como a informação será exibida:
     </tr>
     <tr>
         <td>'0'</td>
-        <td>O valor do terceiro parâmetro é lido: <br/>`T` -> Em valores brutos;<br/>`F` -> Em valores líquidos.</td>
+        <td>Em valores.</td>
     </tr>
      <tr>
         <td>'1'</td>
@@ -103,9 +103,32 @@ O segundo parâmetro define como a informação será exibida:
     </tr>
 </table>
 
+### Terceiro parâmetro
+
+Define se a informação será exibida em valores líquidos ou brutos.
+
+<table>
+    <tr>
+        <th>Valor</th>
+        <th>Tipo da Informação</th>
+    </tr>
+    <tr>
+        <td>'T'</td>
+        <td>Em valores brutos.</td>
+    </tr>
+     <tr>
+        <td>'F'</td>
+        <td>Em valores líquidos.</td>
+    </tr>
+</table>
+
+:::info[IMPORTANTE]
+Este parâmetro é obrigatório, mas, ele só será utilizado quando o valor do segundo parâmetro for '0', isto é, se você definir que a informação será exibida em valores, este parâmetro irá definir se a informação será em valores brutos ou líquidos.
+:::
+
 ### Quarto parâmetro
 
-O quarto parâmetro define os tipos do materiáis dos produtos a serem consideradados. 
+O quarto parâmetro define os tipos do materiais dos produtos a serem consideradados. 
 
 ```sql title="Sintaxe:"
 'TIPO1, TIPO2, ...'

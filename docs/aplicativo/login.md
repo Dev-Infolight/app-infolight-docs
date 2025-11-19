@@ -43,7 +43,7 @@ O login se refere ao processo no qual o usuário informa as suas credenciais e t
             <li>Entrar com outra conta (outro usuário).</li>
             <li className="pb-16">Acessar as configurações de login, tendo a possibilidade de efetuar uma limpeza de base, cadastrar uma nova conexão e alternar entre as conexões cadastradas.</li>
             :::info[INFORMAÇÃO]
-            `Limpeza de base` é o processo no qual todos os dados das tabelas referentes ao sistema e ao módulo anteriormente logado, serão apagados.
+            `Limpeza de base` é o processo no qual todos os dados das tabelas referentes ao usuário, empresa e módulo anteriormente logado, serão apagados.
             :::
         </ol>
     </div>

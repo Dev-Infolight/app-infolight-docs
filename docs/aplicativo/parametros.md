@@ -50,7 +50,7 @@ Os **parâmetros globais** devem ser cadastrados na `tabela de parâmetros do si
     </tr>
     <tr>
         <td>MV_FATPERMAX</td>
-        <td>Define a **`porcentagem máxima de acréscimo que o vendedor por atribuir ao preço de tabela de um produto`**. Se quiser definir este limite, **`informe um valor entre 0 e 100`**, caso não queira, **`insira um valor vazio`** ou simplesmente **`não cadastre este parâmetro`**.</td>
+        <td>Define a **`porcentagem máxima de acréscimo que o vendedor pode atribuir ao preço de tabela de um produto`**. Se quiser definir este limite, **`informe um valor entre 0 e 100`**, caso não queira, **`insira um valor vazio`** ou simplesmente **`não cadastre este parâmetro`**.</td>
         <td>Global</td>
     </tr>
     <tr>

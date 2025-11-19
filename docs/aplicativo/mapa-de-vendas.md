@@ -23,7 +23,7 @@ import MapaEmTelaCheia from "@site/static/img/mapa-de-vendas/Visualizacao-em-tel
     <div className="divColumn">
         <p>Um recurso bem interessante do aplicativo infolight é o **Mapa de vendas**. Esta tela permite que o usuário:</p>
         <ul>
-            <li>Visualize o **local** de todos os `pedidos de venda` e `visitas não positivadas` que foram digitadas por ele;</li>
+            <li>Visualize o **local** de todos os `pedidos de venda` e `visitas não positivadas` que foram digitadas por ele ou por seus colaboradores;</li>
             <li>Visualize informações relevantes, como: `Quantidade de pedidos exibidos`, `Quantidade de visitas não positivadas`, `Valor total de pedidos, trocas e bonificações`, `Valor do ticket médio naquele período`, e por fim, o `periodo referente aos dados que estão sendo exibidos na tela`;</li>
             <li>**Filtre** os dados por `período` e também por `vendedor`;</li>
             <li>Detecte possíveis vendedors que não visitaram o cliente para a realização do pedido (pedidos suspeitos).</li>
@@ -63,9 +63,9 @@ A legenda do mapa foi projetada para que o usuário entenda o que significa cada
     />
     <div className="divColumn">
         <b>Entendendo</b>
-        <p>Outro recurso que pode ser útil é a possibilidade aproximar ou distanciar a visualização do mapa. Para aproximar, clique no botão `+`, para distanciar, clique no botão `-`.</p>
+        <p>Outro recurso que pode ser útil é a possibilidade aproximar ou distanciar a visualização do mapa. Para aproximar, clique no botão **`+`**, para distanciar, clique no botão **`-`**.</p>
         :::tip[DICA]
-        O mapa também permite que você aplique o zoom fazendo movimento de pinça com os dedos.
+        O mapa também permite que você aplique o zoom fazendo o movimento de pinça com os dedos.
         :::
     </div>
 </div>
@@ -122,7 +122,7 @@ Para escolher um período onde a **data inicial é igual a data final**, clique 
     src={FiltroPorVendedor}
 />
 
-#### Entedendo
+#### Entendendo
 
 Para visualizar os dados relacionados a vendedores específicos, clique no ícone destacado na imagem 1, selecione os vendedores a qual você deseja visualizar as informações e clique no botão `Filtrar` (imagem 2).
 
@@ -130,7 +130,7 @@ Para visualizar os dados relacionados a vendedores específicos, clique no ícon
 Filtro exclusivo para usuários do módulo de gestor.
 
 :::tip
-Ao filtrar os dados por vendedor, o aplicativo irá exibir todos os pedidos, visitas não positivadas e 0 endereço da casa do vendedor no mapa.
+Ao filtrar os dados por vendedor, o aplicativo irá exibir todos os pedidos, visitas não positivadas e o endereço da casa do vendedor no mapa.
 :::
 
 ---
@@ -144,7 +144,7 @@ Ao filtrar os dados por vendedor, o aplicativo irá exibir todos os pedidos, vis
 
 #### Entendendo
 
-Esta funcionalidade foi desenvolvida para ajudar os gestores a identificar possíveis vendedores que dizem que visitaram o cliente, mas, na verdade, estavam fazendo o pedido de casa. 
+Esta funcionalidade foi desenvolvida para ajudar os gestores a identificar possíveis vendedores que dizem que visitaram o cliente, mas, na verdade, estavam digitando os pedidos de venda de casa. 
 
 Baseado nos dados que estão na tela, o aplicativo verifica todos os pedidos que o vendedor fez em uma mesma data, para clientes diferentes, em localizações parecidas.
 

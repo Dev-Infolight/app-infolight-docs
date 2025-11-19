@@ -20,7 +20,7 @@ A **guia de início** é o ponto de partida para acessar a grande maioria dos re
 
 1. **Sair da aplicação (logout);**
 2. **Visualizar o quanto vendeu no dia e no mês;**
-3. **Mascarar os valores das vendas do dia e do mês**
+3. **Mascarar os valores das vendas do dia e do mês;**
 4. **Visualizar o nome da empresa selecionada;**
 5. **Ver a data e hora de quando sincronizou os dados pela última vez;**
 6. **Conferir o número da versão do app;**
@@ -184,7 +184,7 @@ Ao arrastar para baixo na guia inicial, o aplicativo irá realizar os seguintes 
 #### Para qualquer módulo:
 
 1. Criar novas tabelas e/ou campos (casos existam);
-2. Atualizar os dados relacionados as tabelas do módulo a qual o usuário está logado.
+2. Atualizar os dados relacionados as tabelas do módulo e empresa a qual o usuário está logado.
 
 #### Para vendedores:
 

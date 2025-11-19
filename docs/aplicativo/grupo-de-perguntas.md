@@ -10,7 +10,7 @@ Os grupos de perguntas definem os campos que vão aparecer no formulário dos re
 
 ## Onde cadastrar ?
 
-As perguntas devem ser cadastradas na tabela de **`perguntas (CXE)`**. Abaixo você pode conferir a descrição de cada campo.
+As perguntas devem ser cadastradas na **`tabela de perguntas (CXE)`**. Abaixo você pode conferir a descrição de cada campo.
 
 <table>
     <tr>

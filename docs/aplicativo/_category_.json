@@ -1,6 +1,7 @@
 {
   "label": "Aplicativo",
   "position": 2,
+  "collapsed": false,
   "link": {
     "type": "generated-index",
     "description": "Documentação do aplicativo Infolight.",
