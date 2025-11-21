@@ -463,3 +463,52 @@ Ao fim da digitação de um novo pedido de venda, os dados do **cabeçalho** ser
 
 ---
 
+## Problemas comuns
+
+1. **Produto não aparece na guia de produtos com o filtro "Todos":**
+
+    Para que um produto seja listado na guia de produtos utilizando o filtro "Todos", ele deve satisfazer as seguintes condições:
+
+    ```SQL showLineNumbers title="Condições"
+
+    /*
+    Tabelas utilizadas:
+        TA7 - Produtos
+        TT4 - Itens da tabela de preços
+    */
+    
+    WHERE
+        T4_FILIAL = '$FILIAL_SELECIONADA'
+        AND T4_CODIGO = '$CODIGO_DA_TABELA_DE_PRECOS_SELECIONADA'
+        AND T4_QTDMIN = 0
+        AND IFNULL(A7_ATIVO, 'S') <> 'N' 
+        AND IFNULL(A7_DISP, 'S') <> 'N'
+        AND IFNULL(A7_PALM, 'S') <> 'N'
+    ```
+    
+2. **Produto não aparece na guia de produtos com o filtro "Produto foco":**
+
+    As seguintes condições devem ser atendidas:
+
+    ```SQL showLineNumbers title="Condições"
+    /*
+    Tabelas utilizadas:
+        TA7 - Produtos
+        TT4 - Itens da tabela de preços
+    */
+    
+    WHERE
+        (T4_FILIAL = '$FILIAL_SELECIONADA')
+        AND (T4_CODIGO = '$CODIGO_DA_TABELA_DE_PRECOS_SELECIONADA')
+        AND (IFNULL(A7_FOCOVND, 'N') = 'S')
+        AND T4_QTDMIN = 0
+        AND IFNULL(A7_ATIVO, 'S') <> 'N' 
+        AND IFNULL(A7_DISP, 'S') <> 'N'
+        AND IFNULL(A7_PALM, 'S') <> 'N'
+    ```
+
+    :::tip
+        Por fim, se não tiver sucesso, entre em contato com o suporte da [Infolight](https://infolight.com.br/#contato).
+    :::
+
+        
