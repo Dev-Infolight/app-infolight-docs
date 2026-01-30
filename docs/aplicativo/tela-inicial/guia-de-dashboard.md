@@ -248,6 +248,7 @@ A imagem abaixo demonstra esta tela em detalhes:
 
 <div className="divRow">
     <video
+        className="h-500"
         src="/videos/updating.mp4"
         preload="none"
         autoPlay

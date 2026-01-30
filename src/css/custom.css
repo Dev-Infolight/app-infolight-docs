@@ -48,7 +48,7 @@
   gap: 16px;
 }
 
-.divRow > img, .divRow > video {
+.divRow > img {
   height: 500px;
   object-fit: cover;
 }
