@@ -253,6 +253,7 @@ A imagem abaixo demonstra esta tela em detalhes:
         autoPlay
         loop
         muted
+        controls
     />
     <div className="divColumn">
         <b>Entendendo</b>
