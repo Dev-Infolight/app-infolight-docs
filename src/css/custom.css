@@ -48,10 +48,12 @@
   gap: 16px;
 }
 
-.divRow > img {
+.divRow > img, .divRow > video {
   height: 500px;
   object-fit: cover;
 }
+
+
 
 .divRow > p {
   flex: 1;
