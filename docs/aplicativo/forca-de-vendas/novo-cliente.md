@@ -52,9 +52,9 @@ Ambas as opções levam para a tela de cadastro, que é composta por quatro guia
 
 Na guia Cadastro de Informações, escolha entre *Pessoa Jurídica* ou *Pessoa Física* e preencha os campos obrigatórios para o cadastro, sinalizados com `*` de cor vermelha. Os campos obrigatórios incluem:
 
-- CNPJ/CPF, Razão Social, Nome Fantasia, CEP, Bairro, Cód. Município, Município, Estado(Sigla), Rota, Tipo Logradouro, Logradouro, Número, Tel1 e Email.
+- CNPJ/CPF, Razão Social, Nome Fantasia, CEP, Segmento (caso a tabela de **Detalhes (ATB)** não esteja sem o código`089` no campo `TB_Tabela`), Bairro, Cód. Município, Município, Estado (sigla), Rota, Tipo de Logradouro, Logradouro, Número, Tel1 e E-mail.
 
-Se você estiver conectado à internet, ao cadastrar um CNPJ válido, é provável que quase todos os dados obrigatórios sejam preenchidos automaticamente, exceto a **Rota**. Para esse campo, será disponibilizada uma lista com as opções disponíveis na guia **Endereço**.
+Se você estiver conectado à internet, ao cadastrar um CNPJ válido, é provável que quase todos os dados obrigatórios sejam preenchidos automaticamente, com exceção dos campos **Segmento** e **Rota**. Para esses campos, será disponibilizada uma lista com as opções cadastradas disponíveis nas guias **Cadastro de Informações** e **Endereço**, respectivamente. No caso do **Segmento**, caso não existam opções disponíveis na tabela de **Detalhes (ATB)**, o campo não será exibido e, consequentemente, deixará de ser obrigatório.
 
 Caso falte mais algum dado, ao tentar concluir o cadastro, a tela informará quais campos ainda precisam ser preenchidos.
 
@@ -65,7 +65,7 @@ Para o cadastro de *Pessoa Física*, tanto **offline** quanto **online**, o pree
 
 <div className="images-grid-2">
     <img src={novoscliente7} alt="Guia Pendentes" />
-    <img src={novoscliente9} alt="Guia Enviados" />
+    <img src={novoscliente8} alt="Guia Enviados" />
 </div>
 
 - Se o cadastro foi feito **offline**, após a restauração da conexão com a internet, será necessário rolar a tela para baixo na guia **Início** da tela principal ou na guia **Pendentes** da tela de *Novos Clientes*. Só então, a aprovação ficará pedente no ERP Tempus. 
@@ -76,10 +76,15 @@ Para o cadastro de *Pessoa Física*, tanto **offline** quanto **online**, o pree
 
  1. **Cliente Cadastrado com internet, mas continua na guia de pedentes**
         <div className="images-grid-2">
-            <img src={novoscliente8} alt="Cliente com Duplicidade" />
+            <img src={novoscliente9} alt="Cliente com Duplicidade" />
         </div>
 
     - Cliente com cadastro duplicado, pois já foi registrado anteriormente no ERP.
+
+
+ 3. **Campo de Segmento não é exibido**
+
+    - Tabela de **Detalhes (ATB)** sem cadastro de segmentos.
 
 
 ## Como Corrigir
@@ -91,6 +96,10 @@ Para o cadastro de *Pessoa Física*, tanto **offline** quanto **online**, o pree
 1. **Cliente na guia pedentes com status de Duplicidade**
 
     - Entre no ERP Tempus e aprove o novo cliente. Em seguida, role a tela para baixo na guia *Início* da tela inicial.
+
+2. **Como exibir o campo Segmento**
+
+    - Entre no ERP Tempus e cadastre os segmentos com o código `089` na tabela de **Detalhes (ATB)**. Em seguida, role a tela para baixo na guia *Início* da tela inicial.
     
 :::tip
     Por fim, se não tiver sucesso, entre em contato com o suporte da [Infolight](https://infolight.com.br/#contato).
