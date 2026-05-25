@@ -54,7 +54,7 @@ Na guia Cadastro de Informações, escolha entre *Pessoa Jurídica* ou *Pessoa F
 
 - CNPJ/CPF, Razão Social, Nome Fantasia, CEP, Segmento (caso a tabela de **Detalhes (ATB)** não esteja sem o código`089` no campo `TB_Tabela`), Bairro, Cód. Município, Município, Estado (sigla), Rota, Tipo de Logradouro, Logradouro, Número, Tel1 e E-mail.
 
-Se você estiver conectado à internet, ao cadastrar um CNPJ válido, é provável que quase todos os dados obrigatórios sejam preenchidos automaticamente, com exceção dos campos **Segmento** e **Rota**. Para esses campos, será disponibilizada uma lista com as opções cadastradas disponíveis nas guias **Cadastro de Informações** e **Endereço**, respectivamente. No caso do **Segmento**, caso não existam opções disponíveis na tabela de **Detalhes (ATB)**, o campo não será exibido e, consequentemente, deixará de ser obrigatório.
+Se você estiver conectado à internet, ao cadastrar um CNPJ válido, é provável que quase todos os dados obrigatórios sejam preenchidos automaticamente, com exceção dos campos **Segmento** e **Rota**. Para esses campos, será disponibilizada uma lista com as opções cadastradas disponíveis nas guias **Cadastro de Informações** e **Endereço**, respectivamente. Para o campo **Segmento**, caso não existam opções disponíveis na tabela de **Detalhes (ATB)**, o campo não será exibido e, consequentemente, deixará de ser obrigatório.
 
 Caso falte mais algum dado, ao tentar concluir o cadastro, a tela informará quais campos ainda precisam ser preenchidos.
 
