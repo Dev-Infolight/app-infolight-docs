@@ -15,8 +15,6 @@ import Botoes from "@site/static/img/pedidos-de-venda/botoes.png";
 import TotalizadorItens from "@site/static/img/pedidos-de-venda/totalizador-itens.png";
 import GerarPdfA4 from "@site/static/img/pedidos-de-venda/pdf_pedido_de_venda.jpg";
 import ImprimirNaImpressoraTermica80mm from "@site/static/img/pedidos-de-venda/impressao_pedido_de_venda_80mm.jpg";
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 # Pedidos de venda
 

@@ -6,7 +6,8 @@ title: 'Guia "Dashboard"'
 
 import Dashboard100 from "@site/static/img/guia-dashboard/dashboard-100.jpg";
 import Dashboard101 from "@site/static/img/guia-dashboard/dashboard-101.jpg";
-import MetaDeVendasPorProduto from "@site/static/img/guia-dashboard/metas-vendas-por-produto.jpg";
+import MetasVendasPorProduto from "@site/static/img/guia-dashboard/guia_de_produtos.jpg";
+import MetaVendasProGrupoDeProdutos from "@site/static/img/guia-dashboard/guia_de_grupo_de_produtos.jpg";
 import MetaDeVendasPorVendedor from "@site/static/img/guia-dashboard/metas-vendas-por-vendedor.jpg"
 import AtualizandoDados from "@site/static/img/guia-dashboard/atualizando-dados.jpg";
 import Dashboard000 from "@site/static/img/dashboard-000/dashboard-000.png";
@@ -62,9 +63,11 @@ Durante as seções a seguir, vamos entender o que é exibido em cada dashboard.
 <div className="divRow pb-16">
     <img 
         src={Dashboard100}
+        alt="Dashboard do gestor"
     />
     <img 
         src={MetaDeVendasPorVendedor}
+        alt="Metas de vendas por vendedor"
     />
 </div>
 
@@ -86,12 +89,15 @@ No dashboard do gestor, o usuário pode visualizar os seguintes gráficos:
 
 ### 101: Dashboard do vendedor
 
-<div className="divRow pb-16">
+<div className="auto-grid">
     <img 
         src={Dashboard101}
     />
     <img 
-        src={MetaDeVendasPorProduto}
+        src={MetasVendasPorProduto}
+    />
+    <img 
+        src={MetaVendasProGrupoDeProdutos}
     />
 </div>
 
@@ -106,7 +112,7 @@ No dashboard para o vendedor, o usuário pode visualizar os seguintes gráficos:
 3. **Acompanhamento da meta de vendas mensal**;
 
     :::tip[VISUALIZAR DETALHES DA META DE VENDAS]
-    Ao clicar em cima do gráfico de meta de vendas, você será redirecionado para a tela de **Metas de vendas**, e poderá acompanhar o progresso por produto.
+    Ao clicar em cima do gráfico de meta de vendas, você será redirecionado para a tela de **Metas de vendas**, e poderá acompanhar o progresso por produto e grupo de produtos.
     :::
 
 ---
