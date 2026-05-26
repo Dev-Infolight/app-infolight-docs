@@ -1,5 +1,4 @@
 import type {ReactNode} from 'react';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
@@ -25,7 +24,7 @@ export default function Home(): ReactNode {
     
     <div className={styles.banner}>
         <LogoWhite />
-        <p>Um sistema completo para a gestão do seu negócio</p>
+        <p>Um sistema completo para a gestão do seu negócio.</p>
     </div>
     <div className={styles.divTitle}>
         <h1>Explore a nossa documentação</h1>
