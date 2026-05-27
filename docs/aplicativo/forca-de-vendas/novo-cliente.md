@@ -52,7 +52,7 @@ Ambas as opções levam para a tela de cadastro, que é composta por quatro guia
 
 Na guia Cadastro de Informações, escolha entre *Pessoa Jurídica* ou *Pessoa Física* e preencha os campos obrigatórios para o cadastro, sinalizados com `*` de cor vermelha. Os campos obrigatórios incluem:
 
-- CNPJ/CPF, Razão Social, Nome Fantasia, CEP, Segmento (caso a tabela de **Detalhes (ATB)** não esteja sem o código`089` no campo `TB_Tabela`), Bairro, Cód. Município, Município, Estado (sigla), Rota, Tipo de Logradouro, Logradouro, Número, Tel1 e E-mail.
+- CNPJ/CPF, Razão Social, Nome Fantasia, CEP, Segmento (caso a tabela de **Detalhes (ATB)** possua registros com o código `089` no campo `TB_TABELA`), Bairro, Cód. Município, Município, Estado (sigla), Rota, Tipo de Logradouro, Logradouro, Número, Tel1 e E-mail.
 
 Se você estiver conectado à internet, ao cadastrar um CNPJ válido, é provável que quase todos os dados obrigatórios sejam preenchidos automaticamente, com exceção dos campos **Segmento** e **Rota**. Para esses campos, será disponibilizada uma lista com as opções cadastradas disponíveis nas guias **Cadastro de Informações** e **Endereço**, respectivamente. Para o campo **Segmento**, caso não existam opções disponíveis na tabela de **Detalhes (ATB)**, o campo não será exibido e, consequentemente, deixará de ser obrigatório.
 
@@ -99,7 +99,7 @@ Para o cadastro de *Pessoa Física*, tanto **offline** quanto **online**, o pree
 
 2. **Como exibir o campo Segmento**
 
-    - Entre no ERP Tempus e cadastre os segmentos com o código `089` na tabela de **Detalhes (ATB)**. Em seguida, role a tela para baixo na guia *Início* da tela inicial.
+    - Entre no ERP Tempus e cadastre os segmentos na tabela de **Detalhes (ATB)**, informando o código `089` no campo `TB_TABELA` e o nome do segmento no campo `TB_DESCRIC`. Em seguida, role a tela para baixo na guia *Início* da tela inicial.
     
 :::tip
     Por fim, se não tiver sucesso, entre em contato com o suporte da [Infolight](https://infolight.com.br/#contato).
