@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Infolight Docs',
-  tagline: 'Documentação oficial do aplicativo infolight',
+  tagline: 'Documentação oficial dos sistemas da empresa Infolight.',
   favicon: 'img/infolight-logo.svg',
   trailingSlash: false,
 
