@@ -10,6 +10,14 @@ import ExpedicaoDeCargaIcon from "@site/static/img/lading-page/expedicao-carga.s
 import ExpedicaoNFCeIcon from "@site/static/img/lading-page/expedicao-nfce.svg";
 import DashboardIcon from "@site/static/img/lading-page/dashboard.svg";
 import LiberacaoDePrecosIcon from "@site/static/img/lading-page/liberacrao-precos.svg";
+import Administrador from "@site/static/img/lading-page/cadastro.svg";
+import Compras from "@site/static/img/lading-page/compras.svg";
+import Estoque from "@site/static/img/lading-page/estoque.svg";
+import Faturamento from "@site/static/img/lading-page/faturamento.svg";
+import Financeiro from "@site/static/img/lading-page/financeiro.svg";
+import Livros from "@site/static/img/lading-page/livros-fiscais.svg";
+
+
 import { CardInfo } from '../components/CardInfo';
 
 
@@ -62,8 +70,47 @@ export default function Home(): ReactNode {
           redirectTo='/docs/aplicativo/gestor/liberacao-de-precos'
           icon={LiberacaoDePrecosIcon}
         />
+        
+        
     </div>
     </div>
+    <div className={styles.divTitle}>
+        <h1>Documentação do TempusERP</h1>
+        </div>
+      <div className={styles.center}>
+        <div className={styles.topics}>
+          <CardInfo 
+            label='Adiministrador'
+            redirectTo='/docs/TempusERP/Administrador/pagina-do-cliente'
+            icon={Administrador}
+          />
+          <CardInfo 
+            label='Compras'
+            redirectTo='/docs/TempusERP/Compras/emissao-de-pedidos'
+            icon={Compras}
+          />
+          <CardInfo 
+            label='Estoque'
+            redirectTo='/docs/TempusERP/Estoque/ficha-tecnica'
+            icon={Estoque}
+          />
+          <CardInfo 
+            label='Faturamento'
+            redirectTo='/docs/TempusERP/Faturamento/cadastro-de-regiao'
+            icon={Faturamento}
+          />
+          <CardInfo 
+            label='Financeiro'
+            redirectTo='/docs/TempusERP/Financeiro/prestacao'
+            icon={Financeiro}
+          />
+          <CardInfo 
+            label='Livros Fiscais'
+            redirectTo='/docs/TempusERP/Livros-Fiscais/entrada-via-xml'
+            icon={Livros}
+          />
+        </div>
+        </div>
     </Layout>
   );
 }

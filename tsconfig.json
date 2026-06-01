@@ -1,8 +1,16 @@
 {
   // This file is not used in compilation. It is here just for a nice editor experience.
-  "extends": "@docusaurus/tsconfig",
+  // Removed extending @docusaurus/tsconfig to avoid missing package error.
   "compilerOptions": {
-    "baseUrl": "."
+    "target": "ES2019",
+    "module": "commonjs",
+    "lib": ["ES2019", "DOM"],
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "ignoreDeprecations": "6.0"
   },
   "exclude": [".docusaurus", "build"]
 }
