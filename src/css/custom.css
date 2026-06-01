@@ -147,6 +147,20 @@
   max-width: 100%;
 }
 
+.auto-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.auto-grid > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .images-half {
   display: flex;
   justify-content: flex-start;

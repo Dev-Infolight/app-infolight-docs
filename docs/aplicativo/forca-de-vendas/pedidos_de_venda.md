@@ -13,6 +13,8 @@ import Filtros from "@site/static/img/pedidos-de-venda/filtros.png";
 import ItensDoPedidoDeVenda from "@site/static/img/pedidos-de-venda/itens-do-pedido.png";
 import Botoes from "@site/static/img/pedidos-de-venda/botoes.png";
 import TotalizadorItens from "@site/static/img/pedidos-de-venda/totalizador-itens.png";
+import GerarPdfA4 from "@site/static/img/pedidos-de-venda/pdf_pedido_de_venda.jpg";
+import ImprimirNaImpressoraTermica80mm from "@site/static/img/pedidos-de-venda/impressao_pedido_de_venda_80mm.jpg";
 
 # Pedidos de venda
 
@@ -165,9 +167,35 @@ Ao arrastar para baixo em qualquer guia, o aplicativo irá sincronizar com o Tem
 
 O aplicativo oferece alguns recursos para o usuário utilizar em relação ao pedido em questão, são eles:
 
-1. **Botão para gerar um PDF do pedido:**
+1. **Botão para gerar um PDF ou imprimir na impressora térmica:**
 
-    Esta funcionalidade gera um arquivo PDF contendo os dados do pedido e permite que o usuário imprima ou compartilhe com quem ele desejar.
+    Compartilhar os dados do pedido de venda para com o cliente é um dos casos mais rotineiros de um vendedor ao usar o aplicativo. Pensando nisto, preparamos duas funcionalidades para essa situação, são elas: **Gerar um arquivo PDF** e **imprimir o pedido em uma impressora térmica**. Ambas as opções serão detalhadas logo abaixo.
+
+    - **Gerando PDF do pedido (folha A4):**
+
+        Para gerar um arquivo PDF com os dados do pedido, primeiro, clique em **`Gerar PDF (folha A4)`** (1), e na tela de visualização do PDF, clique no **`ícone de compartilhar`** (2). Na imagem abaixo você pode visualizar em detalhes esse processo.
+
+        <img 
+            src={GerarPdfA4}
+            alt="Gerando PDF do pedido de venda"
+            className="object-fit-contain"
+        />
+
+        ---
+    
+    - **Imprimindo pedido na impressora térmica (folha 80mm):**
+
+        Para imprimir o pedido direto na impressora térmica, clique em **`Imprimir (folha 80mm)`** (1), **`conceda todas as permissões solicitadas`** (2), **`escolha a impressora`** (3), clique em **`Imprimir`** (4), aguarde até que o pedido seja imprimido por completo e depois clique em **`OK`** (5) na mensagem de sucesso.
+
+        :::info[IMPORTANTE]
+        Essa função requer uma conexão via **`bluetooth com a impressora`**, portanto, certifique-se de ligar o bluetooth e parear com a impressora antes de utilizar esta funcionalidade.
+        :::
+
+        <img 
+            src={ImprimirNaImpressoraTermica80mm}
+            alt="Imprimindo pedido na impressora térmica"
+            className="object-fit-contain"
+        />
 
 2. **Botão para editar o pedido:**
 

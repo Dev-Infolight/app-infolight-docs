@@ -23,6 +23,8 @@ import IconeFiltro from "@site/static/img/nova-venda/icone-filtro.svg";
 import AdicionarItemAoCarrinho from "@site/static/img/nova-venda/adicionando-item-ao-carrinho.png";
 import GuiaDoCarrinho from "@site/static/img/nova-venda/carrinho.png";
 import PedidoEmCache from "@site/static/img/nova-venda/pedido-em-cache.png";
+import CampoSegmento from "@site/static/img/nova-venda/campo-segmento.png";
+import EscolhendoSegmento from "@site/static/img/nova-venda/escolhendo-segmento.png";
 
 
 # Nova venda
@@ -226,6 +228,27 @@ WHERE
 
 :::info[IMPORTANTE]
 Os campos de condição de pagamento e tabela de preços só serão preenchidos automaticamente se a `condição de pagamento` e/ou `tabela de preços` que foi inserida no cadastro do cliente aparecer na lista de tabelas de preço e condições de pagamento da tela.
+:::
+
+---
+
+
+### Segmento <span className="color-red">*</span>
+
+O campo exibe o segmento do cliente. Caso esteja em branco ou já preenchido, o usuário poderá selecionar ou alterar uma opção conforme os segmentos disponíveis na lista. Ao finalizar o pedido o cadastro do cliente é atualizado.
+
+<div className="images-grid-rows-2">
+    <img src={CampoSegmento} alt="Campo de Segmento"/>
+    <img src={EscolhendoSegmento} alt="Lista de Segmento"/>
+</div>
+
+Se o usuário estiver sem conexão com a internet, a atualização será gravada no banco de dados local ao finalizar o pedido. Na próxima sincronização, as informações do pedido serão enviadas e o segmento do cadastro do cliente será atualizado no sistema.
+
+:::info[IMPORTANTE]
+O campo **Segmento** será exibido apenas se a tabela de **Detalhes (ATB)** possuir segmentos cadastrados. Para isso, é necessário que o campo `TB_TABELA` contenha o código `089` e que o campo `TB_DESCRIC` contenha o nome do segmento.
+
+
+Caso o campo não seja exibido, ele também deixará de ser obrigatório.
 :::
 
 ---
@@ -506,6 +529,9 @@ Ao fim da digitação de um novo pedido de venda, os dados do **cabeçalho** ser
         AND IFNULL(A7_DISP, 'S') <> 'N'
         AND IFNULL(A7_PALM, 'S') <> 'N'
     ```
+3. **Campo de Segmento não é exibido no Cabeçalho**
+   
+    Entre no ERP Tempus e cadastre os segmentos na tabela de **Detalhes (ATB)**, informando o código `089` no campo `TB_TABELA` e o nome do segmento no campo `TB_DESCRIC`. Em seguida, role a tela para baixo na guia *Início* da tela inicial.
 
     :::tip
         Por fim, se não tiver sucesso, entre em contato com o suporte da [Infolight](https://infolight.com.br/#contato).

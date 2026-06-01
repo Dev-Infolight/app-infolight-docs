@@ -128,6 +128,11 @@ Os **parâmetros globais** devem ser cadastrados na `tabela de parâmetros do si
         <td>Este parâmetro `habilita/desabilita` o **`checkbox`** para **`inativar um cliente durante o cadastro de uma visita não positivada`**. Use **`S`** para **habilitar** ou utilize **`N`**, **`String vazia`** ou **`simplesmente não cadastre este parâmetro`** para **desabilitar**.</td>
         <td>Usuário</td>
     </tr>
+     <tr>
+        <td>MV_FIXATABPRC</td>
+        <td>Este parâmetro permite que o aplicativo filtre a lista de tabelas de preços que está sendo exibida na [guia do cabeçalho do pedido](./forca-de-vendas/nova-venda.md#cabeçalho), e apresente apenas a tabela de preços que está atrelada ao cliente. Para ativar esse comportamento, o valor deste parâmetro deve ser **`T`**, para desativar, você pode simplesmente não cadastrar esse parâmetro, ou cadastrá-lo como **`F`**, **`N`** ou **`String vazia`**.</td>
+        <td>Global</td>
+    </tr>
 </table>
 
 ## Problemas comuns
