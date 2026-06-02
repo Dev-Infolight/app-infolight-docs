@@ -20,7 +20,7 @@ import Mobile from "@site/static/img/lading-page/mobile.svg";
 
 import { CardInfo } from '../components/CardInfo';
 
-type ViewOptions = 'TempusApp' | 'InfolightApp';
+type ViewOptions = 'TempusERP' | 'InfolightApp';
 
 export default function Home(): ReactNode {
 
@@ -49,7 +49,7 @@ export default function Home(): ReactNode {
                 <Mobile />
                 <span>Infolight App</span>
               </button>
-              <button className={`${styles.tab} ${viewOption == 'TempusApp' ? styles.selectedTab : '' }`} onClick={() => setViewOption('TempusApp')}>
+              <button className={`${styles.tab} ${viewOption == 'TempusERP' ? styles.selectedTab : '' }`} onClick={() => setViewOption('TempusERP')}>
                 <Computer />
                 <span>Tempus ERP</span>
               </button>
