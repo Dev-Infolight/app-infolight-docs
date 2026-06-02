@@ -1,6 +1,6 @@
 --- 
 sidebar_position: 2
-sidebar_label: "Comotado" 
+sidebar_label: "Comodato" 
 title: "Comodato"
 --- 
 import ConexaoComOServidor from "@site/static/img/conexao-com-o-servidor/conexao-com-o-servidor.png"; 

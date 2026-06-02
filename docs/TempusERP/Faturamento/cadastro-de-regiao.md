@@ -17,13 +17,6 @@ Esse cadastro é fundamental para facilitar o controle estratégico de vendas, d
 
 Ao acessar a rotina, será exibida uma listagem contendo todas as regiões previamente cadastradas no sistema.
 
-<div className="divRow">
-    <img 
-        src={Regiao}
-        alt="Tela inicial da rotina de cadastro de regiões"
-    />
-</div>
-
 Nesta tela, é possível gerenciar completamente os registros de regiões, realizando operações como:
 - Inclusão de novas regiões
 - Visualização de regiões existentes
