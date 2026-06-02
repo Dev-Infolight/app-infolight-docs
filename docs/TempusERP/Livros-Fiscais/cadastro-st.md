@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 sidebar_label: "Cadastro de ST"
 title: "Cadastro de ST"
 ---

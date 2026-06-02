@@ -1,4 +1,5 @@
 ---
+sidebar_position: 3
 sidebar_label: "Nota fiscal manual"
 title: "Entrada de nota fiscal manual"
 ---
@@ -85,7 +86,7 @@ Se você preferir acompanhar o processo visualmente, assista ao tutorial abaixo 
   <iframe 
     width="100%" 
     height="450" 
-    src="https://www.youtube.com/embed/WLaO1jwBie8" 
+    src="https://www.youtube.com/embed/WLaO1jwBie8&list=PL7PBAYDQP4i1YkyjjbwlHsFHYcO9NBhiS&index=18" 
     title="Lançamento de Nota Fiscal Manual - Infolight" 
     frameBorder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
