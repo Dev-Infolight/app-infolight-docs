@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 sidebar_label: "Conta de energia"
 title: "Conta de energia"
 ---

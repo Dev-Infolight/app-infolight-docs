@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 sidebar_label: "Manifestação do destinatário"
 title: "Manifestação do destinatário"
 ---

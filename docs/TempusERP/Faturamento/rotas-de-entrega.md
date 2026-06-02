@@ -1,4 +1,5 @@
 ---
+sidebar_position: 4
 sidebar_label: "Rotas de Entrega"
 title: "Cadastros de Rotas de entrega"
 ---

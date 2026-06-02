@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 sidebar_label: "Emissão de pedido e compra"
 title: "Emissão de Pedido de Compra"
 ---
@@ -29,7 +30,7 @@ import TabItem from '@theme/TabItem';
 
 Esta rotina serve para formalizar as solicitações de mercadorias junto aos fornecedores no sistema Infolight. O Pedido de Compra é uma etapa fundamental para o controle de estoque futuro e planejamento financeiro, permitindo registrar preços negociados, condições de pagamento e até pagamentos antecipados, garantindo que a entrada da nota fiscal posterior seja conferida com precisão.
 
-### 2: Passo a Passo do Processo
+### Passo a Passo do Processo
 
 Cabeçalho e Dados do Fornecedor
 `Incluir Novo:` Clique no botão Incluir para abrir o formulário de pedido.
@@ -55,7 +56,7 @@ Cabeçalho e Dados do Fornecedor
 
 
 
-### 3: Adição de Produtos
+###  Adição de Produtos
 
 `Selecionar Itens:` Clique em Incluir na área de itens para buscar os produtos.
 
@@ -70,7 +71,7 @@ Cabeçalho e Dados do Fornecedor
     />
 </div>
 
-### 4: Monitoramento e Status (Legendas)
+### Monitoramento e Status (Legendas)
 
 Após salvar, o pedido será listado com cores que indicam sua situação atual:
 
