@@ -12,6 +12,7 @@ import telaLibercaodePrecos5 from '@site/static/img/telaLiberacaodePrecos/libera
 import telaLibercaodePrecos6 from '@site/static/img/telaLiberacaodePrecos/liberacaodeprecos6.png';
 import telaLibercaodePrecos7 from '@site/static/img/telaLiberacaodePrecos/liberacaodeprecos7.png';
 import telaLibercaodePrecos8 from '@site/static/img/telaLiberacaodePrecos/liberacaodeprecos8.png';
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Liberação de Preços
 
@@ -41,7 +42,7 @@ Além disso, a tela apresenta dados essenciais para análise do administrador:
 - **Diferença total** entre o valor de tabela e o valor negociado, incluindo a **porcentagem da diferença**
 
 <div className="images-grid-2">
-  <img src={telaLibercaodePrecos1} alt="Informações gerais da tela Liberação de Preços" />
+  <ZoomableImage src={telaLibercaodePrecos1} alt="Informações gerais da tela Liberação de Preços" />
 </div>
 
 ---
@@ -57,7 +58,7 @@ Essa escolha é feita através de *switches* posicionados acima dos cards.
 Ao selecionar uma das opções, **todos os cards** são automaticamente marcados com o **ícone ✅**, indicando aprovação.
 
 <div className="images-grid-2">
-  <img src={telaLibercaodePrecos2} alt="Switch de definição de preços por tabela ou negociado" />
+  <ZoomableImage src={telaLibercaodePrecos2} alt="Switch de definição de preços por tabela ou negociado" />
 </div>
 
 ---
@@ -77,7 +78,7 @@ Exemplo de formato do título:
 ```
 
 <div className="images-grid-2">
-  <img src={telaLibercaodePrecos3} alt="Card de Produto" />
+  <ZoomableImage src={telaLibercaodePrecos3} alt="Card de Produto" />
 </div>
 
 Ao **tocar no card**, ele se expande e mostra informações adicionais, como:
@@ -91,7 +92,7 @@ Ao **tocar no card**, ele se expande e mostra informações adicionais, como:
 Abaixo desses campos há o botão **`Alterar preço autorizado`**.
 
 <div className="images-half">
-  <img src={telaLibercaodePrecos4} alt="Card de Produto Expandido" />
+  <ZoomableImage src={telaLibercaodePrecos4} alt="Card de Produto Expandido" />
 </div>
 
 ---
@@ -111,14 +112,14 @@ Na aba **Preço**, o administrador pode:
 - Ou **digitar manualmente** um valor desejado para autorização  
 
 <div className="images-half">
-  <img src={telaLibercaodePrecos5} alt="Aba Preço do modal" />
+  <ZoomableImage src={telaLibercaodePrecos5} alt="Aba Preço do modal" />
 </div>
 
 Na aba **Comissão**, o administrador pode definir **até três tipos de porcentagem de comissão**.  
 A alteração desta aba é **opcional**.
 
 <div className="images-half">
-  <img src={telaLibercaodePrecos6} alt="Aba Comissão do modal" />
+  <ZoomableImage src={telaLibercaodePrecos6} alt="Aba Comissão do modal" />
 </div>
 
 ---
@@ -134,7 +135,7 @@ Algumas validações importantes são aplicadas:
 Após definir o preço autorizado e tocar em **`CONFIRMAR`**, o modal é fechado e o card passa a exibir o **ícone ✅**, indicando que foi autorizado.
 
 <div className="images-grid-2">
-  <img src={telaLibercaodePrecos7} alt="Card autorizado" />
+  <ZoomableImage src={telaLibercaodePrecos7} alt="Card autorizado" />
 </div>
 
 ---
@@ -145,7 +146,7 @@ Depois que todos os produtos tiverem seus preços definidos, no final da tela, o
 Com conexão ativa à internet, ao tocar nele o processo de **liberação de preços** é concluído com sucesso.
 
 <div className="images-half">
-  <img src={telaLibercaodePrecos8} alt="Botão Autorizar habilitado" />
+  <ZoomableImage src={telaLibercaodePrecos8} alt="Botão Autorizar habilitado" />
 </div>
 
 ---

@@ -25,7 +25,7 @@ import GuiaDoCarrinho from "@site/static/img/nova-venda/carrinho.png";
 import PedidoEmCache from "@site/static/img/nova-venda/pedido-em-cache.png";
 import CampoSegmento from "@site/static/img/nova-venda/campo-segmento.png";
 import EscolhendoSegmento from "@site/static/img/nova-venda/escolhendo-segmento.png";
-
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Nova venda
 
@@ -40,8 +40,8 @@ O preenchimento das informações do cabeçalho é o primeiro passo a ser realiz
 As duas imagens a seguir demonstram a guia do cabeçalho:
 
 <div className="divRow">
-    <img src={Cabecalho1} alt="Primeira parte do cabeçalho"/>
-    <img src={Cabecalho2} alt="Segunda parte do cabeçalho"/>
+    <ZoomableImage src={Cabecalho1} alt="Primeira parte do cabeçalho"/>
+    <ZoomableImage src={Cabecalho2} alt="Segunda parte do cabeçalho"/>
 </div>
 
 ---
@@ -53,8 +53,8 @@ Campos marcados com <span className="color-red">*</span> são obrigatórios.
 ### Regra de saída <span className="color-red">*</span>
 
 <div className="images-grid-rows-2">
-    <img src={CampoRegraDeSaida} alt="Campo de regra de saída"/>
-    <img src={EscolhendoRegraDeSaida} alt="Lista de regras de saída"/>
+    <ZoomableImage src={CampoRegraDeSaida} alt="Campo de regra de saída"/>
+    <ZoomableImage src={EscolhendoRegraDeSaida} alt="Lista de regras de saída"/>
 </div>
 
 No campo de regra de saída, o vendedor seleciona o tipo do novo pedido de venda, ou seja, define se o pedido vai ser uma venda, troca, bonificação e etc. A regra de saída escolhida será salva no campo **F3_TS** da tabela de **pedidos de venda (TF3)**.
@@ -100,8 +100,8 @@ ORDER BY
 ### Condição de pagamento <span className="color-red">*</span>
 
 <div className="images-grid-rows-2">
-    <img src={CampoDeCondicaoDePagamento} alt="Campo de condição de pagamento"/>
-    <img src={EscolhendoCondicaoDePagamento} alt="Lista de condições de pagamento"/>
+    <ZoomableImage src={CampoDeCondicaoDePagamento} alt="Campo de condição de pagamento"/>
+    <ZoomableImage src={EscolhendoCondicaoDePagamento} alt="Lista de condições de pagamento"/>
 </div>
 
 Este é o campo onde é definido a forma de pagamento escolhida pelo cliente. A tabela de preços selecionada será salva no campo **F3_CONDPAG** da tabela de **pedidos de venda (TF3)**.
@@ -161,8 +161,8 @@ Caso a query não retorne dados, o campo de condições de pagamento não será 
 ### Tabela de preços <span className="color-red">*</span>
 
 <div className="images-grid-rows-2">
-    <img src={CampoDeTabelaDePrecos} alt="Campo de tabela de preços"/>
-    <img src={EscolhendoCondicaoDePagamento} alt="Lista de tabelas de preço"/>
+    <ZoomableImage src={CampoDeTabelaDePrecos} alt="Campo de tabela de preços"/>
+    <ZoomableImage src={EscolhendoCondicaoDePagamento} alt="Lista de tabelas de preço"/>
 </div>
 
 A tabela de preços é o campo que vai definir não somente os produtos que vão aparecer na **guia de produtos**, mas também o preço de cada um deles. A tabela de preços selecionada será salva no campo **F3_TABPRC** da tabela de **pedidos de venda (TF3)**.
@@ -238,8 +238,8 @@ Os campos de condição de pagamento e tabela de preços só serão preenchidos 
 O campo exibe o segmento do cliente. Caso esteja em branco ou já preenchido, o usuário poderá selecionar ou alterar uma opção conforme os segmentos disponíveis na lista. Ao finalizar o pedido o cadastro do cliente é atualizado.
 
 <div className="images-grid-rows-2">
-    <img src={CampoSegmento} alt="Campo de Segmento"/>
-    <img src={EscolhendoSegmento} alt="Lista de Segmento"/>
+    <ZoomableImage src={CampoSegmento} alt="Campo de Segmento"/>
+    <ZoomableImage src={EscolhendoSegmento} alt="Lista de Segmento"/>
 </div>
 
 Se o usuário estiver sem conexão com a internet, a atualização será gravada no banco de dados local ao finalizar o pedido. Na próxima sincronização, as informações do pedido serão enviadas e o segmento do cadastro do cliente será atualizado no sistema.
@@ -263,7 +263,7 @@ Este campo é opcional e só será apresentando quando o campo `F3_PEDCLI` exist
 
 Abaixo está a imagem que retrata este campo:
 
-<img
+<ZoomableImage
     src={NroPedidoDoCliente}
     alt="Campo do número do pedido do cliente"
 />
@@ -275,7 +275,7 @@ Abaixo está a imagem que retrata este campo:
 
 No campo de observação, o usuário pode escrever alguma mensagem relacionada ao pedido em questão. O texto digitado será salvo no campo **F3_HIST** da tabela de **Pedidos de venda (TF3)**. Abaixo está uma imagem do campo de observação: 
 
-<img
+<ZoomableImage
     className="pb-16"
     src={ObservacaoDoPedido}
     alt="Obvervação do pedido"
@@ -287,7 +287,7 @@ No campo de observação, o usuário pode escrever alguma mensagem relacionada a
 
 Além do formulário, a guia do cabeçalho também exibe informações relevantes para o vendedor:
 
-<img 
+<ZoomableImage 
     src={InfoCliente}
     alt="Informações sobre o cliente"
 />
@@ -321,7 +321,7 @@ Além do formulário, a guia do cabeçalho também exibe informações relevante
 
 ### Listagem
 
-<img 
+<ZoomableImage 
     className="h-500"
     src={GuiaProdutos}
     alt="Guia com os produtos da tabela de preços selecionada"
@@ -347,7 +347,7 @@ O aplicativo não exibe o **estoque** e a **segunda unidade de medida** simultan
 
 ### Filtros
 
-<img 
+<ZoomableImage 
     src={FiltroProdutos1}
     alt="Filtros dos produtos"
 />
@@ -378,7 +378,7 @@ Para facilitar a busca por produtos ou grupos de produtos, o aplicativo fornece 
 
     Ao clicar em <IconeFiltro className="iconFilter"/>, um modal será aberto, e nele, o vendedor poderá filtrar os produtos por marca, grupo e subgrupo. Este modal pode ser visualizado na imagen abaixo:
 
-    <img 
+    <ZoomableImage 
         className="h-500 object-fit-contain"
         src={FiltroProdutos2}
         alt="Filtro por marca, grupo e subgrupo."
@@ -386,7 +386,7 @@ Para facilitar a busca por produtos ou grupos de produtos, o aplicativo fornece 
 
 ### Adicionando item ao carrinho
 
-<img 
+<ZoomableImage 
     className="h-500"
     src={AdicionarItemAoCarrinho}
     alt="Tela para adicionar um item ao carrinho"
@@ -412,7 +412,7 @@ Existem alguns parâmetros que você pode considerar para utilizar nesta tela, [
 
 ## Carrinho
 
-<img 
+<ZoomableImage 
     className="h-500"
     src={GuiaDoCarrinho}
     alt="guia do carrinho"
@@ -451,7 +451,7 @@ Ao fim da digitação de um novo pedido de venda, os dados do **cabeçalho** ser
 ## Informação de pedido já realizado
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={PedidoJaRealizado}
         alt="Informação de pedido já realizado para o cliente"
     />
@@ -472,7 +472,7 @@ Ao fim da digitação de um novo pedido de venda, os dados do **cabeçalho** ser
 ## Fechei o pedido sem querer, e agora ?
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={PedidoEmCache}
         alt="Pedido em cache"
     />

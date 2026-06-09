@@ -18,7 +18,7 @@ import configuracao11 from '@site/static/img/telaInicialConfiguracoes/configurac
 import configuracao12 from '@site/static/img/telaInicialConfiguracoes/configuracoes12.png';
 import configuracao13 from '@site/static/img/telaInicialConfiguracoes/configuracoes13.png';
 import configuracao14 from '@site/static/img/telaInicialConfiguracoes/configuracoes14.png';
-
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Guia de configurações
 
@@ -32,8 +32,8 @@ A interface é organizada em **três seções principais**:
 Como ilustrado nas imagens abaixo:
 
 <div className="images-half">
-    <img src={configuracao1} alt="Primeira parte da guia Configurações" />
-    <img src={configuracao2} alt="Segunda parte da guia Configurações"/>
+    <ZoomableImage src={configuracao1} alt="Primeira parte da guia Configurações" />
+    <ZoomableImage src={configuracao2} alt="Segunda parte da guia Configurações"/>
 </div>
 
 
@@ -48,9 +48,9 @@ Na tela de visualizar perfil, é possível visualizar informações como **códi
 Além disso, o usuário pode **adicionar uma foto de perfil** e **alterar a senha**.
 
 <div className="images-half">
-  <img src={configuracao3} alt="Tela de Perfil do Usuário" />
-  <img src={configuracao4} alt="Adcionar Foto no perfil" />
-  <img src={configuracao5} alt="Alterar Senha" />
+  <ZoomableImage src={configuracao3} alt="Tela de Perfil do Usuário" />
+  <ZoomableImage src={configuracao4} alt="Adcionar Foto no perfil" />
+  <ZoomableImage src={configuracao5} alt="Alterar Senha" />
 
 </div>
 
@@ -61,7 +61,7 @@ Em **Alterar Tema**, o usuário pode escolher entre três opções:
 - **Escuro** — exibe o aplicativo com fundo escuro.
 
 <div className="images-half">
-  <img src={configuracao6} alt="Tela de Personalização de Tema" />
+  <ZoomableImage src={configuracao6} alt="Tela de Personalização de Tema" />
 </div>
 
 
@@ -84,16 +84,16 @@ Essas funções permitem **corrigir eventuais erros**, **manter o sistema atuali
 - **Atualizar fotos dos produtos** — Permite baixar ou atualizar as imagens dos produtos. Embora o aplicativo funcione sem fotos, esse recurso melhora a personalização e a experiência visual.
 
 <div className="images-half">
-  <img src={configuracao7} alt="Atualizar fotos dos produtos" />
+  <ZoomableImage src={configuracao7} alt="Atualizar fotos dos produtos" />
 </div>
 
 - **Reenviar pedidos** — Possibilita o envio novamente de pedidos que não foram transmitidos devido à falta de conexão ou erro de comunicação.  
   É possível, inclusive, selecionar o **período de reenvio**.
 
 <div className="images-half">
-  <img src={configuracao8} alt="Escolhendo o período" />
-  <img src={configuracao9} alt="Tela de confirmação" />
-  <img src={configuracao10} alt="Mensagem de sucesso" />
+  <ZoomableImage src={configuracao8} alt="Escolhendo o período" />
+  <ZoomableImage src={configuracao9} alt="Tela de confirmação" />
+  <ZoomableImage src={configuracao10} alt="Mensagem de sucesso" />
 </div>
 
 
@@ -109,25 +109,25 @@ A seção **Sistema** reúne funções relacionadas à **troca de empresa ou mó
   Essa troca pode ser feita a qualquer momento, sem necessidade de reiniciar o aplicativo.
 
 <div className="images-half">
-  <img src={configuracao11} alt="Tela Acessar outra Empresa" />
+  <ZoomableImage src={configuracao11} alt="Tela Acessar outra Empresa" />
 </div>
 
 - **Acessar outro módulo** — Permite alternar entre os módulos disponíveis, como **Força de Vendas**, **Expedição** e **Administração**, conforme as permissões do usuário.
 
 <div className="images-half">
-  <img src={configuracao12} alt="Tela Acessar outro Módulo" />
+  <ZoomableImage src={configuracao12} alt="Tela Acessar outro Módulo" />
 </div>
 
 - **Logs de erros** — Exibe o histórico de erros registrados pelo aplicativo.  
   O usuário pode visualizar os logs e compartilhá-los com o suporte técnico para análise e correção de eventuais falhas.
 
 <div className="images-half">
-  <img src={configuracao13} alt="Tela de Logs de Erros" />
+  <ZoomableImage src={configuracao13} alt="Tela de Logs de Erros" />
 </div>
 
 - **Sobre** — Apresenta informações técnicas sobre o aplicativo, como **versão instalada**, **nome da conecao**, **servidor** e **porta de conexão**.
 
 <div className="images-half">
-  <img src={configuracao14} alt="Tela Sobre" />
+  <ZoomableImage src={configuracao14} alt="Tela Sobre" />
 </div>
 

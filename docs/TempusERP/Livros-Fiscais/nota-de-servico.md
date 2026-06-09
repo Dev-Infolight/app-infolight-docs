@@ -3,21 +3,12 @@ sidebar_position: 6
 sidebar_label: "Notas de serviço"
 title: "Notas de serviço"
 ---
-import ConexaoComOServidor from "@site/static/img/conexao-com-o-servidor/conexao-com-o-servidor.png";
-import Login2 from "@site/static/img/conexao-com-o-servidor/login2.png";
+
 import inclusao from "@site/static/img/erp/notas-de-servico/inclusao.png";
 import cadastro from "@site/static/img/erp/notas-de-servico/cadastro_servico.png";
 import cadastroFornecedor from "@site/static/img/erp/notas-de-servico/cadastro_fornecedor.png";
 import inclusao_fiscal from "@site/static/img/erp/notas-de-servico/inclusao_fiscal.png";
-import ConfiguracoesLogin from "@site/static/img/conexao-com-o-servidor/configuracoes-login.png";
-import ListagemDeConexoes1 from "@site/static/img/conexao-com-o-servidor/gerenciar-conexoes-1.png";
-import AdicionarConexao from "@site/static/img/conexao-com-o-servidor/add-nova-conexao.png";
-import RemocaoDeConexao from "@site/static/img/conexao-com-o-servidor/removendo-conexao.png";
-import CheckIcon from "@site/static/img/conexao-com-o-servidor/check.svg";
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Lançamento de Nota Fiscal de Serviço
 
@@ -47,7 +38,7 @@ Ao acessar:
 - Caso não exista, utilize **Incluir**
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={inclusao}
         alt="inclusao da nota"
     />
@@ -74,7 +65,7 @@ Após isso:
 - Salve o cadastro
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={cadastro}
         alt="cadastrando um novo serviço"
     />
@@ -90,7 +81,7 @@ Caso não esteja:
 **Cadastro > Fornecedor**
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={cadastroFornecedor}
         alt="cadastrando um novo fornecedor"
     />
@@ -166,7 +157,7 @@ Mesmo assim:
 - Ajuste manualmente caso necessário
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={inclusao_fiscal}
         alt="inclusao da nota fiscal"
     />

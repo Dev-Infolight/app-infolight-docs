@@ -10,6 +10,7 @@ import liberacaoDeVeiculo3 from '@site/static/img/telaLiberacaodeVeiculo/liberac
 import liberacaoDeVeiculo4 from '@site/static/img/telaLiberacaodeVeiculo/liberacaodeveiculo4.png';
 import liberacaoDeVeiculo5 from '@site/static/img/telaLiberacaodeVeiculo/liberacaodeveiculo5.png';
 import liberacaoDeVeiculo6 from '@site/static/img/telaLiberacaodeVeiculo/liberacaodeveiculo6.png';
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Liberação de Veículo de Carga
 
@@ -33,7 +34,7 @@ Nro. Docs. - Peso Bruno
 ```
 
 <div className="images-grid-2">
-  <img src={liberacaoDeVeiculo1} alt="Card de Nota" />
+  <ZoomableImage src={liberacaoDeVeiculo1} alt="Card de Nota" />
 </div>
 
 ---
@@ -43,7 +44,7 @@ Nro. Docs. - Peso Bruno
 Ao tocar no **card do veículo de carga**, é exibido um modal onde o usuário pode visualizar o **nome do motorista** e informar o **ajudante** (opcional) e a **quilometragem**.
 
 <div className="images-grid">
-  <img src={liberacaoDeVeiculo2} alt="Modal para confirmar as informações do Veículo de Carga" />
+  <ZoomableImage src={liberacaoDeVeiculo2} alt="Modal para confirmar as informações do Veículo de Carga" />
 </div>
 
 A tela possui três validações importantes:
@@ -55,25 +56,25 @@ A tela possui três validações importantes:
 Se o usuário digitar um valor **inferior ao permitido**, ao tocar no botão **Liberar Veículo**, um modal de erro exibirá o erro e qual foi a **última quilometragem de saída**.
 
 <div className="images-grid-2">
-  <img src={liberacaoDeVeiculo3} alt="Modal de erro" />
+  <ZoomableImage src={liberacaoDeVeiculo3} alt="Modal de erro" />
 </div>
 
 Quando a quilometragem informada está correta, ao confirmar, o aplicativo apresenta um **modal de sucesso**, concluindo a liberação do veículo.
 
 <div className="images-grid-2">
-  <img src={liberacaoDeVeiculo4} alt="Modal de erro" />
+  <ZoomableImage src={liberacaoDeVeiculo4} alt="Modal de erro" />
 </div>
 
 Após a liberação, o aplicativo retorna o usuário para a tela de **Liberação de veículo de Carga**.
 
 <div className="images-grid-2">
-  <img src={liberacaoDeVeiculo5} alt="tela de Liberação de veículo de Carga" />
+  <ZoomableImage src={liberacaoDeVeiculo5} alt="tela de Liberação de veículo de Carga" />
 </div>
 
 O card do veículo de carga que foi liberada passa a ser identificada pela legenda **CARGA LIBERADA**, exibida no canto superior esquerdo do card.
 
 <div className="images-grid-2">
-  <img src={liberacaoDeVeiculo6} alt="Card de veículo de carga Liberada" />
+  <ZoomableImage src={liberacaoDeVeiculo6} alt="Card de veículo de carga Liberada" />
 </div>
 
 ---

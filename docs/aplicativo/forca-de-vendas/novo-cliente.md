@@ -13,7 +13,7 @@ import novoscliente6 from '@site/static/img/telaNovoCliente/novos-clientes6.png'
 import novoscliente7 from '@site/static/img/telaNovoCliente/novos-clientes7.png';
 import novoscliente8 from '@site/static/img/telaNovoCliente/novos-clientes8.png';
 import novoscliente9 from '@site/static/img/telaNovoCliente/novos-clientes9.png';
-
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Novo cliente
 
@@ -30,8 +30,8 @@ Va na tela de *Novo Cliente* ou na tela de *Clientes* e toque no icone demostrad
 
 
 <div className="images-grid-2">
-    <img src={novoscliente1} alt="Exemplo na tela Novo Cliente" />
-    <img src={novoscliente2} alt="Exemplo na tela Clientes"/>
+    <ZoomableImage src={novoscliente1} alt="Exemplo na tela Novo Cliente" />
+    <ZoomableImage src={novoscliente2} alt="Exemplo na tela Clientes"/>
 </div>
 
 
@@ -43,10 +43,10 @@ Ambas as opções levam para a tela de cadastro, que é composta por quatro guia
 4. **Informações de Contato**
 
 <div className="images-grid">
-    <img src={novoscliente3} alt="Guia Cadastro de Informações" />
-    <img src={novoscliente4} alt="Guia Endereço" />
-    <img src={novoscliente5} alt="Guia Complemento do Endereço" />
-    <img src={novoscliente6} alt="Guia Informações de Contato" />
+    <ZoomableImage src={novoscliente3} alt="Guia Cadastro de Informações" />
+    <ZoomableImage src={novoscliente4} alt="Guia Endereço" />
+    <ZoomableImage src={novoscliente5} alt="Guia Complemento do Endereço" />
+    <ZoomableImage src={novoscliente6} alt="Guia Informações de Contato" />
 </div>
 
 
@@ -64,8 +64,8 @@ Para o cadastro de *Pessoa Física*, tanto **offline** quanto **online**, o pree
 ## Depois do Cadastro
 
 <div className="images-grid-2">
-    <img src={novoscliente7} alt="Guia Pendentes" />
-    <img src={novoscliente8} alt="Guia Enviados" />
+    <ZoomableImage src={novoscliente7} alt="Guia Pendentes" />
+    <ZoomableImage src={novoscliente8} alt="Guia Enviados" />
 </div>
 
 - Se o cadastro foi feito **offline**, após a restauração da conexão com a internet, será necessário rolar a tela para baixo na guia **Início** da tela principal ou na guia **Pendentes** da tela de *Novos Clientes*. Só então, a aprovação ficará pedente no ERP Tempus. 
@@ -76,7 +76,7 @@ Para o cadastro de *Pessoa Física*, tanto **offline** quanto **online**, o pree
 
  1. **Cliente Cadastrado com internet, mas continua na guia de pedentes**
         <div className="images-grid-2">
-            <img src={novoscliente9} alt="Cliente com Duplicidade" />
+            <ZoomableImage src={novoscliente9} alt="Cliente com Duplicidade" />
         </div>
 
     - Cliente com cadastro duplicado, pois já foi registrado anteriormente no ERP.

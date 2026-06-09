@@ -3,18 +3,8 @@ sidebar_position: 1
 sidebar_label: "Painel do Cliente"
 title: "Painel do Cliente"
 ---
-import ConexaoComOServidor from "@site/static/img/conexao-com-o-servidor/conexao-com-o-servidor.png";
-import Login2 from "@site/static/img/conexao-com-o-servidor/login2.png";
-import local from "@site/static/img/erp/painel-do-cliente/local.png";
 import pagina from "@site/static/img/erp/painel-do-cliente/pagina.png";
-import Entrega3 from "@site/static/img/erp/entregas/entregas3.png";
-import ConfiguracoesLogin from "@site/static/img/conexao-com-o-servidor/configuracoes-login.png";
-import ListagemDeConexoes1 from "@site/static/img/conexao-com-o-servidor/gerenciar-conexoes-1.png";
-import AdicionarConexao from "@site/static/img/conexao-com-o-servidor/add-nova-conexao.png";
-import RemocaoDeConexao from "@site/static/img/conexao-com-o-servidor/removendo-conexao.png";
-import CheckIcon from "@site/static/img/conexao-com-o-servidor/check.svg";
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 
 # Painel do Cliente
@@ -39,7 +29,7 @@ A rotina **Painel do Cliente** do sistema Tempus, localizada no módulo de fatur
 **RENTABILIDADE** – Define se a bonificação será considerada ou não nos cálculos.
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={pagina}
         alt="Painel cliente"
     />

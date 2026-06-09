@@ -14,6 +14,7 @@ import Dashboard000 from "@site/static/img/dashboard-000/dashboard-000.png";
 import ClientesPorStatus from "@site/static/img/dashboard-000/Clientes-por-status.png";
 import BuscandoDados from "@site/static/img/dashboard-000/Buscando-dados.png";
 import RupturaItensCriticos from "@site/static/img/dashboard-000/Ruptura-em-itens-criticos.png";
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Guia do dashboard
 
@@ -61,11 +62,11 @@ Durante as seções a seguir, vamos entender o que é exibido em cada dashboard.
 ### 100: Dashboard do gestor
 
 <div className="divRow pb-16">
-    <img 
+    <ZoomableImage 
         src={Dashboard100}
         alt="Dashboard do gestor"
     />
-    <img 
+    <ZoomableImage 
         src={MetaDeVendasPorVendedor}
         alt="Metas de vendas por vendedor"
     />
@@ -90,13 +91,13 @@ No dashboard do gestor, o usuário pode visualizar os seguintes gráficos:
 ### 101: Dashboard do vendedor
 
 <div className="auto-grid">
-    <img 
+    <ZoomableImage 
         src={Dashboard101}
     />
-    <img 
+    <ZoomableImage 
         src={MetasVendasPorProduto}
     />
-    <img 
+    <ZoomableImage 
         src={MetaVendasProGrupoDeProdutos}
     />
 </div>
@@ -120,7 +121,7 @@ No dashboard para o vendedor, o usuário pode visualizar os seguintes gráficos:
 ### Atualizando dados do dashboard
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={AtualizandoDados}
         alt="Atualizando informações do dashboard"
     />
@@ -143,7 +144,7 @@ No dashboard para o vendedor, o usuário pode visualizar os seguintes gráficos:
 Este dashboard foi projetado para a **diretória da empresa**. Com ele, o usuário poderá visualizar informações extremamente relevantes sobre o setor financeiro da empresa em um determinado período.
 
 <div className="divRow pb-16">
-    <img
+    <ZoomableImage
         src={Dashboard000}
         alt="dashboard gestão a vista"
         className="h-500"
@@ -208,7 +209,7 @@ Após a realização dos passos apresentados acima, o dashboard será recarregad
 
 Na imagem abaixo você pode conferir o processo para buscar os dados:
 
-<img
+<ZoomableImage
     src={BuscandoDados}
     alt="Buscando dados"
     className="h-500 object-fit-contain"
@@ -228,7 +229,7 @@ Você pode ocultar o gráfico de pizza clicando no ícone que representa um olho
 
 Na imagem abaixo, você pode conferir todos os detalhes desta tela:
 
-<img
+<ZoomableImage
     src={ClientesPorStatus}
     alt="Clientes por status"
     className="h-500 object-fit-contain"
@@ -244,7 +245,7 @@ Clicando no card dos itens criticos em ruptura, uma nova tela será aberta, e ne
 
 A imagem abaixo demonstra esta tela em detalhes:
 
-<img
+<ZoomableImage
     src={RupturaItensCriticos}
     alt="Ruptura em itens criticos"
     className="h-500 object-fit-contain"

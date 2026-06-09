@@ -3,18 +3,8 @@ sidebar_position: 2
 sidebar_label: "Remessa e Retorno"
 title: "Remessa e Retorno"
 ---
-import ConexaoComOServidor from "@site/static/img/conexao-com-o-servidor/conexao-com-o-servidor.png";
-import Login2 from "@site/static/img/conexao-com-o-servidor/login2.png";
 import remessa from "@site/static/img/erp/remessa/remessa.png";
-import justificativa2 from "@site/static/img/erp/justificativa-das-rotas/justificativa2.png";
-import justificativa3 from "@site/static/img/erp/justificativa-das-rotas/justificativa3.png";
-import ConfiguracoesLogin from "@site/static/img/conexao-com-o-servidor/configuracoes-login.png";
-import ListagemDeConexoes1 from "@site/static/img/conexao-com-o-servidor/gerenciar-conexoes-1.png";
-import AdicionarConexao from "@site/static/img/conexao-com-o-servidor/add-nova-conexao.png";
-import RemocaoDeConexao from "@site/static/img/conexao-com-o-servidor/removendo-conexao.png";
-import CheckIcon from "@site/static/img/conexao-com-o-servidor/check.svg";
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Geração de Remessa de Boletos Bancários
 
@@ -54,7 +44,7 @@ Será necessário gerar remessa individual para cada banco utilizado.
 Ao acessar a rotina:
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={remessa}
         alt="Acesso a rotina"
     />

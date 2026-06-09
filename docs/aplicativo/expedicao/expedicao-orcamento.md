@@ -26,6 +26,7 @@ import telaexpedicaod19 from '@site/static/img/telaExpedicao/expedicao19.png';
 import telaexpedicaod20 from '@site/static/img/telaExpedicao/expedicao20.png';
 import telaexpedicaod22 from '@site/static/img/telaExpedicao/expedicao22.png';
 import telaexpedicaod23 from '@site/static/img/telaExpedicao/expedicao23.png';
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Expedição de Orçamento
 
@@ -47,7 +48,7 @@ No cabeçalho da tela, no canto superior direito, há o ícone para **cancelar o
 Também é exibida a **placa do veículo** onde os produtos serão carregados.
 
 <div className="images-grid-2">
-  <img src={telaexpedicaod1} alt="Cabeçalho da tela de produtos" />
+  <ZoomableImage src={telaexpedicaod1} alt="Cabeçalho da tela de produtos" />
 </div>
 
 O conteúdo da tela é composto por **cards**, cada um representando um produto.  
@@ -62,16 +63,16 @@ Quantidade - Unidade de medida.
 ```
 
 <div className="images-grid-2">
-  <img src={telaexpedicaod2} alt="Card de Produto com Foto" />
-  <img src={telaexpedicaod3} alt="Card de Produto sem Foto" />
+  <ZoomableImage src={telaexpedicaod2} alt="Card de Produto com Foto" />
+  <ZoomableImage src={telaexpedicaod3} alt="Card de Produto sem Foto" />
 </div>
 
 Na parte inferior da tela, são exibidos o **número da carga**, a **quantidade de produtos já carregados** e uma **barra de progresso** com a porcentagem do carregamento.  
 Quando atinge **100%**, o botão **Finalizar Carga** é habilitado.
 
 <div className="images-grid-2">
-  <img src={telaexpedicaod4} alt="Tela sem o botão Finalizar habilitado" />
-  <img src={telaexpedicaod5} alt="Tela com o botão Finalizar habilitado" />
+  <ZoomableImage src={telaexpedicaod4} alt="Tela sem o botão Finalizar habilitado" />
+  <ZoomableImage src={telaexpedicaod5} alt="Tela com o botão Finalizar habilitado" />
 </div>
 
 ---
@@ -85,17 +86,17 @@ Mesmo que o aplicativo seja fechado, a carga permanece **disponível apenas para
 Enquanto houver uma carga em andamento, **outras cargas permanecem ocultas**.
 
 <div className="images-grid">
-  <img src={telaexpedicaod6} alt="Card da carga selecionada" />
+  <ZoomableImage src={telaexpedicaod6} alt="Card da carga selecionada" />
 </div>
 
 O usuário tem duas opções: **finalizar** a expedição ou **cancelar**.  
 No caso de cancelamento, se a conferência já tiver começado, é necessário **desmarcar todos os produtos** para que o botão de cancelamento volte a ser habilitado.
 
 <div className="images-grid">
-  <img src={telaexpedicaod7} alt="Conferência iniciada e botão desabilitado" />
-  <img src={telaexpedicaod8} alt="Produtos desmarcados e botão habilitado" />
-  <img src={telaexpedicaod9} alt="Modal de confirmação de cancelamento" />
-  <img src={telaexpedicaod10} alt="Sem carga selecionada" />
+  <ZoomableImage src={telaexpedicaod7} alt="Conferência iniciada e botão desabilitado" />
+  <ZoomableImage src={telaexpedicaod8} alt="Produtos desmarcados e botão habilitado" />
+  <ZoomableImage src={telaexpedicaod9} alt="Modal de confirmação de cancelamento" />
+  <ZoomableImage src={telaexpedicaod10} alt="Sem carga selecionada" />
 </div>
 
 ---
@@ -119,7 +120,7 @@ O tipo de conferência varia conforme os campos do produtos e o parâmetro de co
 Se o parâmetro `MV_VALCODBAR` **não existir**, estiver **vazio** ou com valor `F`, será exibida uma conferência simples, onde o usuário pode apenas confirmar (**Sim**) ou cancelar (**Não**).
 
 <div className="images-grid-2">
-  <img src={telaexpedicaod11} alt="Modal Simples de Conferência" />
+  <ZoomableImage src={telaexpedicaod11} alt="Modal Simples de Conferência" />
 </div>
 
 ---
@@ -133,9 +134,9 @@ Se o parâmetro `MV_VALCODBAR` tiver o valor `S` e os campos `CBWMS` e `CBWMS2` 
 - Abaixo do campo, é exibido o **total digitado / total esperado**.
 
 <div className="images-grid">
-  <img src={telaexpedicaod12} alt="Campo de código vazio" />
-  <img src={telaexpedicaod13} alt="Código incorreto" />
-  <img src={telaexpedicaod14} alt="Código correto" />
+  <ZoomableImage src={telaexpedicaod12} alt="Campo de código vazio" />
+  <ZoomableImage src={telaexpedicaod13} alt="Código incorreto" />
+  <ZoomableImage src={telaexpedicaod14} alt="Código correto" />
 </div>
 
 ---
@@ -146,21 +147,21 @@ Se `CBWMS` e `CBWMS2` estiverem preenchidos, a conferência é feita por **bipag
 O modal exibe as unidades de medida, a quantidade e um **círculo de progresso** indicando o total de bips restantes.  
 
 <div className="images-grid">
-  <img src={telaexpedicaod15} alt="Modal de conferência por unidade de medida" />
+  <ZoomableImage src={telaexpedicaod15} alt="Modal de conferência por unidade de medida" />
 </div>
 
 Quando o progresso atinge mais de **50%**, o botão **Concluir Carregamento do Item** é habilitado.  
 Se o usuário confirmar antes de completar 100%, um novo modal de confirmação é exibido.
 
 <div className="images-grid">
-  <img src={telaexpedicaod16} alt="Modal de código vazio" />
-  <img src={telaexpedicaod17} alt="Modal de confirmação de divergência" />
+  <ZoomableImage src={telaexpedicaod16} alt="Modal de código vazio" />
+  <ZoomableImage src={telaexpedicaod17} alt="Modal de confirmação de divergência" />
 </div>
 
 Se o usuário tocar em sim, o item é verificado, mas recebe a advertência `ITEM COM DIVERGÊNCIA`.
 
 <div className="images-grid-2">
-  <img src={telaexpedicaod18} alt="Item com divergência" />
+  <ZoomableImage src={telaexpedicaod18} alt="Item com divergência" />
 </div>
 
 Por outro lado, **quando o usuário realiza a bipagem completa de todos os itens (100%)**, o produto é automaticamente marcado como **verificado** e **sem nenhuma advertência**, exibindo o **ícone ✅** no card do item.
@@ -172,13 +173,13 @@ Por outro lado, **quando o usuário realiza a bipagem completa de todos os itens
 Se `CBWMS` e `CBWMS2` estiverem preenchidos e o campo `PESAGEM` tiver valor `S`, será exibido um campo adicional para informar o **peso do produto** após a leitura do código de barras.
 
 <div className="images-grid">
-  <img src={telaexpedicaod19} alt="Modal com campo de pesagem" />
+  <ZoomableImage src={telaexpedicaod19} alt="Modal com campo de pesagem" />
 </div>
 
 Após concluída a conferência, o card exibe a mensagem **PESO CONFERIDO**, com o valor informado em quilogramas.
 
 <div className="images-grid-2">
-  <img src={telaexpedicaod20} alt="Produto com peso conferido" />
+  <ZoomableImage src={telaexpedicaod20} alt="Produto com peso conferido" />
 </div>
 
 ---
@@ -188,8 +189,8 @@ Após concluída a conferência, o card exibe a mensagem **PESO CONFERIDO**, com
 Após a conferência de todos os produtos, o botão **Finalizar Carga** é habilitado. Com conexão ativa à internet, ao tocar nele o processo de expedição é concluído com sucesso. Após a finalização, o aplicativo retorna o usuário à tela de **Expedição**, onde a **nota finalizada** deixa de ser exibida na lista.
 
 <div className="images-grid">
-  <img src={telaexpedicaod22} alt="Tela com botão de finalizar Carga habilitado" />
-  <img src={telaexpedicaod23} alt="Retorno a tela de expedição" />
+  <ZoomableImage src={telaexpedicaod22} alt="Tela com botão de finalizar Carga habilitado" />
+  <ZoomableImage src={telaexpedicaod23} alt="Retorno a tela de expedição" />
 </div>
 
 ---

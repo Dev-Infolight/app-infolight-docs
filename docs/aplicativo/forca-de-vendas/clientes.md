@@ -22,8 +22,7 @@ import telaCliente16 from '@site/static/img/telaCliente/telaCliente16.png';
 import telaCliente17 from '@site/static/img/telaCliente/telaCliente17.png';
 import telaCliente18 from '@site/static/img/telaCliente/telaCliente18.png';
 import telaCliente19 from '@site/static/img/telaCliente/telaCliente19.png';
-
-
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Cliente
 
@@ -47,7 +46,7 @@ Na parte superior da tela, há um conjunto de filtros rápidos que permitem clas
 **Atendidos**, **Não atendidos** e **Inadimplentes**.
 
 <div className="images-grid-2">
-  <img src={telaCliente1} alt="Filtro por status" />
+  <ZoomableImage src={telaCliente1} alt="Filtro por status" />
 </div>
 
 
@@ -58,7 +57,7 @@ O usuário também pode realizar uma **seleção de cards** por meio do filtro a
 Para acessar o filtro, basta tocar no **penúltimo ícone** localizado no canto superior direito da tela.
 
 <div className="images-grid">
-  <img src={telaCliente2} alt="Seleção por Filtro" />
+  <ZoomableImage src={telaCliente2} alt="Seleção por Filtro" />
 </div>
 
 
@@ -67,7 +66,7 @@ Para efetuar uma busca direta, toque no **ícone de lupa (🔍)**, o **último �
 Nesse modo, o usuário pode realizar uma **busca genérica** em todos os campos ou limitar a pesquisa a um campo específico — por exemplo, buscar clientes de uma determinada **cidade**.
 
 <div className="images-grid-2">
-  <img src={telaCliente3} alt="Busca por Campos" />
+  <ZoomableImage src={telaCliente3} alt="Busca por Campos" />
 </div>
 
 
@@ -89,7 +88,7 @@ Nome Fatansia
 ```
 
 <div className="images-grid-2">
-  <img src={telaCliente4} alt="Card do cliente" />
+  <ZoomableImage src={telaCliente4} alt="Card do cliente" />
 </div>
 
 O usuário pode **expandir o card** clicando sobre ele.  
@@ -105,7 +104,7 @@ Contatos
 ```
 
 <div className="images-grid-2">
-  <img src={telaCliente5} alt="Card expandido" />
+  <ZoomableImage src={telaCliente5} alt="Card expandido" />
 </div>
 
 No final do card expandido, está disponível o botão Menu **`O que deseja fazer?`**. Ao tocar nesse botão, o usuário acessa um **modal** com as principais funções do módulo **Força de Vendas**.
@@ -114,7 +113,7 @@ No final do card expandido, está disponível o botão Menu **`O que deseja faze
 ## Menu `O que deseja fazer?`
 
 <div className="images-grid">
-  <img src={telaCliente6} alt="Menu Cliente" />
+  <ZoomableImage src={telaCliente6} alt="Menu Cliente" />
 </div>
 
 Ao clicar no menu **`O que deseja fazer?`**, o usuário tem acesso às seguintes funções:
@@ -134,9 +133,9 @@ Ao clicar no menu **`O que deseja fazer?`**, o usuário tem acesso às seguintes
 Nesta função, o usuário encontra um modal com **três abas** com informações do cliente: **Dados**, **Endereço** e **Administrativo/Financeiro**.
 
 <div className="images-grid">
-  <img src={telaCliente7} alt="Aba Dados" />
-  <img src={telaCliente8} alt="Aba Endereço" />
-  <img src={telaCliente9} alt="Aba Administrativa/Financeira" />
+  <ZoomableImage src={telaCliente7} alt="Aba Dados" />
+  <ZoomableImage src={telaCliente8} alt="Aba Endereço" />
+  <ZoomableImage src={telaCliente9} alt="Aba Administrativa/Financeira" />
 </div>
 
 ---
@@ -170,20 +169,20 @@ A função Visistas Não Positivada abre a tela **Vendas Não Positivadas** que 
 Para registrar uma nova visita, toque no **ícone de (+)** no canto superior direito.
 
 <div className="images-grid">
-  <img src={telaCliente10} alt="Tela de Visitas Não Positivadas" />
+  <ZoomableImage src={telaCliente10} alt="Tela de Visitas Não Positivadas" />
 </div>
 
 Na tela de **Cadastro de Visita Não Positivada**, o usuário deve selecionar **uma ou mais justificativas** da lista padrão ou inserir manualmente. Também é possível **inativar o cliente** a partir dessa tela.
 
 <div className="images-grid">
-  <img src={telaCliente11} alt="Tela Cadastro de Visitas Não Positivadas" />
-  <img src={telaCliente12} alt="Lista de Justificativas Padrão" />
+  <ZoomableImage src={telaCliente11} alt="Tela Cadastro de Visitas Não Positivadas" />
+  <ZoomableImage src={telaCliente12} alt="Lista de Justificativas Padrão" />
 </div>
 
 Se o usuário estiver **sem conexão**, o cadastro ficará **pendente** e poderá ser **editado ou excluído**. Os registros pendentes são enviados automaticamente quando o aplicativo sincronizar ou reconectar-se à internet.
 
 <div className="images-grid">
-  <img src={telaCliente13} alt="Visitas Não Positivadas Pendentes" />
+  <ZoomableImage src={telaCliente13} alt="Visitas Não Positivadas Pendentes" />
 </div>
 
 ---
@@ -200,14 +199,14 @@ No rodapé da tela são exibidos:
 - **Valor somado de todos os títulos**
 
 <div className="images-grid">
-  <img src={telaCliente14} alt="Tela Títulos em Aberto" />
+  <ZoomableImage src={telaCliente14} alt="Tela Títulos em Aberto" />
 </div>
 
 Ao tocar em um card, ele se **expande** e mostra o botão **Mais detalhes?**, que abre um modal com as informações completas do título.
 
 <div className="images-grid">
-  <img src={telaCliente15} alt="Card expandido - Títulos em Aberto" />
-  <img src={telaCliente16} alt="Modal - Mais detalhes do título" />
+  <ZoomableImage src={telaCliente15} alt="Card expandido - Títulos em Aberto" />
+  <ZoomableImage src={telaCliente16} alt="Modal - Mais detalhes do título" />
 </div>
 
 ---
@@ -218,8 +217,8 @@ Ao tocar em um card, ele se **expande** e mostra o botão **Mais detalhes?**, qu
 A função **Últimos Compras** abre a tela **Pedidos de Venda** do cliente, exibindo tanto os pedidos **pendentes** quanto os **enviados**.
 
 <div className="images-grid">
-  <img src={telaCliente17} alt="Tela Pedidos de Venda - Pendentes" />
-  <img src={telaCliente18} alt="Tela Pedidos de Venda - Enviados" />
+  <ZoomableImage src={telaCliente17} alt="Tela Pedidos de Venda - Pendentes" />
+  <ZoomableImage src={telaCliente18} alt="Tela Pedidos de Venda - Enviados" />
 </div>
 
 :::info
@@ -237,7 +236,7 @@ Funcionalidade **em desenvolvimento**.
  1. **Clico em `O que desejo fazer?` e um modal abre informado que a base esta desatualizada**
 
 <div className="images-grid">
-  <img src={telaCliente19} alt="Base desatualizada" />
+  <ZoomableImage src={telaCliente19} alt="Base desatualizada" />
 </div>
 
   - Sem sincronizar a base local por 24 horas, mesmo **online** ou 36 **offline**

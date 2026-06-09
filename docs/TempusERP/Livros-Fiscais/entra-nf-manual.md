@@ -3,18 +3,9 @@ sidebar_position: 3
 sidebar_label: "Nota fiscal manual"
 title: "Entrada de nota fiscal manual"
 ---
-import ConexaoComOServidor from "@site/static/img/conexao-com-o-servidor/conexao-com-o-servidor.png";
-import Login2 from "@site/static/img/conexao-com-o-servidor/login2.png";
-import nfs1 from "@site/static/img/erp/nota-de-serviço/nfs1.png";
+
 import nfs2 from "@site/static/img/erp/nota-de-serviço/nfs2.png";
-import Entrega3 from "@site/static/img/erp/entregas/entregas3.png";
-import ConfiguracoesLogin from "@site/static/img/conexao-com-o-servidor/configuracoes-login.png";
-import ListagemDeConexoes1 from "@site/static/img/conexao-com-o-servidor/gerenciar-conexoes-1.png";
-import AdicionarConexao from "@site/static/img/conexao-com-o-servidor/add-nova-conexao.png";
-import RemocaoDeConexao from "@site/static/img/conexao-com-o-servidor/removendo-conexao.png";
-import CheckIcon from "@site/static/img/conexao-com-o-servidor/check.svg";
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 Esta rotina tem como objetivo orientar o usuário no processo de lançamento manual de Notas Fiscais de Entrada no sistema Infolight.
 
@@ -33,7 +24,7 @@ Navegue pelo caminho: Movimentos > Nota Fiscal Manual de Entrada.
 ### 2: Passo a Passo do Lançamento
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={nfs2}
         alt="Entrada de serviço"
     />

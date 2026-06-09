@@ -12,12 +12,12 @@ import DetalhesPedido from "@site/static/img/mapa-de-vendas/Detalhes-do-pedido.j
 import FiltroPorVendedor from "@site/static/img/mapa-de-vendas/Filtragem-por-vendedor.jpg";
 import FiltroPorPeriodo from "@site/static/img/mapa-de-vendas/Filtragem-por-periodo.jpg";
 import MapaEmTelaCheia from "@site/static/img/mapa-de-vendas/Visualizacao-em-tela-cheia.jpg";
-
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Mapa de vendas
 
 <div className="divRow pb-16">
-    <img 
+    <ZoomableImage 
         src={MapaPedidos}
     />
     <div className="divColumn">
@@ -43,7 +43,7 @@ Durante as seções abaixo, explicaremos como utilizar cada funcionalidade desta
 
 ### Legenda
 
-<img
+<ZoomableImage
     className="h-500 object-fit-contain"
     src={Legenda}
 />
@@ -57,7 +57,7 @@ A legenda do mapa foi projetada para que o usuário entenda o que significa cada
 ### Zoom
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         className="h-500"
         src={Zoom}
     />
@@ -74,7 +74,7 @@ A legenda do mapa foi projetada para que o usuário entenda o que significa cada
 
 ### Vizualizar em tela cheia
 
-<img 
+<ZoomableImage 
     className="h-500 object-fit-contain"
     src={MapaEmTelaCheia}
 />
@@ -87,7 +87,7 @@ Pensando nos usuários que possuem celulares com telas pequenas ou que desejam v
 
 ### Detalhes do pedido
 
-<img 
+<ZoomableImage 
     className="h-500 object-fit-contain"
     src={DetalhesPedido}
 />
@@ -100,7 +100,7 @@ Visualizar apenas os marcadores no mapa, não é uma informação que vai ajudar
 
 ### Filtragem de dados por período
 
-<img 
+<ZoomableImage 
     className="h-500 object-fit-contain"
     src={FiltroPorPeriodo}
 />
@@ -117,7 +117,7 @@ Para escolher um período onde a **data inicial é igual a data final**, clique 
 
 ### Filtragem de dados por vendedor
 
-<img 
+<ZoomableImage 
     className="h-500 object-fit-contain"
     src={FiltroPorVendedor}
 />
@@ -137,7 +137,7 @@ Ao filtrar os dados por vendedor, o aplicativo irá exibir todos os pedidos, vis
 
 ### Detecção de pedidos suspeitos
 
-<img 
+<ZoomableImage 
     className="h-500 object-fit-contain"
     src={PedidosSuspeitos}
 />

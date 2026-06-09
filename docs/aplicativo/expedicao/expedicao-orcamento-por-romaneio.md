@@ -25,6 +25,7 @@ import telaexpedicaodeorcamentoporromaneio18 from '@site/static/img/telaExpedica
 import telaexpedicaodeorcamentoporromaneio21 from '@site/static/img/telaExpedicao/expedicao21.png';
 import telaexpedicaodeorcamentoporromaneio22 from '@site/static/img/telaExpedicao/expedicao22.png';
 import telaexpedicaodeorcamentoporromaneio23 from '@site/static/img/telaExpedicao/expedicao23.png';
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Expedição de Orçamento por Romaneio
 
@@ -45,7 +46,7 @@ No cabeçalho da tela, no canto superior direito, há o ícone para **cancelar o
 Também é exibida a **placa do veículo** onde os produtos serão carregados.
 
 <div className="images-grid-2">
-  <img src={telaexpedicaodeorcamentoporromaneio1} alt="Cabeçalho da tela de produtos" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio1} alt="Cabeçalho da tela de produtos" />
 </div>
 
 O conteúdo da tela é composto por **cards**, cada um representando um produto.  
@@ -60,16 +61,16 @@ Quantidade - Unidade de medida.
 ```
 
 <div className="images-grid-2">
-  <img src={telaexpedicaodeorcamentoporromaneio2} alt="Card de Produto com Foto" />
-  <img src={telaexpedicaodeorcamentoporromaneio3} alt="Card de Produto sem Foto" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio2} alt="Card de Produto com Foto" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio3} alt="Card de Produto sem Foto" />
 </div>
 
 Na parte inferior da tela, são exibidos o **número da carga**, a **quantidade de produtos já carregados** e uma **barra de progresso** com a porcentagem do carregamento.  
 Quando atinge **100%**, o botão **Finalizar Carga** é habilitado.
 
 <div className="images-grid-2">
-  <img src={telaexpedicaodeorcamentoporromaneio4} alt="Tela sem o botão Finalizar habilitado" />
-  <img src={telaexpedicaodeorcamentoporromaneio5} alt="Tela com o botão Finalizar habilitado" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio4} alt="Tela sem o botão Finalizar habilitado" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio5} alt="Tela com o botão Finalizar habilitado" />
 </div>
 
 ---
@@ -86,16 +87,16 @@ Enquanto houver uma carga em andamento, **as demais cargas permanecem ocultas**,
 Durante o processo, o **progresso de conferência é salvo automaticamente em uma tabela interna**, permitindo que o usuário retome exatamente do ponto em que parou, mesmo após sair do aplicativo.
 
 <div className="images-grid">
-  <img src={telaexpedicaodeorcamentoporromaneio6} alt="Card da carga selecionada" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio6} alt="Card da carga selecionada" />
 </div>
 
 No caso de cancelamento, se a conferência já tiver começado, é necessário **desmarcar todos os produtos** para que o botão de cancelamento volte a ser habilitado.
 
 <div className="images-grid">
-  <img src={telaexpedicaodeorcamentoporromaneio7} alt="Conferência iniciada e botão desabilitado" />
-  <img src={telaexpedicaodeorcamentoporromaneio8} alt="Produtos desmarcados e botão habilitado" />
-  <img src={telaexpedicaodeorcamentoporromaneio9} alt="Modal de confirmação de cancelamento" />
-  <img src={telaexpedicaodeorcamentoporromaneio10} alt="Sem carga selecionada" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio7} alt="Conferência iniciada e botão desabilitado" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio8} alt="Produtos desmarcados e botão habilitado" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio9} alt="Modal de confirmação de cancelamento" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio10} alt="Sem carga selecionada" />
 </div>
 
 ---
@@ -124,7 +125,7 @@ Caso o usuário feche a tela ou o aplicativo durante a expedição, ao voltar a 
 Se o parâmetro `MV_VALCODBAR` **não existir**, estiver **vazio** ou com valor `F`, será exibida uma conferência simples, onde o usuário pode apenas confirmar (**Sim**) ou cancelar (**Não**).
 
 <div className="images-grid-2">
-  <img src={telaexpedicaodeorcamentoporromaneio11} alt="Modal Simples de Conferência" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio11} alt="Modal Simples de Conferência" />
 </div>
 
 ---
@@ -138,9 +139,9 @@ Se o parâmetro `MV_VALCODBAR` tiver o valor `S` e os campos `CBWMS` e `CBWMS2` 
 - Abaixo do campo, é exibido o **total digitado / total esperado**.
 
 <div className="images-grid">
-  <img src={telaexpedicaodeorcamentoporromaneio12} alt="Campo de código vazio" />
-  <img src={telaexpedicaodeorcamentoporromaneio13} alt="Código incorreto" />
-  <img src={telaexpedicaodeorcamentoporromaneio14} alt="Código correto" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio12} alt="Campo de código vazio" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio13} alt="Código incorreto" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio14} alt="Código correto" />
 </div>
 
 ---
@@ -151,21 +152,21 @@ Se `CBWMS` e `CBWMS2` estiverem preenchidos, a conferência é feita por **bipag
 O modal exibe as unidades de medida, a quantidade e um **círculo de progresso** indicando o total de bips restantes.  
 
 <div className="images-grid">
-  <img src={telaexpedicaodeorcamentoporromaneio15} alt="Modal de conferência por unidade de medida" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio15} alt="Modal de conferência por unidade de medida" />
 </div>
 
 Quando o progresso atinge mais de **50%**, o botão **Concluir Carregamento do Item** é habilitado.  
 Se o usuário confirmar antes de completar 100%, um novo modal de confirmação é exibido.
 
 <div className="images-grid">
-  <img src={telaexpedicaodeorcamentoporromaneio16} alt="Modal de código vazio" />
-  <img src={telaexpedicaodeorcamentoporromaneio17} alt="Modal de confirmação de divergência" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio16} alt="Modal de código vazio" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio17} alt="Modal de confirmação de divergência" />
 </div>
 
 Se o usuário tocar em sim, o item é verificado, mas recebe a advertência `ITEM COM DIVERGÊNCIA`.
 
 <div className="images-grid-2">
-  <img src={telaexpedicaodeorcamentoporromaneio18} alt="Item com divergência" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio18} alt="Item com divergência" />
 </div>
 
 Por outro lado, **quando o usuário realiza a bipagem completa de todos os itens (100%)**, o produto é automaticamente marcado como **verificado** e **sem nenhuma advertência**.
@@ -180,7 +181,7 @@ Itens que permanecerem inalterados e já verificados **mantêm o status de confe
 Para atualizar a lista, basta **arrastar a tela para baixo**  ou tocar em **Finalizar Carga**.  
 
 <div className="images-grid-2">
-  <img src={telaexpedicaodeorcamentoporromaneio21} alt="Atualizando tela" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio21} alt="Atualizando tela" />
 </div>
 
 O aplicativo verificará se há alterações e as exibirá automaticamente.
@@ -194,8 +195,8 @@ Após a conferência de todos os produtos, o botão **Finalizar Carga** é habil
 
 
 <div className="images-grid">
-  <img src={telaexpedicaodeorcamentoporromaneio22} alt="Tela com botão de finalizar Carga habilitado" />
-  <img src={telaexpedicaodeorcamentoporromaneio23} alt="Retorno a tela de expedição" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio22} alt="Tela com botão de finalizar Carga habilitado" />
+  <ZoomableImage src={telaexpedicaodeorcamentoporromaneio23} alt="Retorno a tela de expedição" />
 </div>
 
 ---

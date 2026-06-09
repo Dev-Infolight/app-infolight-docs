@@ -3,19 +3,10 @@ sidebar_position: 2
 sidebar_label: "Painel de vendas"
 title: "Painel de vendas"
 ---
-import ConexaoComOServidor from "@site/static/img/conexao-com-o-servidor/conexao-com-o-servidor.png";
-import Login2 from "@site/static/img/conexao-com-o-servidor/login2.png";
-import local from "@site/static/img/erp/painel-do-cliente/local.png";
 import painel from "@site/static/img/erp/painel-de-vendas/painel.png";
 import supervisor from "@site/static/img/erp/painel-de-vendas/supervisor.png";
 import imprimir from "@site/static/img/erp/painel-de-vendas/imprimir.png";
-import ConfiguracoesLogin from "@site/static/img/conexao-com-o-servidor/configuracoes-login.png";
-import ListagemDeConexoes1 from "@site/static/img/conexao-com-o-servidor/gerenciar-conexoes-1.png";
-import AdicionarConexao from "@site/static/img/conexao-com-o-servidor/add-nova-conexao.png";
-import RemocaoDeConexao from "@site/static/img/conexao-com-o-servidor/removendo-conexao.png";
-import CheckIcon from "@site/static/img/conexao-com-o-servidor/check.svg";
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Painel de Vendas
 
@@ -44,7 +35,7 @@ O painel é uma importante ferramenta de gestão comercial e apoio à tomada de 
 Ao acessar o painel, será possível configurar diversos filtros para análise das informações.
 
 <div className="imgRow">
-    <img 
+    <ZoomableImage 
         src={painel}
         alt="Acesso ao menu"
     />
@@ -116,7 +107,7 @@ Dependendo da estrutura comercial:
 - O sistema poderá apresentar níveis de gerente e supervisor
 
 <div className="imgRow">
-    <img 
+    <ZoomableImage 
         src={supervisor}
         alt="Acesso ao menu"
     />
@@ -191,7 +182,7 @@ Gerar relatórios para análise e apresentação.
 Exportar os dados em formato de planilha para tratamento externo e análises complementares.
 
 <div className="imgRow">
-    <img 
+    <ZoomableImage 
         src={imprimir}
         alt="Acesso ao menu"
     />

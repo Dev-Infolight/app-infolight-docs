@@ -7,6 +7,7 @@ title: "Painel de vendas"
 import paineldevendas1 from '@site/static/img/telaPaineldeVendas/paineldeVendas1.png';
 import paineldevendas2 from '@site/static/img/telaPaineldeVendas/paineldeVendas2.png';
 import paineldevendas3 from '@site/static/img/telaPaineldeVendas/paineldeVendas3.png';
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Painel de Vendas
 
@@ -92,9 +93,9 @@ Depois de selecionar a **categoria cadastrada** e definir o **período**, ao toc
 
 
 <div className="images-grid">
-  <img src={paineldevendas1} alt="Aba Dados" />
-  <img src={paineldevendas2} alt="Aba Endereço" />
-  <img src={paineldevendas3} alt="Aba Administrativa/Financeira" />
+  <ZoomableImage src={paineldevendas1} alt="Aba Dados" />
+  <ZoomableImage src={paineldevendas2} alt="Aba Endereço" />
+  <ZoomableImage src={paineldevendas3} alt="Aba Administrativa/Financeira" />
 </div>
 
 ## Problemas comuns

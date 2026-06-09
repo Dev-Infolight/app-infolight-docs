@@ -23,6 +23,7 @@ import nota5 from '@site/static/img/telaExpedicao/Nota/nota5.png';
 import nota6 from '@site/static/img/telaExpedicao/Nota/nota6.png';
 import nota7 from '@site/static/img/telaExpedicao/Nota/nota7.png';
 import nota8 from '@site/static/img/telaExpedicao/Nota/nota8.png';
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Expedição de NFCe
 
@@ -42,7 +43,7 @@ No cabeçalho da tela, no canto superior direito, há o ícone para **cancelar o
 Também é exibida a **placa do veículo** onde os produtos serão carregados.
 
 <div className="images-grid-2">
-  <img src={telaexpedicaod1} alt="Cabeçalho da tela de produtos" />
+  <ZoomableImage src={telaexpedicaod1} alt="Cabeçalho da tela de produtos" />
 </div>
 
 O conteúdo da tela é composto por **cards**, cada um representando um produto.  
@@ -57,16 +58,16 @@ Quantidade - Unidade de medida.
 ```
 
 <div className="images-grid-2">
-  <img src={telaexpedicaod2} alt="Card de Produto com Foto" />
-  <img src={telaexpedicaod3} alt="Card de Produto sem Foto" />
+  <ZoomableImage src={telaexpedicaod2} alt="Card de Produto com Foto" />
+  <ZoomableImage src={telaexpedicaod3} alt="Card de Produto sem Foto" />
 </div>
 
 Na parte inferior da tela, são exibidos o **número da NFCe**, a **quantidade de produtos já carregados** e uma **barra de progresso** com a porcentagem do carregamento.  
 Quando atinge **100%**, o botão **Finalizar NFCe** é habilitado.
 
 <div className="images-grid-2">
-  <img src={telaexpedicaod4} alt="Tela sem o botão Finalizar habilitado" />
-  <img src={telaexpedicaod5} alt="Tela com o botão Finalizar habilitado" />
+  <ZoomableImage src={telaexpedicaod4} alt="Tela sem o botão Finalizar habilitado" />
+  <ZoomableImage src={telaexpedicaod5} alt="Tela com o botão Finalizar habilitado" />
 </div>
 
 ---
@@ -80,17 +81,17 @@ Mesmo que o aplicativo seja fechado, a NFCe permanece **disponível apenas para 
 Enquanto houver uma NFCe em andamento, **outras NFCes permanecem ocultas**.
 
 <div className="images-grid">
-  <img src={nota1} alt="Card da NFCe selecionada" />
+  <ZoomableImage src={nota1} alt="Card da NFCe selecionada" />
 </div>
 
 O usuário tem duas opções: **finalizar** a expedição ou **cancelar**.  
 No caso de cancelamento, se a conferência já tiver começado, é necessário **desmarcar todos os produtos** para que o botão de cancelamento volte a ser habilitado.
 
 <div className="images-grid">
-  <img src={nota2} alt="Conferência iniciada e botão desabilitado" />
-  <img src={nota3} alt="Produtos desmarcados e botão habilitado" />
-  <img src={nota4} alt="Modal de confirmação de cancelamento" />
-  <img src={nota5} alt="Sem NFCe selecionada" />
+  <ZoomableImage src={nota2} alt="Conferência iniciada e botão desabilitado" />
+  <ZoomableImage src={nota3} alt="Produtos desmarcados e botão habilitado" />
+  <ZoomableImage src={nota4} alt="Modal de confirmação de cancelamento" />
+  <ZoomableImage src={nota5} alt="Sem NFCe selecionada" />
 </div>
 
 ---
@@ -118,7 +119,7 @@ Caso o usuário feche a tela ou o aplicativo durante a expedição, ao voltar a 
 Se o parâmetro `MV_VALCODBAR` **não existir**, estiver **vazio** ou com valor `F`, será exibida uma conferência simples, onde o usuário pode apenas confirmar (**Sim**) ou cancelar (**Não**).
 
 <div className="images-grid-2">
-  <img src={telaexpedicaod11} alt="Modal Simples de Conferência" />
+  <ZoomableImage src={telaexpedicaod11} alt="Modal Simples de Conferência" />
 </div>
 
 ---
@@ -132,9 +133,9 @@ Se o parâmetro `MV_VALCODBAR` tiver o valor `S`, o usuário deve **informar ape
 - Abaixo do campo, é exibido o **total digitado / total esperado**.
 
 <div className="images-grid">
-  <img src={telaexpedicaod12} alt="Campo de código vazio" />
-  <img src={telaexpedicaod13} alt="Código incorreto" />
-  <img src={telaexpedicaod14} alt="Código correto" />
+  <ZoomableImage src={telaexpedicaod12} alt="Campo de código vazio" />
+  <ZoomableImage src={telaexpedicaod13} alt="Código incorreto" />
+  <ZoomableImage src={telaexpedicaod14} alt="Código correto" />
 </div>
 
 ---
@@ -144,14 +145,14 @@ Se o parâmetro `MV_VALCODBAR` tiver o valor `S`, o usuário deve **informar ape
 Após a conferência de todos os produtos, o botão **Finalizar NFCe** é habilitado. Com conexão ativa à internet, ao tocar nele o processo de expedição é concluído com sucesso. Após a finalização, o aplicativo retorna o usuário para a tela de **Expedição de NFCe**, onde a **nota finalizada** é exibida no topo da lista.
 
 <div className="images-grid">
-  <img src={nota6} alt="Tela com botão de finalizar NFCe habilitado" />
-  <img src={nota7} alt="Tela com NFCe finalizada no topo" />
+  <ZoomableImage src={nota6} alt="Tela com botão de finalizar NFCe habilitado" />
+  <ZoomableImage src={nota7} alt="Tela com NFCe finalizada no topo" />
 </div>
 
 O **card da NFCe finalizada** passa a ser a identificada pela legenda **Nota fiscal finalizada**, exibida no canto superior esquerdo do card.  
 
 <div className="images-grid-2">
-  <img src={nota8} alt="Card de NFCe finalizada destacado" />
+  <ZoomableImage src={nota8} alt="Card de NFCe finalizada destacado" />
 </div>
 
 ---

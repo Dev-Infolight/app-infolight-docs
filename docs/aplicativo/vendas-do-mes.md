@@ -5,10 +5,11 @@ title: "Vendas do mês"
 ---
 
 import VendasDosMeses from "@site/static/img/vendas-do-mes/vendas-dos-meses.jpg";
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Vendas do mês
 
-<img 
+<ZoomableImage 
     className="h-500 object-fit-contain"
     src={VendasDosMeses}
     alt="Tela de vendas dos meses"

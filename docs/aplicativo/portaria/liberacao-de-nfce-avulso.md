@@ -10,6 +10,7 @@ import notaAvulso2 from '@site/static/img/telaLiberacaoNotaAvulso/notaAvulso2.pn
 import notaAvulso3 from '@site/static/img/telaLiberacaoNotaAvulso/notaAvulso3.png';
 import notaAvulso4 from '@site/static/img/telaLiberacaoNotaAvulso/notaAvulso4.png';
 import notaAvulso5 from '@site/static/img/telaLiberacaoNotaAvulso/notaAvulso5.png';
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Liberação de NFC-e Avulsa
 
@@ -34,7 +35,7 @@ Placa
 ```
 
 <div className="images-grid-2">
-  <img src={notaAvulso1} alt="Card de Nota" />
+  <ZoomableImage src={notaAvulso1} alt="Card de Nota" />
 </div>
 
 ---
@@ -45,21 +46,21 @@ Placa
 Ao tocar no card, é aberto um **modal de confirmação**. Ao confirmar em **Sim**, a nota é **liberada com sucesso**.
 
 <div className="images-grid-2">
-  <img src={notaAvulso2} alt="Modal de confirmação" />
-  <img src={notaAvulso3} alt="Modal de Sucesso" />
+  <ZoomableImage src={notaAvulso2} alt="Modal de confirmação" />
+  <ZoomableImage src={notaAvulso3} alt="Modal de Sucesso" />
 </div>
 
 Após a liberação, o aplicativo retorna o usuário para a tela de **Liberação de NFCe avulsa**.
 
 <div className="images-grid-2">
-  <img src={notaAvulso4} alt="tela de Liberação NFCe avulsa" />
+  <ZoomableImage src={notaAvulso4} alt="tela de Liberação NFCe avulsa" />
 </div>
 
 O card da NFCe liberada passa a ser identificada pela legenda **NFCe LIBERADA**, exibida no canto superior esquerdo do card.
 
 
 <div className="images-grid-2">
-  <img src={notaAvulso5} alt="Card de NFCe Liberada" />
+  <ZoomableImage src={notaAvulso5} alt="Card de NFCe Liberada" />
 
 </div>
 

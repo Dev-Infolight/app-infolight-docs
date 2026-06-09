@@ -23,6 +23,7 @@ import carga7 from '@site/static/img/telaExpedicao/Carga/carga7.png';
 import carga8 from '@site/static/img/telaExpedicao/Carga/carga8.png';
 import carga9 from '@site/static/img/telaExpedicao/Carga/carga9.png';
 import carga10 from '@site/static/img/telaExpedicao/Carga/carga10.png';
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Expedição de Carga
 
@@ -38,7 +39,7 @@ A tela **Expedição de Carga** pertence ao módulo de **Expedição**, mas tamb
 Ao tocar no card que representa a carga, é exibido logo abaixo um **modal de seleção de visualização**. Nele, o usuário pode escolher visualizar a carga por **Produto**, **Nota Fiscal (N.F.)** ou **Cliente**.  
 
 <div className="images-grid-2">
-  <img src={carga1} alt="Modal Simples de Conferência" />
+  <ZoomableImage src={carga1} alt="Modal Simples de Conferência" />
 </div>
 
 :::info
@@ -50,7 +51,7 @@ A escolher por Produtos a tela exibe todos os produtos vinculados, que devem pas
 No cabeçalho da tela, no canto superior direito, há o ícone para **cancelar o carregamento da carga**.  
 
 <div className="images-grid-2">
-  <img src={carga2} alt="Cabeçalho da tela de produtos" />
+  <ZoomableImage src={carga2} alt="Cabeçalho da tela de produtos" />
 </div>
 
 O conteúdo dela é composto por **cards**, cada um representando um produto.  
@@ -65,16 +66,16 @@ Quantidade - Unidade de medida.
 ```
 
 <div className="images-grid-2">
-  <img src={telaexpedicaod2} alt="Card de Produto com Foto" />
-  <img src={telaexpedicaod3} alt="Card de Produto sem Foto" />
+  <ZoomableImage src={telaexpedicaod2} alt="Card de Produto com Foto" />
+  <ZoomableImage src={telaexpedicaod3} alt="Card de Produto sem Foto" />
 </div>
 
 Na parte inferior da tela, são exibidos o **número da Carga**, a **quantidade de produtos já carregados** e uma **barra de progresso** com a porcentagem do carregamento.  
 Quando atinge **100%**, o botão **Finalizar Carga** é habilitado.
 
 <div className="images-grid-2">
-  <img src={telaexpedicaod4} alt="Tela sem o botão Finalizar habilitado" />
-  <img src={telaexpedicaod5} alt="Tela com o botão Finalizar habilitado" />
+  <ZoomableImage src={telaexpedicaod4} alt="Tela sem o botão Finalizar habilitado" />
+  <ZoomableImage src={telaexpedicaod5} alt="Tela com o botão Finalizar habilitado" />
 </div>
 
 ---
@@ -88,17 +89,17 @@ Mesmo que o aplicativo seja fechado, a carga permanece **disponível apenas para
 Enquanto houver uma carga em andamento, **outras cargas permanecem ocultas**.
 
 <div className="images-grid">
-  <img src={carga3} alt="Card da carga selecionada" />
+  <ZoomableImage src={carga3} alt="Card da carga selecionada" />
 </div>
 
 O usuário tem duas opções: **finalizar** a expedição ou **cancelar**.  
 No caso de cancelamento, se a conferência já tiver começado, é necessário **desmarcar todos os produtos** para que o botão de cancelamento volte a ser habilitado.
 
 <div className="images-grid">
-  <img src={carga4} alt="Conferência iniciada e botão desabilitado" />
-  <img src={carga5} alt="Produtos desmarcados e botão habilitado" />
-  <img src={carga6} alt="Modal de confirmação de cancelamento" />
-  <img src={carga7} alt="Sem carga selecionada" />
+  <ZoomableImage src={carga4} alt="Conferência iniciada e botão desabilitado" />
+  <ZoomableImage src={carga5} alt="Produtos desmarcados e botão habilitado" />
+  <ZoomableImage src={carga6} alt="Modal de confirmação de cancelamento" />
+  <ZoomableImage src={carga7} alt="Sem carga selecionada" />
 </div>
 
 ---
@@ -126,7 +127,7 @@ Caso o usuário feche a tela ou o aplicativo durante a expedição, ao voltar a 
 Se o parâmetro `MV_VALCODBAR` **não existir**, estiver **vazio** ou com valor `F`, será exibida uma conferência simples, onde o usuário pode apenas confirmar (**Sim**) ou cancelar (**Não**).
 
 <div className="images-grid-2">
-  <img src={telaexpedicaod11} alt="Modal Simples de Conferência" />
+  <ZoomableImage src={telaexpedicaod11} alt="Modal Simples de Conferência" />
 </div>
 
 ---
@@ -140,9 +141,9 @@ Se o parâmetro `MV_VALCODBAR` tiver o valor `S`, o usuário deve **informar ape
 - Abaixo do campo, é exibido o **total digitado / total esperado**.
 
 <div className="images-grid">
-  <img src={telaexpedicaod12} alt="Campo de código vazio" />
-  <img src={telaexpedicaod13} alt="Código incorreto" />
-  <img src={telaexpedicaod14} alt="Código correto" />
+  <ZoomableImage src={telaexpedicaod12} alt="Campo de código vazio" />
+  <ZoomableImage src={telaexpedicaod13} alt="Código incorreto" />
+  <ZoomableImage src={telaexpedicaod14} alt="Código correto" />
 </div>
 
 ---
@@ -152,8 +153,8 @@ Se o parâmetro `MV_VALCODBAR` tiver o valor `S`, o usuário deve **informar ape
 Após a conferência de todos os produtos, o botão **Finalizar Carga** é habilitado. Com conexão ativa à internet, ao tocar nele o processo de expedição é concluído com sucesso. Após a finalização, o aplicativo retorna o usuário para a tela de **Expedição de Carga**, onde a **carga finalizada** é exibida no topo da lista.
 
 <div className="images-grid">
-  <img src={carga8} alt="Tela com botão de finalizar carga habilitado" />
-  <img src={carga9} alt="Tela com carga finalizada no topo" />
+  <ZoomableImage src={carga8} alt="Tela com botão de finalizar carga habilitado" />
+  <ZoomableImage src={carga9} alt="Tela com carga finalizada no topo" />
 </div>
 
 O **card da carga finalizada aparece no canto superior esquerdo, identificado pela legenda **Carga finalizada**.
@@ -161,7 +162,7 @@ O **card da carga finalizada aparece no canto superior esquerdo, identificado pe
 O **card da carga finalizada** passa a ser a identificada pela legenda **Carga finalizada**, exibida no canto superior esquerdo do card.
 
 <div className="images-grid-2">
-  <img src={carga10} alt="Card de carga finalizada destacado" />
+  <ZoomableImage src={carga10} alt="Card de carga finalizada destacado" />
 </div>
 
 ---

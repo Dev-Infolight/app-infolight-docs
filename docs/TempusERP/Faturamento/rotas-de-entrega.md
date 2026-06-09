@@ -3,21 +3,11 @@ sidebar_position: 4
 sidebar_label: "Rotas de Entrega"
 title: "Cadastros de Rotas de entrega"
 ---
-import ConexaoComOServidor from "@site/static/img/conexao-com-o-servidor/conexao-com-o-servidor.png";
-import Login2 from "@site/static/img/conexao-com-o-servidor/login2.png";
+
 import Entrega from "@site/static/img/erp/entregas/entrega1.png";
 import Entrega2 from "@site/static/img/erp/entregas/entregas2.png";
 import Entrega3 from "@site/static/img/erp/entregas/entregas3.png";
-import ConfiguracoesLogin from "@site/static/img/conexao-com-o-servidor/configuracoes-login.png";
-import ListagemDeConexoes1 from "@site/static/img/conexao-com-o-servidor/gerenciar-conexoes-1.png";
-import AdicionarConexao from "@site/static/img/conexao-com-o-servidor/add-nova-conexao.png";
-import RemocaoDeConexao from "@site/static/img/conexao-com-o-servidor/removendo-conexao.png";
-import CheckIcon from "@site/static/img/conexao-com-o-servidor/check.svg";
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-
-
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Cadastros de Rotas de Entrega
 
@@ -37,7 +27,7 @@ A correta configuração das rotas garante maior eficiência logística, reduç�
 Ao acessar a rotina, o sistema exibirá uma listagem com todas as rotas de entrega previamente cadastradas.
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={Entrega}
         alt="Tela inicial da rotina de cadastro de rotas de entrega"
     />
@@ -50,7 +40,7 @@ Nesta tela, é possível:
 - Visualizar informações detalhadas
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={Entrega2}
         alt="Tela de gerenciamento de rotas de entrega"
     />
@@ -61,7 +51,7 @@ Nesta tela, é possível:
 Ao clicar na opção **Incluir**, o sistema abrirá a tela de cadastro para registro de uma nova rota de entrega.
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={Entrega3}
         alt="Tela de inclusão de nova rota de entrega"
     />

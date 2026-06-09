@@ -15,6 +15,7 @@ import Botoes from "@site/static/img/pedidos-de-venda/botoes.png";
 import TotalizadorItens from "@site/static/img/pedidos-de-venda/totalizador-itens.png";
 import GerarPdfA4 from "@site/static/img/pedidos-de-venda/pdf_pedido_de_venda.jpg";
 import ImprimirNaImpressoraTermica80mm from "@site/static/img/pedidos-de-venda/impressao_pedido_de_venda_80mm.jpg";
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Pedidos de venda
 
@@ -33,11 +34,11 @@ Projetamos duas guias para esta tela, são elas:
 As duas guias são apresentadas na imagem abaixo.
 
 <div className="divRow">
-    <img
+    <ZoomableImage
         src={GuiaPendentes}
         alt="Guia de pedidos pendentes"
     />
-    <img 
+    <ZoomableImage 
         src={GuiaEnviados}
         alt="Guia de pedidos enviados"
     />
@@ -49,7 +50,7 @@ As duas guias são apresentadas na imagem abaixo.
 
 ### Listagem de pedidos
 
-<img 
+<ZoomableImage 
     className="pb-16"
     src={CardPedido}
     alt="Card do pedido de venda"
@@ -74,7 +75,7 @@ A informação do pedido de origem só vai aparecer quando o pedido for uma **c�
 ### Totalizador
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={Totalizador}
         alt="Totalizador"
     />
@@ -92,7 +93,7 @@ A informação do pedido de origem só vai aparecer quando o pedido for uma **c�
 </div>
 ---
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         className="h-500"
         src={TotaisPorRegraDeSaida}
     />
@@ -106,7 +107,7 @@ A informação do pedido de origem só vai aparecer quando o pedido for uma **c�
 
 ### Filtros
 
-<img 
+<ZoomableImage 
     className="pb-16"
     src={Filtros}
     alt="Filtros tela de pedidos de venda"
@@ -140,7 +141,7 @@ Ao arrastar para baixo em qualquer guia, o aplicativo irá sincronizar com o Tem
 ## Itens do pedido de venda
 
 <div className="divRow">
-    <img
+    <ZoomableImage
         src={ItensDoPedidoDeVenda}
         alt="Itens do pedido de venda"
     />
@@ -159,7 +160,7 @@ Ao arrastar para baixo em qualquer guia, o aplicativo irá sincronizar com o Tem
 
 ### Botões
 
-<img 
+<ZoomableImage 
     className="pb-16"
     src={Botoes}
     alt="Funcionalidades da tela de itens do pedido de venda"
@@ -175,7 +176,7 @@ O aplicativo oferece alguns recursos para o usuário utilizar em relação ao pe
 
         Para gerar um arquivo PDF com os dados do pedido, primeiro, clique em **`Gerar PDF (folha A4)`** (1), e na tela de visualização do PDF, clique no **`ícone de compartilhar`** (2). Na imagem abaixo você pode visualizar em detalhes esse processo.
 
-        <img 
+        <ZoomableImage 
             src={GerarPdfA4}
             alt="Gerando PDF do pedido de venda"
             className="object-fit-contain"
@@ -191,7 +192,7 @@ O aplicativo oferece alguns recursos para o usuário utilizar em relação ao pe
         Essa função requer uma conexão via **`bluetooth com a impressora`**, portanto, certifique-se de ligar o bluetooth e parear com a impressora antes de utilizar esta funcionalidade.
         :::
 
-        <img 
+        <ZoomableImage 
             src={ImprimirNaImpressoraTermica80mm}
             alt="Imprimindo pedido na impressora térmica"
             className="object-fit-contain"
@@ -231,7 +232,7 @@ Existem algumas considerações importantes sobre o uso dos botões:
 ### Totalizador
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={TotalizadorItens}
         alt="Totalizador da tela de itens do pedido de venda"
     />

@@ -12,7 +12,7 @@ import RemocaoDeConexao from "@site/static/img/conexao-com-o-servidor/removendo-
 import CheckIcon from "@site/static/img/conexao-com-o-servidor/check.svg";
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Conexão com o servidor
 
@@ -74,7 +74,7 @@ Por questões de segurança de dados, o aplicativo não faz o download dos dados
 O processo de conexão com o servidor é realizado na `tela de apresentação do aplicativo`.
 
 <div className="divRow">
-    <img src={ConexaoComOServidor} alt="Tela de conexão com o servidor"/>
+    <ZoomableImage src={ConexaoComOServidor} alt="Tela de conexão com o servidor"/>
     <div className="divColumn">
         <b>Passo a passo para fazer a conexão com o servidor:</b>
         <ol className="divColumn">
@@ -93,11 +93,11 @@ O aplicativo também fornece suporte a multiplas conexões com o servidor. Este 
 A configuração de múltiplas conexões é realizada na tela de `Gerenciamento de conexões`, tela esta que pode ser acessada através da [tela de login](./login.md), para isso, clique no botão `Configurações do login` e no modal que será aberto, clique em `Gerenciar conexões`. Este passo a passo é mostrado nas imagens abaixo.
 
 <div className="divRow pb-16">
-    <img 
+    <ZoomableImage 
         src={Login2}
         alt="Tela de login"
     />
-    <img 
+    <ZoomableImage 
         src={ConfiguracoesLogin}
         alt="Configurações do login"
     />
@@ -114,7 +114,7 @@ Ao limpar o cache, o aplicativo perderá a informação de logins já realizados
 <Tabs className="fw-600">
     <TabItem value="list" label="Listagem de conexões">
         <div className="divRow">
-            <img
+            <ZoomableImage
                 src={ListagemDeConexoes1}
                 alt="listagem de conexões"
                 className="h-500"
@@ -140,7 +140,7 @@ Ao limpar o cache, o aplicativo perderá a informação de logins já realizados
     </TabItem>
     <TabItem value="add" label="Adicionando uma conexão">
         <div className="divRow">
-            <img
+            <ZoomableImage
                 src={AdicionarConexao}
                 alt="Adicionando uma nova conexão"
                 className="h-500"
@@ -162,7 +162,7 @@ Ao limpar o cache, o aplicativo perderá a informação de logins já realizados
     </TabItem>
     <TabItem value="remove" label="Removendo uma conexão">
        <div className="divRow">
-            <img
+            <ZoomableImage
                 src={RemocaoDeConexao}
                 alt="Removendo uma conexão"
                 className="h-500"

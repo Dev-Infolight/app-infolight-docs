@@ -6,14 +6,15 @@ title: "Menus de usuário"
 
 import MenuDeUsuario1 from '@site/static/img/menus-de-usuario/menu-de-usuario1.png';
 import MenuDeUsuario2 from '@site/static/img/menus-de-usuario/menu-de-usuario2.png';
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Menus de usuário
 
 São basicamente as **`opções do menu`** que serão apresentadas para o usuário após ele fazer login e/ou acessar a tela de relatórios do sistema. Com este recurso, podemos definir exatamente quais as **`telas`** e **`relatórios`** que serão apresentados para cada **`empresa, grupo de usuário e módulo do sistema`**. As imagens a seguir demonstram alguns exemplos de menus de usuário:
 
 <div className="divRow">
-    <img src={MenuDeUsuario1} alt="Exemplo de menu de usuário 1"/>
-    <img src={MenuDeUsuario2} alt="Exemplo de menu de usuário 2"/>
+    <ZoomableImage src={MenuDeUsuario1} alt="Exemplo de menu de usuário 1"/>
+    <ZoomableImage src={MenuDeUsuario2} alt="Exemplo de menu de usuário 2"/>
 </div>
 
 ## Onde configurar ?

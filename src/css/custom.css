@@ -123,7 +123,7 @@
   margin-bottom: 20px;
 }
 
-.images-grid img {
+.images-grid > img {
   width: 100%;
   height: auto;
   object-fit: contain; /* mantém proporção */
@@ -140,7 +140,7 @@
   margin-bottom: 20px;
 }
 
-.images-grid-2 img {
+.images-grid-2 > img {
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -171,7 +171,7 @@
   margin-bottom: 20px;
 }
 
-.images-half img {
+.images-half > img {
   height: 500px;
   width: auto;
   max-width: 45%;
@@ -196,7 +196,7 @@
     align-items: flex-start;
   }
 
-  .images-half img {
+  .images-half > img {
     height: 300px;
   }
 

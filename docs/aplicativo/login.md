@@ -8,6 +8,7 @@ import Login1 from "@site/static/img/login/login1.png";
 import Login2 from "@site/static/img/login/login2-editado.png";
 import FluxogramaLoginComInternet from "@site/static/img/login/fluxograma-de-login.png";
 import FluxogramaLoginSemInternet from "@site/static/img/login/fluxograma-login-offline.png";
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Login
 
@@ -16,7 +17,7 @@ O login se refere ao processo no qual o usuário informa as suas credenciais e t
 ## Tela de primeiro login
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={Login1}
         alt="Tela de primeiro Login"
     />
@@ -29,7 +30,7 @@ O login se refere ao processo no qual o usuário informa as suas credenciais e t
 ## Tela de segundo login
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={Login2}
         alt="Tela de primeiro Login"
     />
@@ -53,14 +54,14 @@ O login se refere ao processo no qual o usuário informa as suas credenciais e t
 
 ### Login com internet
 
-<img 
+<ZoomableImage 
     src={FluxogramaLoginComInternet}
     alt="Fluxograma login com internet"
 />
 
 ### Login sem internet
 
-<img 
+<ZoomableImage 
     src={FluxogramaLoginSemInternet}
     alt="Fluxograma login com internet"
 />

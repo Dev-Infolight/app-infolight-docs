@@ -3,9 +3,8 @@ sidebar_position: 1
 sidebar_label: "Região" 
 title: "Cadastros de Região" 
 --- 
-import ConexaoComOServidor from "@site/static/img/conexao-com-o-servidor/conexao-com-o-servidor.png"; import Login2 from "@site/static/img/conexao-com-o-servidor/login2.png"; import Regiao from "@site/static/img/erp/regiao/regiao.png"; import Regiao2 from "@site/static/img/erp/regiao/regiao2.png"; import ConfiguracoesLogin from "@site/static/img/conexao-com-o-servidor/configuracoes-login.png"; import ListagemDeConexoes1 from "@site/static/img/conexao-com-o-servidor/gerenciar-conexoes-1.png"; import AdicionarConexao from "@site/static/img/conexao-com-o-servidor/add-nova-conexao.png"; import RemocaoDeConexao from "@site/static/img/conexao-com-o-servidor/removendo-conexao.png"; import CheckIcon from "@site/static/img/conexao-com-o-servidor/check.svg"; import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
-
-
+import Regiao2 from "@site/static/img/erp/regiao/regiao2.png"; 
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Cadastros de Região
 
@@ -36,7 +35,7 @@ Recomenda-se seguir um padrão de agrupamento por estado para facilitar a organi
 Após acessar a rotina, utilize as opções disponíveis para administrar os cadastros conforme sua necessidade.
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={Regiao2}
         alt="Tela de gerenciamento e manutenção de regiões"
     />

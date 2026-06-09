@@ -13,6 +13,7 @@ import PedidoEmCache from "@site/static/img/nova-venda/pedido-em-cache.png";
 import InformacaoNovaVersao from "@site/static/img/guia-inicio/verificacao-de-versao.jpg";
 import TotaisDeVendaMascarados from "@site/static/img/guia-inicio/totais-com-valor-mascarado.png";
 import TotaisDeVendasOcultados from "@site/static/img/guia-inicio/totais-ocultados.png";
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Guia "Início"
 
@@ -29,7 +30,7 @@ A **guia de início** é o ponto de partida para acessar a grande maioria dos re
 
 Você pode visualizar esta tela na imagem abaixo:
 
-<img 
+<ZoomableImage 
     className="pb-16"
     src={GuiaInicio}
     alt="Explicação da guia de ínicio"
@@ -63,7 +64,7 @@ WHERE
 
 ## Total de vendas
 
-<img 
+<ZoomableImage 
     src={VendasDiaMes}
     alt="Vendas do dia e dos meses"
 />
@@ -72,7 +73,7 @@ WHERE
 
 Para cálcular o total de vendas do dia, primeiro, o aplicativo decide se este processo será feito de forma online ou offline. O diagrama abaixo demonstra como funciona o processo de decisão.
 
-<img 
+<ZoomableImage 
     className="pb-16"
     src={DiagramaTotalDeVendasDia}
     alt="Lógica para obtenção de vendas do dia"
@@ -148,7 +149,7 @@ Após a realização dos passos citados acima, se os totais de venda não sumire
 
 A imagem a seguir demonstra o visual com os totais ocultados:
 
-<img
+<ZoomableImage
     className="pb-16"
     src={TotaisDeVendasOcultados}
     alt="Totais de vendas ocultados"
@@ -164,7 +165,7 @@ Ao esconder os totais de venda, a [guia do dashboard](./guia-de-dashboard.md) ta
 
 As vezes o usuário deseja que os totais de venda continuem aparecendo na tela, mas, com os valores mascarados. Para isso, bastar clicar no ícone que está localizado ao lado do botão de logout. Clique uma vez para ocultar e clique novamente para mostrar os valores.
 
-<img 
+<ZoomableImage 
     src={TotaisDeVendaMascarados}
     alt="Totais com valor mascarado"
 />
@@ -173,7 +174,7 @@ As vezes o usuário deseja que os totais de venda continuem aparecendo na tela, 
 
 ## Sincronização de dados
 
-<img 
+<ZoomableImage 
     className="h-500 pb-16"
     src={AtualizandoDados}
     alt="Sincronizando os dados com o servidor"
@@ -201,7 +202,7 @@ Ao arrastar para baixo na guia inicial, o aplicativo irá realizar os seguintes 
 
 Ao passar mais de um dia sem sincronizar os dados, a data da última vez que você sincronizou será destacada em laranja:
 
-<img 
+<ZoomableImage 
     src={SincronizacaoAtrasada}
     alt="Sincronização atrasada"
 />
@@ -217,7 +218,7 @@ Recomendamos que você sincronize os dados do aplicativo diariamente, porquê, c
 ## Verificação da versão do aplicativo
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={InformacaoNovaVersao}
         alt="Nova versão disponível"
     />
@@ -235,7 +236,7 @@ Recomendamos que você sincronize os dados do aplicativo diariamente, porquê, c
 ## Informação de pedido não finalizado
 
 <div className="divRow">
-    <img 
+    <ZoomableImage 
         src={PedidoEmCache}
         alt="Pedido pendente de finalização"
     />

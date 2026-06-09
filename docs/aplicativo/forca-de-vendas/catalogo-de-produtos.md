@@ -10,6 +10,7 @@ import FiltroPorFoto from "@site/static/img/catalogo-de-produtos/filtro-por-foto
 import FiltroPorMarcaGrupoSubgrupo from "@site/static/img/catalogo-de-produtos/filtro-por-marca-grupo-subgrupo.jpg";
 import FitroDeBuscaPorTexto from "@site/static/img/catalogo-de-produtos/Filtro por busca de texto.jpg";
 import ImpressaoCatalogo from "@site/static/img/catalogo-de-produtos/impressao-do-catalogo.jpg";
+import ZoomableImage from "@site/src/components/ZoomableImage";
 
 # Catálogo de produtos
 
@@ -82,7 +83,7 @@ Idenpendentemente do tipo de visualização escolhido, o aplicativo sempre irá 
 
 As imagens abaixo demonstram os dois tipos de vizualização que foram citados acima.
 
-<img 
+<ZoomableImage 
     className="h-500"
     src={ListagemDeProdutos}
     alt="Listagem de produtos"
@@ -93,7 +94,7 @@ As imagens abaixo demonstram os dois tipos de vizualização que foram citados a
 
 ### Detalhes do produto
 
-<img 
+<ZoomableImage 
     className="h-500 pb-16"
     src={DetalhesProduto}
     alt="Detalhes do produto"
@@ -130,7 +131,7 @@ Este filtro permite que o usuário altere a visualização dos produtos com base
 
 Para utilizar, clique no icone destacado na imagem 1, e selecione o filtro desejado (imagem 2).
 
-<img 
+<ZoomableImage 
     className="h-500"
     src={FiltroPorFoto}
     alt="Filtrando os produtos por foto"
@@ -144,7 +145,7 @@ Você também pode buscar o produto desejado escrevendo no campo de busca. A bus
 
 Abaixo está um exemplo de busca por um produto cujo o nome contenha a palavra "51 ice".
 
-<img 
+<ZoomableImage 
     className="h-500"
     src={FitroDeBuscaPorTexto}
     alt="Filtrando os produtos texto"
@@ -162,7 +163,7 @@ O filtro por marca só será apresentado quando o tipo da empresa for **comérci
 
 A imagem abaixo demonstra como utilizar o filtro:
 
-<img 
+<ZoomableImage 
     className="object-fit-contain"
     src={FiltroPorMarcaGrupoSubgrupo}
     alt="Filtrando os produtos por marca, grupo e subgrupo"
@@ -182,7 +183,7 @@ Caso a empresa seleciona for um comércio, o aplicativo exige pelo menos um filt
 
 A imagem abaixo mostra como gerar o PDF do catálogo:
 
-<img 
+<ZoomableImage 
     className="object-fit-contain"
     src={ImpressaoCatalogo}
     alt="Imprimindo o catálogo de produtos"
