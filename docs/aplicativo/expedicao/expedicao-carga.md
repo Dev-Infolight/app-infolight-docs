@@ -157,7 +157,7 @@ Após a conferência de todos os produtos, o botão **Finalizar Carga** é habil
   <ZoomableImage src={carga9} alt="Tela com carga finalizada no topo" />
 </div>
 
-O **card da carga finalizada aparece no canto superior esquerdo, identificado pela legenda **Carga finalizada**.
+O **card da carga finalizada** aparece no canto superior esquerdo, identificado pela legenda **Carga finalizada**.
 
 O **card da carga finalizada** passa a ser a identificada pela legenda **Carga finalizada**, exibida no canto superior esquerdo do card.
 
