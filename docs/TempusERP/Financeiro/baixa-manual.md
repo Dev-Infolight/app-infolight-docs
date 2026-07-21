@@ -1,5 +1,5 @@
 ---
-sidebar_position: 19
+sidebar_position: 12
 sidebar_label: "Baixa manual de títulos a receber"
 title: "Baixa manual de títulos a receber"
 ---
