@@ -55,6 +55,10 @@ Serão apresentadas apenas as condições de pagamento autorizadas no cadastro d
 
 Também é possível preencher mensagens que serão apresentadas na nota fiscal.
 
+Caso deseje alterar a quantidade e a espécie você poderá preencher os campos: **quantidade** e **espécie** na aba administrativa da tela de cabeçalho.
+O campos **Espécie** receberá a descrição.
+Ex: 'Volumes', 'Kg', 'Unidade', etc...
+
 Para informações de uso exclusivamente interno, utilize o campo de **observação interna**, pois seu conteúdo não será impresso na nota fiscal.
 
 ## Configuração da Venda
