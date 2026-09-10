@@ -6,11 +6,15 @@ title: "Remessa e Retorno"
 import remessa from "@site/static/img/erp/remessa/remessa.png";
 import ZoomableImage from "@site/src/components/ZoomableImage";
 
+
 # Geração de Remessa de Boletos Bancários
 
 A rotina **Geração de Remessa de Boletos** do sistema Tempus tem como finalidade registrar junto às instituições bancárias os boletos emitidos pela empresa.
 
 Esse processo é indispensável para que o banco receba, processe e valide os boletos gerados no sistema, permitindo que os clientes possam efetuar o pagamento normalmente.
+
+## Acesso a rotina
+Para acessar a rotina de emissão de remessa bancaria vá no modulo **Financeiro** -> **Movimento Bancario** -> **Gerar arquivo de remessa**
 
 ## Importância da Remessa Bancária
 

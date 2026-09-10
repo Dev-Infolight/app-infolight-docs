@@ -58,9 +58,9 @@ Cabeçalho e Dados do Fornecedor
 
 Após salvar, o pedido será listado com cores que indicam sua situação atual:
 
-`Azul (Digitado):` O pedido está aberto e aguardando a entrega.
+`Verde (Digitado):` O pedido está aberto e aguardando a entrega.
 
-`Verde (Atendido Parcialmente):` Apenas uma parte dos produtos foi entregue e vinculada a uma nota fiscal.
+`Amarelo (Atendido Parcialmente):` Apenas uma parte dos produtos foi entregue e vinculada a uma nota fiscal.
 
 `Vermelho (Atendido):` Todos os itens já foram recebidos e a nota fiscal foi lançada no sistema.
 
