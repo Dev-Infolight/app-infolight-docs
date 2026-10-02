@@ -70,7 +70,7 @@ Acesse:
 Para cadastrar um funcionário:
 
 1. Clique em **Incluir**.
-2. A matrícula será gerada automaticamente pelo sistema.
+2. Preencha obrigatoriamente a matricula do funcionário.
 3. Informe o nome do funcionário.
 4. Preencha todos os campos obrigatórios (destacados em azul).
 

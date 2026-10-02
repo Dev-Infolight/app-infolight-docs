@@ -113,13 +113,13 @@ Posteriormente, recomenda-se atualizar o limite de crédito no cadastro do clien
 
 Quando o pedido estiver liberado e pronto para faturamento, ele será apresentado na situação correspondente na tela.
 
-## Montagem da Carga
+## Montagem de Romaneio
 
 Após liberar os pedidos que serão enviados juntos, acesse:
 
-**Faturamento → Vendas → Montagem → Montagem**
+**Faturamento → Movimentos → pré-carga**
 
-Selecione os pedidos que farão parte da mesma carga.
+Selecione os pedidos que farão parte do mesmo romaneio.
 
 Para selecionar vários pedidos, mantenha pressionada a tecla **Ctrl** e clique nos pedidos desejados.
 
@@ -139,9 +139,8 @@ Também será possível informar:
 - Veículo
 - Rota
 
-Caso o cliente retire a mercadoria diretamente no estabelecimento, poderá ser utilizada uma rota específica para **retirada no balcão**.
 
-Após a confirmação, o sistema irá gerar uma carga.
+Após a confirmação, o sistema irá gerar um romaneio.
 
 :::warning
 Anote o número do romaneio gerado, pois ele será utilizado para importar a carga na empresa Fiscal.
