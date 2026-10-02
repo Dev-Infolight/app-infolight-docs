@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
 
 A rotina de **Grade de Produtos** permite trabalhar com produtos que possuem variações, como **cor, tamanho, sabor, embalagem ou voltagem**.
 
-Cada combinação de características é cadastrada como um produto próprio, com seu respectivo código, preço e estoque. A grade facilita principalmente o lançamento de várias combinações de um mesmo produto no pedido de venda. :contentReference[oaicite:0]{index=0}
+Cada combinação de características é cadastrada como um produto próprio, com seu respectivo código, preço e estoque. A grade facilita principalmente o lançamento de várias combinações de um mesmo produto no pedido de venda. :contentReference.
 
 ## Como funciona
 
@@ -37,7 +37,7 @@ Por exemplo, uma referência **Camisa Polo Piquet** pode gerar:
 - Camisa Polo Piquet Preto P
 - Camisa Polo Piquet Preto M
 
-Cada combinação possui estoque e código próprios. :contentReference[oaicite:1]{index=1}
+Cada combinação possui estoque e código próprios. :contentReference.
 
 ## Tabelas de grade
 
@@ -64,7 +64,7 @@ Exemplo:
 | **COR** | AZ - Azul / PR - Preto / BR - Branco |
 | **TAM** | PP / P / M / G / GG |
 
-Os códigos devem ser planejados antes da geração, pois o código final do produto é formado pela combinação do código da referência com os códigos das variações e não pode ultrapassar 15 caracteres. :contentReference[oaicite:2]{index=2}
+Os códigos devem ser planejados antes da geração, pois o código final do produto é formado pela combinação do código da referência com os códigos das variações e não pode ultrapassar 15 caracteres. :contentReference.
 
 ## Cadastrar o produto de referência
 
@@ -80,7 +80,7 @@ Na guia **Grade**, configure:
 - **Tabela das linhas:** informe a tabela que será utilizada nas linhas da matriz.
 - **Tabela das colunas:** informe a tabela que será utilizada nas colunas da matriz.
 
-É necessário informar pelo menos uma tabela. Quando forem utilizadas linhas e colunas, elas devem ser tabelas diferentes. :contentReference[oaicite:3]{index=3}
+É necessário informar pelo menos uma tabela. Quando forem utilizadas linhas e colunas, elas devem ser tabelas diferentes. :contentReference.
 
 > **Importante:** o produto de referência não é vendido e não possui estoque. Ele serve para gerar e abrir a matriz da grade.
 
